@@ -12,12 +12,12 @@ import (
 
 var Routers = []*Router{}
 
-// Router
+type Load func(apis []*apis.API) http.Handler
+
 type Router struct {
-	Name    string
-	URL     string
-	Handler http.Handler
-	Load    func(apis []*apis.API) http.Handler
+	Name string
+	URL  string
+	Load Load
 }
 
 func defaultHandleFunc(w http.ResponseWriter, r *http.Request) {
