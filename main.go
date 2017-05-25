@@ -11,6 +11,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"strconv"
 	"testing"
 
 	"github.com/caixw/go-http-routing-test/apis"
@@ -47,10 +48,10 @@ func main() {
 }
 
 func test() {
-	for _, r := range routers.Routers {
-		rs := make([]*router, 0, len(apis.APIS))
+	for index, c := range apis.APIS {
+		rs := make([]*router, 0, len(routers.Routers))
 
-		for _, c := range apis.APIS {
+		for _, r := range routers.Routers {
 			rs = append(rs, testSingle(c, r))
 		}
 
@@ -59,7 +60,7 @@ func test() {
 			panic(err)
 		}
 
-		path := filepath.Join(dataDir, r.Name+".json")
+		path := filepath.Join(dataDir, strconv.Itoa(index)+".json")
 		f, err := os.Create(path)
 		if err != nil {
 			panic(err)
@@ -113,7 +114,7 @@ func testHit(apis []*apis.API, h http.Handler) []*hit {
 		h.ServeHTTP(w, r)
 
 		hits = append(hits, &hit{
-			OK:     w.Body.String() != r.URL.Path,
+			OK:     w.Body.String() == r.URL.Path,
 			Path:   api.Test,
 			Want:   api.Brace,
 			Actual: w.Body.String(),
