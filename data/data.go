@@ -59,13 +59,6 @@ func JSON(dir string, log io.Writer) error {
 	return nil
 }
 
-// HTML 输出 HTML 模板
-func HTML(dir string, log io.Writer) error {
-	// TODO
-
-	return nil
-}
-
 func writeJSON(path string, obj interface{}) error {
 	bs, err := json.MarshalIndent(obj, "", "  ")
 	if err != nil {

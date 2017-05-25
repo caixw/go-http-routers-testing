@@ -12,11 +12,12 @@ type env struct {
 
 // 每个 API 对应的路由测试数据
 type item struct {
-	RouterName string `json:"routerName"` // 路由的名称
-	APIName    string `json:"apiName"`    // API 名称
-	MemBytes   uint64 `json:"memBytes"`   // 分配的内存
-	Bench      *bench `json:"benchmark"`  // 所有的性能数据
-	Hits       []*hit `json:"hits"`       // 所有的命中数据
+	RouterName string `json:"routerName"`     // 路由的名称
+	APIName    string `json:"apiName"`        // API 名称
+	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
+	Bench      *bench `json:"benchmark"`      // 所有的性能数据
+	HitPrecent int    `json:"hitPrecent"`     // 命中率
+	Hits       []*hit `json:"hits,omitempty"` // 所有的命中数据
 }
 
 type bench struct {

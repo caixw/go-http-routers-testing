@@ -8,7 +8,6 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"strings"
 
 	"github.com/caixw/go-http-routes-testing/data"
 )
@@ -25,7 +24,6 @@ const version = "0.1.1+20170525"
 var output = os.Stdout
 
 func main() {
-	typ := flag.String("type", "html", "指定输出的数据类型，可以是 HTML 或是 JSON")
 	v := flag.Bool("v", false, "显示版本号")
 	flag.Parse()
 
@@ -34,13 +32,5 @@ func main() {
 		return
 	}
 
-	fmt.Println(*typ)
-	switch strings.ToLower(*typ) {
-	case "html":
-		data.HTML(docsDir, output)
-	case "json":
-		data.JSON(dataDir, output)
-	default:
-		panic("无效的 type 值")
-	}
+	data.JSON(dataDir, output)
 }
