@@ -7,7 +7,7 @@ package routers
 import (
 	"net/http"
 
-	"github.com/caixw/go-http-routing-test/apis"
+	"github.com/caixw/go-http-routes-testing/apis"
 	"github.com/issue9/mux"
 )
 

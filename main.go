@@ -14,8 +14,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/caixw/go-http-routing-test/apis"
-	"github.com/caixw/go-http-routing-test/routers"
+	"github.com/caixw/go-http-routes-testing/apis"
+	"github.com/caixw/go-http-routes-testing/routers"
 )
 
 // 数据存放目录
