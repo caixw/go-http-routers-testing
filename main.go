@@ -4,11 +4,15 @@
 
 package main
 
-import "github.com/caixw/go-http-routes-testing/data"
+import (
+	"os"
+
+	"github.com/caixw/go-http-routes-testing/data"
+)
 
 // 数据存放目录
 const dataDir = "./docs/data"
 
 func main() {
-	data.JSON(dataDir)
+	data.JSON(dataDir, os.Stdout)
 }

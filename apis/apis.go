@@ -9,6 +9,7 @@ import "strings"
 
 var APIS = []*Collection{}
 
+// Collection 表示一组 API 的定义。
 type Collection struct {
 	Name string
 	APIS []*API

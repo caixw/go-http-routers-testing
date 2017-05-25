@@ -6,6 +6,7 @@ package data
 
 import (
 	"encoding/json"
+	"io"
 	"net/http"
 	"net/http/httptest"
 	"os"
@@ -14,37 +15,56 @@ import (
 	"strconv"
 	"testing"
 
+	"fmt"
+
 	"github.com/caixw/go-http-routes-testing/apis"
 	"github.com/caixw/go-http-routes-testing/routers"
+	"github.com/issue9/utils"
 )
 
-// JSON 输出 JSON 数据
-func JSON(dir string) {
-	for index, c := range apis.APIS {
-		items := make([]*item, 0, len(routers.Routers))
+// JSON 输出 JSON 数据，数据按路由进行分组。
+func JSON(dir string, log io.Writer) error {
+	for _, r := range routers.Routers {
+		fmt.Fprintf(log, "开始测试 %v \n", r.Name)
 
-		for _, r := range routers.Routers {
-			items = append(items, single(c, r))
+		// 以路由名创建目录
+		routerDir := filepath.Join(dir, r.Name)
+		if !utils.FileExists(routerDir) {
+			if err := os.Mkdir(routerDir, os.ModePerm); err != nil {
+				return err
+			}
 		}
 
-		bs, err := json.MarshalIndent(items, "", "  ")
-		if err != nil {
-			panic(err)
-		}
+		for index, c := range apis.APIS {
+			fmt.Fprintf(log, "    %v......", c.Name)
 
-		path := filepath.Join(dir, strconv.Itoa(index)+".json")
-		f, err := os.Create(path)
-		if err != nil {
-			panic(err)
+			d := single(c, r)
+			bs, err := json.MarshalIndent(d, "", "  ")
+			if err != nil {
+				return err
+			}
+
+			path := filepath.Join(routerDir, strconv.Itoa(index)+".json")
+			f, err := os.Create(path)
+			if err != nil {
+				return err
+			}
+			f.Write(bs)
+			f.Close()
+
+			fmt.Fprintln(log, "[OK]")
 		}
-		defer f.Close()
-		f.Write(bs)
-	}
+		fmt.Fprintf(log, "完成 %v 测试\n\n", r.Name)
+	} // end for routers.Routers
+
+	return nil
 }
 
 // HTML 输出 HTML 模板
-func HTML(dir string) {
-	//
+func HTML(dir string, log io.Writer) error {
+	// TODO
+
+	return nil
 }
 
 func single(c *apis.Collection, r *routers.Router) *item {
