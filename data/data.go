@@ -32,28 +32,34 @@ func JSON(dir string, log io.Writer) error {
 
 	writeJSON(filepath.Join(dir, "env.json"), getEnv())
 
-	for _, r := range routers.Routers {
-		fmt.Fprintf(log, "开始测试 %v \n", r.Name)
+	for cindex, c := range apis.APIS {
+		cdata := make([]*item, 0, len(routers.Routers))
 
-		// 以路由名创建目录
-		routerDir := filepath.Join(dir, r.Name)
-		if !utils.FileExists(routerDir) {
-			if err := os.Mkdir(routerDir, os.ModePerm); err != nil {
+		fmt.Fprintf(log, "开始测试 %v \n", c.Name)
+
+		for rindex, r := range routers.Routers {
+			fmt.Fprint(log, "    ", r.Name, "......")
+
+			filename := strconv.Itoa(cindex) + "-" + strconv.Itoa(rindex) + ".json"
+			path := filepath.Join(dir, filename)
+			data := single(c, r)
+			data.HitFile = filename
+			if err := writeJSON(path, data.Hits); err != nil {
 				return err
 			}
-		}
 
-		for index, c := range apis.APIS {
-			fmt.Fprintf(log, "    %v......", c.Name)
-
-			path := filepath.Join(routerDir, strconv.Itoa(index)+".json")
-			if err := writeJSON(path, single(c, r)); err != nil {
-				return err
-			}
+			data.Hits = nil
+			cdata = append(cdata, data)
 
 			fmt.Fprintln(log, "[OK]")
 		}
-		fmt.Fprintf(log, "完成 %v 测试\n\n", r.Name)
+
+		path := filepath.Join(dir, strconv.Itoa(cindex)+".json")
+		if err := writeJSON(path, cdata); err != nil {
+			return err
+		}
+
+		fmt.Fprintf(log, "完成 %v 测试\n\n", c.Name)
 	} // end for routers.Routers
 
 	return nil
@@ -95,6 +101,13 @@ func single(c *apis.Collection, r *routers.Router) *item {
 
 	// 命中情况
 	ret.Hits = testHit(c.APIS, h)
+	var cnt int
+	for _, hit := range ret.Hits {
+		if hit.OK {
+			cnt++
+		}
+	}
+	ret.HitPrecent = cnt / len(ret.Hits) * 100
 
 	// bench
 	rslt := testing.Benchmark(func(b *testing.B) {

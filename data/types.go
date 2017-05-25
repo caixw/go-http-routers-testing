@@ -17,6 +17,7 @@ type item struct {
 	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
 	Bench      *bench `json:"benchmark"`      // 所有的性能数据
 	HitPrecent int    `json:"hitPrecent"`     // 命中率
+	HitFile    string `json:"hitFile"`        // 保存 hit 记录的文件名
 	Hits       []*hit `json:"hits,omitempty"` // 所有的命中数据
 }
 
