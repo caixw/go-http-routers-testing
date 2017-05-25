@@ -24,6 +24,14 @@ import (
 
 // JSON 输出 JSON 数据，数据按路由进行分组。
 func JSON(dir string, log io.Writer) error {
+	if !utils.FileExists(dir) {
+		if err := os.Mkdir(dir, os.ModePerm); err != nil {
+			return err
+		}
+	}
+
+	writeJSON(filepath.Join(dir, "env.json"), getEnv())
+
 	for _, r := range routers.Routers {
 		fmt.Fprintf(log, "开始测试 %v \n", r.Name)
 
@@ -38,19 +46,10 @@ func JSON(dir string, log io.Writer) error {
 		for index, c := range apis.APIS {
 			fmt.Fprintf(log, "    %v......", c.Name)
 
-			d := single(c, r)
-			bs, err := json.MarshalIndent(d, "", "  ")
-			if err != nil {
-				return err
-			}
-
 			path := filepath.Join(routerDir, strconv.Itoa(index)+".json")
-			f, err := os.Create(path)
-			if err != nil {
+			if err := writeJSON(path, single(c, r)); err != nil {
 				return err
 			}
-			f.Write(bs)
-			f.Close()
 
 			fmt.Fprintln(log, "[OK]")
 		}
@@ -65,6 +64,30 @@ func HTML(dir string, log io.Writer) error {
 	// TODO
 
 	return nil
+}
+
+func writeJSON(path string, obj interface{}) error {
+	bs, err := json.MarshalIndent(obj, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	f, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+	f.Write(bs)
+	f.Close()
+
+	return nil
+}
+
+func getEnv() *env {
+	return &env{
+		OS:   runtime.GOOS,
+		Arch: runtime.GOARCH,
+		CPU:  runtime.NumCPU(),
+	}
 }
 
 func single(c *apis.Collection, r *routers.Router) *item {

@@ -4,6 +4,12 @@
 
 package data
 
+type env struct {
+	OS   string `json:"os"`
+	Arch string `json:"arch"`
+	CPU  int    `json:"cpu"`
+}
+
 // 每个 API 对应的路由测试数据
 type item struct {
 	RouterName string `json:"routerName"` // 路由的名称

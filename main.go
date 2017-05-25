@@ -27,12 +27,14 @@ var output = os.Stdout
 func main() {
 	typ := flag.String("type", "html", "指定输出的数据类型，可以是 HTML 或是 JSON")
 	v := flag.Bool("v", false, "显示版本号")
+	flag.Parse()
 
 	if *v {
 		fmt.Println("version:", version)
 		return
 	}
 
+	fmt.Println(*typ)
 	switch strings.ToLower(*typ) {
 	case "html":
 		data.HTML(docsDir, output)
