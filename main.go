@@ -44,15 +44,11 @@ type hit struct {
 }
 
 func main() {
-	test()
-}
-
-func test() {
 	for index, c := range apis.APIS {
 		rs := make([]*router, 0, len(routers.Routers))
 
 		for _, r := range routers.Routers {
-			rs = append(rs, testSingle(c, r))
+			rs = append(rs, single(c, r))
 		}
 
 		bs, err := json.MarshalIndent(rs, "", "  ")
@@ -70,7 +66,7 @@ func test() {
 	}
 }
 
-func testSingle(c *apis.Collection, r *routers.Router) *router {
+func single(c *apis.Collection, r *routers.Router) *router {
 	ret := &router{
 		RouterName: r.Name,
 		APIName:    c.Name,

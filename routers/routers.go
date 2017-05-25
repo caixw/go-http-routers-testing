@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT
 // license that can be found in the LICENSE file.
 
+// Package routers 各类路由包的定义处。
 package routers
 
 import (
