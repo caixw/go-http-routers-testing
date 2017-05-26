@@ -5,9 +5,10 @@
 package data
 
 type env struct {
-	OS   string `json:"os"`
-	Arch string `json:"arch"`
-	CPU  int    `json:"cpu"`
+	OS   string   `json:"os"`
+	Arch string   `json:"arch"`
+	CPU  int      `json:"cpu"`
+	Data []string `json:"data"` // 测试数据文件列表
 }
 
 // 每个 API 对应的路由测试数据
@@ -15,7 +16,7 @@ type item struct {
 	RouterName string `json:"routerName"`     // 路由的名称
 	APIName    string `json:"apiName"`        // API 名称
 	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
-	Bench      *bench `json:"benchmark"`      // 所有的性能数据
+	Bench      *bench `json:"bench"`          // 所有的性能数据
 	HitPrecent int    `json:"hitPrecent"`     // 命中率
 	HitFile    string `json:"hitFile"`        // 保存 hit 记录的文件名
 	Hits       []*hit `json:"hits,omitempty"` // 所有的命中数据

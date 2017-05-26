@@ -30,7 +30,8 @@ func JSON(dir string, log io.Writer) error {
 		}
 	}
 
-	writeJSON(filepath.Join(dir, "env.json"), getEnv())
+	env := getEnv()
+	env.Data = make([]string, 0, len(apis.APIS))
 
 	for cindex, c := range apis.APIS {
 		cdata := make([]*item, 0, len(routers.Routers))
@@ -54,13 +55,16 @@ func JSON(dir string, log io.Writer) error {
 			fmt.Fprintln(log, "[OK]")
 		}
 
-		path := filepath.Join(dir, strconv.Itoa(cindex)+".json")
-		if err := writeJSON(path, cdata); err != nil {
+		filename := strconv.Itoa(cindex) + ".json"
+		env.Data = append(env.Data, filename)
+		if err := writeJSON(filepath.Join(dir, filename), cdata); err != nil {
 			return err
 		}
 
 		fmt.Fprintf(log, "完成 %v 测试\n\n", c.Name)
 	} // end for routers.Routers
+
+	writeJSON(filepath.Join(dir, "env.json"), env)
 
 	return nil
 }

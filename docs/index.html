@@ -7,25 +7,66 @@
     <meta name="keywords" content="go,golang,benchmark,testing,route,routes,router,mux" />
     <meta name="description" content="Google Go 语言主要路由功能、性能测试工具。" />
     <link href="./style.css" type="text/css" rel="stylesheet" />
-    <style>
-    body{
-      max-width: 1024px;
-      margin: auto;
-    }
-
-    h1{
-      margin-top: 2rem;
-      text-align: center;
-    }
-    </style>
+    <script src="./table.js"></script>
   </head>
 
   <body>
-    <article>
+    <article id="article">
       <h1>Go 路由功能测试数据</h1>
 
       <section>
+        <h3>测试环境</h3>
+        <ul>
+          <li>OS:&#160;&#160;<span id="os"></span></li>
+          <li>Arch:&#160;&#160;<span id="arch"></span></li>
+          <li>CPU:&#160;&#160;<span id="cpu"></span></li>
+        </ul>
       </section>
     </article>
+    <script>
+      const root = './data/'
+
+      fetch(root+'env.json').then(resp=>{
+        return resp.json()
+      }).then(data=>{
+        document.getElementById('os').innerHTML = data.os
+        document.getElementById('arch').innerHTML = data.arch
+        document.getElementById('cpu').innerHTML = data.cpu
+
+        for(index in data.data) {
+          const file = data.data[index]
+          loadFile(file)
+        }
+      }).catch(reason=>{
+        throw reason
+      })
+
+      function loadFile(file) {
+        fetch(root+file).then(resp=>{
+          return resp.json()
+        }).then(data=>{
+          // section
+          const section = document.createElement('section')
+          document.getElementById('article').appendChild(section)
+
+          // h3
+          const h = document.createElement('h3')
+          h.textContent = data[0].apiName
+          section.appendChild(h)
+
+          // table
+          const table = new Table('路由', ['性能测试', 3], '内存分配', '命中率')
+          section.appendChild(table.inst())
+
+          for (let i in data) {
+            const item = data[i]
+            const b = item.bench
+            table.append(item.routerName, b.nsPerOp + ' ns/op', b.allocedBytesPerOp + ' alloced/op', b.allocsPerOp + ' allocs/op', item.memBytes+' Bytes', item.hitPrecent + '%')
+          }
+        }).catch(reason=>{
+          throw reason
+        })
+      }
+    </script>
   </body>
 </html>

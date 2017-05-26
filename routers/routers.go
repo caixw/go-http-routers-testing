@@ -16,8 +16,7 @@ var Routers = []*Router{}
 type Load func(apis []*apis.API) http.Handler
 
 type Router struct {
-	// 路由的名称，必须为一个合法的文件名，且需要与其它路由保持唯一，
-	// 建议使用 owner-reop 的形式命名，
+	// 路由的名称，建议使用 owner-reop 的形式命名，
 	Name string
 	URL  string
 	Load Load
