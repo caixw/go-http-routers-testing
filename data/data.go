@@ -144,6 +144,7 @@ func testHit(apis []*apis.API, h http.Handler) []*hit {
 
 		hits = append(hits, &hit{
 			OK:     w.Body.String() == r.URL.Path,
+			Method: r.Method,
 			Path:   api.Test,
 			Want:   api.Brace,
 			Actual: w.Body.String(),

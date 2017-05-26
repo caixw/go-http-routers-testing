@@ -31,7 +31,8 @@ type bench struct {
 
 type hit struct {
 	OK     bool   `json:"ok"`     // 是否正确
+	Method string `json:"method"` // 请求方法
 	Path   string `json:"path"`   // 请求地址
 	Want   string `json:"want"`   // 应该匹配的地址
-	Actual string `json:"actual"` // 实际访问的地址
+	Actual string `json:"actual"` // 实际输出的内容
 }
