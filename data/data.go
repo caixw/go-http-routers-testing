@@ -110,7 +110,7 @@ func single(c *apis.Collection, r *routers.Router) *item {
 			cnt++
 		}
 	}
-	ret.HitPrecent = cnt / len(ret.Hits) * 100
+	ret.HitPrecent = cnt * 100 / len(ret.Hits)
 
 	// bench
 	rslt := testing.Benchmark(func(b *testing.B) {

@@ -7,6 +7,7 @@
 
 
 class Table {
+  // 指定列表名，若元素为数组，则第一个元素表示列名，第二个元素表示所在的占数
   constructor(...cols) {
     this.table = document.createElement('table')
 
@@ -34,6 +35,7 @@ class Table {
     this.table.appendChild(this.tbody)
   }
 
+  // 添加一行数据
   append(...cols) {
     console.log(...cols)
     const tr = document.createElement('tr')

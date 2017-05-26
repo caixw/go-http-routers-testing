@@ -23,7 +23,10 @@ func issue9MuxLoad(apis []*apis.API) http.Handler {
 	mux := mux.New(false, false, nil, nil)
 
 	for _, api := range apis {
-		mux.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
+		err := mux.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
+		if err != nil {
+			panic(err)
+		}
 	}
 
 	return mux
