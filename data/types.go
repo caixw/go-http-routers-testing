@@ -15,6 +15,7 @@ type env struct {
 type item struct {
 	RouterName string `json:"routerName"`     // 路由的名称
 	APIName    string `json:"apiName"`        // API 名称
+	APICount   int    `json:"apiCount"`       // 本次测试的 API 数量
 	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
 	Bench      *bench `json:"bench"`          // 所有的性能数据
 	HitPrecent int    `json:"hitPrecent"`     // 命中率

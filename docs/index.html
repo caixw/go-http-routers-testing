@@ -23,6 +23,10 @@
         </ul>
       </section>
     </article>
+
+    <footer>
+      <p>&copy; 2017 by <a href="https://caixw.io">caixw</a></p>
+    </footer>
     <script>
       const root = './data/'
 
@@ -51,7 +55,7 @@
 
           // h3
           const h = document.createElement('h3')
-          h.textContent = data[0].apiName
+          h.textContent =  `${data[0].apiName} (${data[0].apiCount})`
           section.appendChild(h)
 
           // table

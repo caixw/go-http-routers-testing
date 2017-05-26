@@ -6,6 +6,7 @@ package data
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 	"net/http/httptest"
@@ -14,8 +15,6 @@ import (
 	"runtime"
 	"strconv"
 	"testing"
-
-	"fmt"
 
 	"github.com/caixw/go-http-routes-testing/apis"
 	"github.com/caixw/go-http-routes-testing/routers"
@@ -42,10 +41,9 @@ func JSON(dir string, log io.Writer) error {
 			fmt.Fprint(log, "    ", r.Name, "......")
 
 			filename := strconv.Itoa(cindex) + "-" + strconv.Itoa(rindex) + ".json"
-			path := filepath.Join(dir, filename)
 			data := single(c, r)
 			data.HitFile = filename
-			if err := writeJSON(path, data.Hits); err != nil {
+			if err := writeJSON(filepath.Join(dir, filename), data.Hits); err != nil {
 				return err
 			}
 
@@ -97,6 +95,7 @@ func single(c *apis.Collection, r *routers.Router) *item {
 	ret := &item{
 		RouterName: r.Name,
 		APIName:    c.Name,
+		APICount:   len(c.APIS),
 	}
 
 	// 加载
