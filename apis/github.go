@@ -12,8 +12,10 @@ func init() {
 	APIS = append(APIS, github)
 }
 
+// https://developer.github.com/v3/
 var github = &Collection{
 	Name: "Github API",
+	Desc: "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
 	APIS: []*API{
 		{Method: http.MethodGet, Brace: "/events"},
 		{Method: http.MethodGet, Brace: "/repos/{owner}/{repo}/events"},
