@@ -18,7 +18,7 @@ const (
 	dataDir = "./docs/data"
 )
 
-const version = "0.1.1+20170525"
+const version = "0.1.1+20170623"
 
 // 默认的输出通首
 var output = os.Stdout

@@ -94,6 +94,7 @@ func getEnv() *env {
 func single(c *apis.Collection, r *routers.Router) *item {
 	ret := &item{
 		RouterName: r.Name,
+		RouterURL:  r.URL,
 		APIName:    c.Name,
 		APICount:   len(c.APIS),
 	}

@@ -65,7 +65,8 @@
           for (let i in data) {
             const item = data[i]
             const b = item.bench
-            table.append(item.routerName, b.nsPerOp + ' ns/op', b.allocedBytesPerOp + ' alloced/op', b.allocsPerOp + ' allocs/op', item.memBytes+' Bytes', item.hitPrecent + '%')
+            const link = `<a href="${item.routerURL}">${item.routerName}</a>`
+            table.append(link, b.nsPerOp + ' ns/op', b.allocedBytesPerOp + ' alloced/op', b.allocsPerOp + ' allocs/op', item.memBytes+' Bytes', item.hitPrecent + '%')
           }
         }).catch(reason=>{
           throw reason

@@ -37,13 +37,12 @@ class Table {
 
   // 添加一行数据
   append(...cols) {
-    console.log(...cols)
     const tr = document.createElement('tr')
     this.tbody.appendChild(tr)
 
     for(let index in cols) {
       const td = document.createElement('td')
-      td.textContent = cols[index]
+      td.innerHTML = cols[index]
 
       tr.appendChild(td)
     }
