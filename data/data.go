@@ -16,8 +16,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/caixw/go-http-routes-testing/apis"
-	"github.com/caixw/go-http-routes-testing/routers"
+	"github.com/caixw/go-http-routers-testing/apis"
+	"github.com/caixw/go-http-routers-testing/routers"
 	"github.com/issue9/utils"
 )
 

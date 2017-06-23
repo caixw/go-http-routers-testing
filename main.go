@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/caixw/go-http-routes-testing/data"
+	"github.com/caixw/go-http-routers-testing/data"
 )
 
 // 数据存放目录

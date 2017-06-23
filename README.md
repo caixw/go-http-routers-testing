@@ -1,4 +1,4 @@
-go-http-routes-testing
+go-http-routers-testing
 ======
 
 Go 路由的性能测试工具
@@ -8,7 +8,7 @@ Go 路由的性能测试工具
 ### 安装
 
 ```shell
-go get github.com/caixw/go-http-routes-testing
+go get github.com/caixw/go-http-routers-testing
 ```
 
 

@@ -8,7 +8,7 @@ package routers
 import (
 	"net/http"
 
-	"github.com/caixw/go-http-routes-testing/apis"
+	"github.com/caixw/go-http-routers-testing/apis"
 )
 
 var Routers = []*Router{}
