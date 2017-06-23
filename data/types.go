@@ -35,5 +35,5 @@ type hit struct {
 	Method string `json:"method"` // 请求方法
 	Path   string `json:"path"`   // 请求地址
 	Want   string `json:"want"`   // 应该匹配的地址
-	Actual string `json:"actual"` // 实际输出的内容
+	Body   string `json:"body"`   // 实际输出的内容，默认情况应该就是路由项
 }

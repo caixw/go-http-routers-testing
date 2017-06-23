@@ -148,7 +148,7 @@ func testHit(apis []*apis.API, h http.Handler) []*hit {
 			Method: r.Method,
 			Path:   api.Test,
 			Want:   api.Brace,
-			Actual: w.Body.String(),
+			Body:   w.Body.String(),
 		})
 
 		w.Body.Reset()
