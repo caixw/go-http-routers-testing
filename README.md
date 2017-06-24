@@ -3,6 +3,8 @@ go-http-routers-testing
 
 Go 路由的性能测试工具
 
+https://caixw.github.io/go-http-routers-testing/
+
 
 
 ### 安装
@@ -10,6 +12,12 @@ Go 路由的性能测试工具
 ```shell
 go get github.com/caixw/go-http-routers-testing
 ```
+
+
+
+### 协作
+
+不要提交 /docs/data 下的数据，该数据有本人统一产生。
 
 
 
