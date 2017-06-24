@@ -8,20 +8,14 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"path/filepath"
 
 	"github.com/caixw/go-http-routers-testing/data"
 )
 
-// 数据存放目录
-const (
-	docsDir = "./docs"
-	dataDir = "./docs/data"
-)
-
 const version = "0.1.1+20170623"
 
-// 默认的输出通首
-var output = os.Stdout
+const docsDir = "./docs"
 
 func main() {
 	v := flag.Bool("v", false, "显示版本号")
@@ -32,5 +26,5 @@ func main() {
 		return
 	}
 
-	data.JSON(dataDir, output)
+	data.JSON(filepath.Join(docsDir, "data"), os.Stdout)
 }
