@@ -13,6 +13,13 @@ https://caixw.github.io/go-http-routers-testing/
 go get github.com/caixw/go-http-routers-testing
 ```
 
+##### 运行测试
+
+可以使用 test.benchtime 指定每个测试的运行时间。
+```shell
+go run main.go -test.benchtime=5s
+```
+
 
 
 ### 协作

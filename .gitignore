@@ -30,4 +30,4 @@ _testmain.go
 *.swp
 
 # app
-go-http-routes-testing
+go-http-routers-testing
