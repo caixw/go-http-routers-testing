@@ -24,7 +24,7 @@ go run main.go -test.benchtime=5s
 
 ### 协作
 
-不要提交 /docs/data 下的数据，该数据有本人统一产生。
+不要提交 /docs/data 下的数据，该数据由本人统一产生。
 
 
 
