@@ -6,7 +6,7 @@
     "apiCount": 348,
     "memBytes": 132960,
     "bench": {
-      "nsPerOp": 5207,
+      "nsPerOp": 4855,
       "allocsPerOp": 20,
       "allocedBytesPerOp": 6154
     },
@@ -18,11 +18,11 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Github API",
     "apiCount": 348,
-    "memBytes": 237112,
+    "memBytes": 108264,
     "bench": {
-      "nsPerOp": 6309,
-      "allocsPerOp": 22,
-      "allocedBytesPerOp": 6642
+      "nsPerOp": 5044,
+      "allocsPerOp": 21,
+      "allocedBytesPerOp": 6473
     },
     "hitPrecent": 100,
     "hitFile": "1-1.json"
