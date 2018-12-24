@@ -7,6 +7,7 @@ package apis
 
 import "strings"
 
+// APIS 所有 API 的集体
 var APIS = []*Collection{}
 
 // Collection 表示一组 API 的定义。
@@ -16,6 +17,7 @@ type Collection struct {
 	APIS []*API
 }
 
+// API 单个 API 接口的定义
 type API struct {
 	Method string // 请求方法
 	Brace  string // {id} 风格的路由项
