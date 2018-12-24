@@ -8,8 +8,6 @@ import "net/http"
 
 func init() {
 	discuz.init()
-
-	APIS = append(APIS, discuz)
 }
 
 var discuz = &Collection{

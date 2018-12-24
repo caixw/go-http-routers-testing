@@ -8,13 +8,22 @@ package apis
 import "strings"
 
 // APIS 所有 API 的集体
-var APIS = []*Collection{}
+var APIS = []*Collection{&Collection{
+	Name: "所有",
+	Desc: "所有接口混合测试",
+	APIS: make([]*API, 0, 1000),
+}}
 
 // Collection 表示一组 API 的定义。
 type Collection struct {
 	Name string
 	Desc string
 	APIS []*API
+}
+
+func addCollection(c *Collection) {
+	APIS = append(APIS, c)
+	APIS[0].APIS = append(APIS[0].APIS, c.APIS...)
 }
 
 // API 单个 API 接口的定义
@@ -37,4 +46,6 @@ func (c *Collection) init() {
 	for _, api := range c.APIS {
 		api.init()
 	}
+
+	addCollection(c)
 }

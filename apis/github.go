@@ -8,8 +8,6 @@ import "net/http"
 
 func init() {
 	github.init()
-
-	APIS = append(APIS, github)
 }
 
 // https://developer.github.com/v3/
