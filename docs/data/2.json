@@ -6,7 +6,7 @@
     "apiCount": 348,
     "memBytes": 132960,
     "bench": {
-      "nsPerOp": 5030,
+      "nsPerOp": 4999,
       "allocsPerOp": 20,
       "allocedBytesPerOp": 6154
     },
@@ -20,7 +20,7 @@
     "apiCount": 348,
     "memBytes": 108296,
     "bench": {
-      "nsPerOp": 5304,
+      "nsPerOp": 5192,
       "allocsPerOp": 21,
       "allocedBytesPerOp": 6473
     },

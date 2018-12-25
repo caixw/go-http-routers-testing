@@ -3,12 +3,12 @@
     "routerName": "dimfeld-httptreemux",
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "所有",
-    "apiCount": 350,
-    "memBytes": 134112,
+    "apiCount": 478,
+    "memBytes": 198056,
     "bench": {
-      "nsPerOp": 5033,
-      "allocsPerOp": 20,
-      "allocedBytesPerOp": 6153
+      "nsPerOp": 4843,
+      "allocsPerOp": 19,
+      "allocedBytesPerOp": 6064
     },
     "hitPrecent": 99,
     "hitFile": "0-0.json"
@@ -17,12 +17,12 @@
     "routerName": "issue9-mux",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "所有",
-    "apiCount": 350,
-    "memBytes": 109856,
+    "apiCount": 478,
+    "memBytes": 165792,
     "bench": {
-      "nsPerOp": 5263,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 6474
+      "nsPerOp": 5916,
+      "allocsPerOp": 20,
+      "allocedBytesPerOp": 6320
     },
     "hitPrecent": 100,
     "hitFile": "0-1.json"
