@@ -4,15 +4,13 @@
 
 package apis
 
-// https://developer.twitter.com/en/docs/api-reference-index
-
 import "net/http"
 
 func init() {
 	twitter.init()
 }
 
-// https://developer.github.com/v3/
+// https://developer.twitter.com/en/docs/api-reference-index
 var twitter = &Collection{
 	Name: "Twitter API",
 	Desc: "采集自 Twitter 的 API，以静态路由为主。",
@@ -67,7 +65,7 @@ var twitter = &Collection{
 		{Method: http.MethodPost, Brace: "/friendships/destroy"},
 		{Method: http.MethodPost, Brace: "/friendships/update"},
 
-		// {Method:http.MethodManage,Brace:"account settings and profile"},
+		// Manage account settings and profile
 		{Method: http.MethodGet, Brace: "/account/settings"},
 		{Method: http.MethodGet, Brace: "/account/verify_credentials"},
 		{Method: http.MethodGet, Brace: "/saved_searches/list"},
@@ -82,7 +80,7 @@ var twitter = &Collection{
 		{Method: http.MethodPost, Brace: "/saved_searches/create"},
 		{Method: http.MethodPost, Brace: "/saved_searches/destroy/{id}"},
 
-		// {Method:http.MethodMute,,Brace:"block and report users"},
+		// Mute,block and report users
 		{Method: http.MethodGet, Brace: "/blocks/ids"},
 		{Method: http.MethodGet, Brace: "/blocks/list"},
 		{Method: http.MethodGet, Brace: "/mutes/users/ids"},
@@ -93,7 +91,7 @@ var twitter = &Collection{
 		{Method: http.MethodPost, Brace: "/mutes/users/destroy"},
 		{Method: http.MethodPost, Brace: "/users/report_spam"},
 
-		// {Method:http.MethodCurate,Brace:"a collection of Tweets"},
+		// Curate a collection of Tweets
 		{Method: http.MethodGet, Brace: "/collections/entries"},
 		{Method: http.MethodGet, Brace: "/collections/list"},
 		{Method: http.MethodGet, Brace: "/collections/show"},
@@ -105,15 +103,15 @@ var twitter = &Collection{
 		{Method: http.MethodPost, Brace: "/collections/entries/remove"},
 		{Method: http.MethodPost, Brace: "/collections/update"},
 
-		// {Method: http.MethodReplay, Brace: "/API"},
+		// Replay API
 		{Method: http.MethodPost, Brace: "/statuses/filter"},
 
-		// {Method:http.MethodGet,Brace:"Tweet timelines"},
+		// Tweet timelines
 		{Method: http.MethodGet, Brace: "/statuses/home_timeline"},
 		{Method: http.MethodGet, Brace: "/statuses/mentions_timeline"},
 		{Method: http.MethodGet, Brace: "/statuses/user_timeline"},
 
-		// {Method:http.MethodPost,,Brace:"retrieve and engage with Tweets"},
+		// retrieve and engage with Tweets
 		{Method: http.MethodGet, Brace: "/favorites/list"},
 		{Method: http.MethodGet, Brace: "/statuses/lookup"},
 		{Method: http.MethodGet, Brace: "/statuses/oembed"},
@@ -129,13 +127,13 @@ var twitter = &Collection{
 		{Method: http.MethodPost, Brace: "/statuses/update"},
 		{Method: http.MethodPost, Brace: "/statuses/update_with_media"},
 
-		// {Method: http.MethodDecahose, Brace: "/stream"},
+		// Decahose stream
 		{Method: http.MethodGet, Brace: "/statuses/sample"},
 
-		// {Method:http.MethodTweet,Brace:"compliance"},
+		// Tweet compliance
 		{Method: http.MethodGet, Brace: "/compliance/firehose"},
 
-		// {Method:http.MethodCustom,Brace:"profiles"},
+		// Custom profiles
 		{Method: http.MethodDelete, Brace: "/custom_profiles/destroy.json"},
 		{Method: http.MethodGet, Brace: "/custom_profiles/{id}"},
 		{Method: http.MethodGet, Brace: "/custom_profiles/list"},
@@ -152,11 +150,11 @@ var twitter = &Collection{
 		{Method: http.MethodGet, Brace: "/direct_messages/events/show"},
 		{Method: http.MethodPost, Brace: "/direct_messages/events/new"},
 
-		// {Method:http.MethodTyping,Brace:"indicator and read receipts"},
+		// Typing indicator and read receipts
 		{Method: http.MethodPost, Brace: "/direct_messages/indicate_typing"},
 		{Method: http.MethodPost, Brace: "/direct_messages/mark_read"},
 
-		// {Method:http.MethodWelcome,Brace:"Messages"},
+		// Welcome Messages
 		{Method: http.MethodDelete, Brace: "/direct_messages/welcome_messages/destroy"},
 		{Method: http.MethodDelete, Brace: "/direct_messages/welcome_messages/rules/destroy"},
 		{Method: http.MethodPut, Brace: "/direct_messages/welcome_messages/update"},
@@ -167,21 +165,21 @@ var twitter = &Collection{
 		{Method: http.MethodPost, Brace: "/direct_messages/welcome_messages/new"},
 		{Method: http.MethodPost, Brace: "/direct_messages/welcome_messages/rules/new"},
 
-		// {Method:http.MethodUpload,Brace:"media"},
+		// Upload media
 		{Method: http.MethodGet, Brace: "/media/upload"},
 		{Method: http.MethodPost, Brace: "/media/metadata/create"},
 		{Method: http.MethodPost, Brace: "/media/subtitles/create"},
 		{Method: http.MethodPost, Brace: "/media/subtitles/delete"},
 		{Method: http.MethodPost, Brace: "/media/upload"},
 
-		// {Method:http.MethodGet,Brace:"locations with trending topics"},
+		// Get locations with trending topics
 		{Method: http.MethodGet, Brace: "/trends/available"},
 		{Method: http.MethodGet, Brace: "/trends/closest"},
 
-		// {Method:http.MethodGet,Brace:"information about a place"},
+		// Get information about a place
 		{Method: http.MethodGet, Brace: "/geo/id/{place_id}"},
 
-		// {Method:http.MethodGet,Brace:"places near a location"},
+		// Get places near a location
 		{Method: http.MethodGet, Brace: "/geo/reverse_geocode"},
 		{Method: http.MethodGet, Brace: "/geo/search"},
 	},
