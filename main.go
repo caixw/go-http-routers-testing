@@ -13,7 +13,7 @@ import (
 	"github.com/caixw/go-http-routers-testing/data"
 )
 
-const version = "0.1.1+20181224"
+const version = "0.1.2+20190320"
 
 const docsDir = "./docs"
 

@@ -6,8 +6,8 @@
     "apiCount": 128,
     "memBytes": 63712,
     "bench": {
-      "nsPerOp": 4189,
-      "allocsPerOp": 17,
+      "nsPerOp": 3990,
+      "allocsPerOp": 18,
       "allocedBytesPerOp": 5816
     },
     "hitPrecent": 100,
@@ -18,10 +18,10 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Twitter API",
     "apiCount": 128,
-    "memBytes": 58184,
+    "memBytes": 63064,
     "bench": {
-      "nsPerOp": 4449,
-      "allocsPerOp": 18,
+      "nsPerOp": 4351,
+      "allocsPerOp": 19,
       "allocedBytesPerOp": 5899
     },
     "hitPrecent": 100,

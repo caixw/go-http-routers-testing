@@ -22,6 +22,7 @@
           <li>OS:&#160;&#160;<span id="os"></span></li>
           <li>Arch:&#160;&#160;<span id="arch"></span></li>
           <li>CPU:&#160;&#160;<span id="cpu"></span></li>
+          <li>Go:&#160;&#160;<span id="go"></span></li>
         </ul>
       </section>
     </article>
@@ -41,6 +42,7 @@
         document.getElementById('os').innerHTML = data.os
         document.getElementById('arch').innerHTML = data.arch
         document.getElementById('cpu').innerHTML = data.cpu
+        document.getElementById('go').innerHTML = data.go
 
         for(index in data.data) {
           const file = data.data[index]

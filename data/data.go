@@ -16,9 +16,10 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/issue9/utils"
+
 	"github.com/caixw/go-http-routers-testing/apis"
 	"github.com/caixw/go-http-routers-testing/routers"
-	"github.com/issue9/utils"
 )
 
 // JSON 输出 JSON 数据，数据按路由进行分组。
@@ -88,6 +89,7 @@ func getEnv() *env {
 		OS:   runtime.GOOS,
 		Arch: runtime.GOARCH,
 		CPU:  runtime.NumCPU(),
+		Go:   runtime.Version(),
 	}
 }
 

@@ -8,6 +8,7 @@ type env struct {
 	OS   string   `json:"os"`
 	Arch string   `json:"arch"`
 	CPU  int      `json:"cpu"`
+	Go   string   `json:"go"`   // Go 的版本
 	Data []string `json:"data"` // 测试数据文件列表
 }
 

@@ -8,7 +8,7 @@ import (
 	"net/http"
 
 	"github.com/caixw/go-http-routers-testing/apis"
-	"github.com/dimfeld/httptreemux"
+	"github.com/dimfeld/httptreemux/v5"
 )
 
 func init() {

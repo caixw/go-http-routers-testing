@@ -8,7 +8,7 @@ import (
 	"net/http"
 
 	"github.com/caixw/go-http-routers-testing/apis"
-	"github.com/issue9/mux"
+	"github.com/issue9/mux/v2"
 )
 
 func init() {
@@ -20,7 +20,7 @@ func init() {
 }
 
 func issue9MuxLoad(apis []*apis.API) http.Handler {
-	mux := mux.New(false, false, nil, nil)
+	mux := mux.New(false, false, false, nil, nil)
 
 	for _, api := range apis {
 		err := mux.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
