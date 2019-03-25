@@ -2,27 +2,27 @@
   {
     "routerName": "dimfeld-httptreemux",
     "routerURL": "https://github.com/dimfeld/httptreemux",
-    "apiName": "Twitter API",
-    "apiCount": 128,
-    "memBytes": 63712,
+    "apiName": "Discuz Routes",
+    "apiCount": 2,
+    "memBytes": 1136,
     "bench": {
-      "nsPerOp": 3990,
-      "allocsPerOp": 18,
-      "allocedBytesPerOp": 5816
+      "nsPerOp": 3673,
+      "allocsPerOp": 20,
+      "allocedBytesPerOp": 5810
     },
-    "hitPrecent": 100,
+    "hitPrecent": 0,
     "hitFile": "3-0.json"
   },
   {
     "routerName": "issue9-mux",
     "routerURL": "https://github.com/issue9/mux",
-    "apiName": "Twitter API",
-    "apiCount": 128,
-    "memBytes": 63064,
+    "apiName": "Discuz Routes",
+    "apiCount": 2,
+    "memBytes": 4592,
     "bench": {
-      "nsPerOp": 4351,
-      "allocsPerOp": 19,
-      "allocedBytesPerOp": 5899
+      "nsPerOp": 4489,
+      "allocsPerOp": 23,
+      "allocedBytesPerOp": 6560
     },
     "hitPrecent": 100,
     "hitFile": "3-1.json"

@@ -4,9 +4,9 @@
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "Github API",
     "apiCount": 348,
-    "memBytes": 133008,
+    "memBytes": 132944,
     "bench": {
-      "nsPerOp": 4777,
+      "nsPerOp": 4833,
       "allocsPerOp": 21,
       "allocedBytesPerOp": 6152
     },
@@ -18,9 +18,9 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Github API",
     "apiCount": 348,
-    "memBytes": 120128,
+    "memBytes": 149184,
     "bench": {
-      "nsPerOp": 5156,
+      "nsPerOp": 5263,
       "allocsPerOp": 22,
       "allocedBytesPerOp": 6471
     },

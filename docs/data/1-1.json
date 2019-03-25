@@ -2,15 +2,897 @@
   {
     "ok": true,
     "method": "GET",
-    "path": "/forum-fid-page.html",
-    "want": "/forum-{fid}-{page}.html",
-    "body": "/forum-fid-page.html"
+    "path": "/oauth/authenticate",
+    "want": "/oauth/authenticate",
+    "body": "/oauth/authenticate"
   },
   {
     "ok": true,
     "method": "GET",
-    "path": "/thread-tid-page-ordertype.html",
-    "want": "/thread-{tid}-{page}-{ordertype}.html",
-    "body": "/thread-tid-page-ordertype.html"
+    "path": "/oauth/authorize",
+    "want": "/oauth/authorize",
+    "body": "/oauth/authorize"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth/access_token",
+    "want": "/oauth/access_token",
+    "body": "/oauth/access_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth/invalidate_token",
+    "want": "/oauth/invalidate_token",
+    "body": "/oauth/invalidate_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth/request_token",
+    "want": "/oauth/request_token",
+    "body": "/oauth/request_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth2/invalidate_token",
+    "want": "/oauth2/invalidate_token",
+    "body": "/oauth2/invalidate_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth2/token",
+    "want": "/oauth2/token",
+    "body": "/oauth2/token"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/list",
+    "want": "/lists/list",
+    "body": "/lists/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/members",
+    "want": "/lists/members",
+    "body": "/lists/members"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/members/show",
+    "want": "/lists/members/show",
+    "body": "/lists/members/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/memberships",
+    "want": "/lists/memberships",
+    "body": "/lists/memberships"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/ownerships",
+    "want": "/lists/ownerships",
+    "body": "/lists/ownerships"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/show",
+    "want": "/lists/show",
+    "body": "/lists/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/statuses",
+    "want": "/lists/statuses",
+    "body": "/lists/statuses"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/subscribers",
+    "want": "/lists/subscribers",
+    "body": "/lists/subscribers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/subscribers/show",
+    "want": "/lists/subscribers/show",
+    "body": "/lists/subscribers/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/subscriptions",
+    "want": "/lists/subscriptions",
+    "body": "/lists/subscriptions"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/create",
+    "want": "/lists/create",
+    "body": "/lists/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/destroy",
+    "want": "/lists/destroy",
+    "body": "/lists/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/create",
+    "want": "/lists/members/create",
+    "body": "/lists/members/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/create_all",
+    "want": "/lists/members/create_all",
+    "body": "/lists/members/create_all"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/destroy",
+    "want": "/lists/members/destroy",
+    "body": "/lists/members/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/destroy_all",
+    "want": "/lists/members/destroy_all",
+    "body": "/lists/members/destroy_all"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/subscribers/create",
+    "want": "/lists/subscribers/create",
+    "body": "/lists/subscribers/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/subscribers/destroy",
+    "want": "/lists/subscribers/destroy",
+    "body": "/lists/subscribers/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/update",
+    "want": "/lists/update",
+    "body": "/lists/update"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/followers/ids",
+    "want": "/followers/ids",
+    "body": "/followers/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/followers/list",
+    "want": "/followers/list",
+    "body": "/followers/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friends/ids",
+    "want": "/friends/ids",
+    "body": "/friends/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friends/list",
+    "want": "/friends/list",
+    "body": "/friends/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/incoming",
+    "want": "/friendships/incoming",
+    "body": "/friendships/incoming"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/lookup",
+    "want": "/friendships/lookup",
+    "body": "/friendships/lookup"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/no_retweets/ids",
+    "want": "/friendships/no_retweets/ids",
+    "body": "/friendships/no_retweets/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/outgoing",
+    "want": "/friendships/outgoing",
+    "body": "/friendships/outgoing"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/show",
+    "want": "/friendships/show",
+    "body": "/friendships/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/lookup",
+    "want": "/users/lookup",
+    "body": "/users/lookup"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/search",
+    "want": "/users/search",
+    "body": "/users/search"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/show",
+    "want": "/users/show",
+    "body": "/users/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/suggestions",
+    "want": "/users/suggestions",
+    "body": "/users/suggestions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/suggestions/slug",
+    "want": "/users/suggestions/{slug}",
+    "body": "/users/suggestions/slug"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/suggestions/slug/members",
+    "want": "/users/suggestions/{slug}/members",
+    "body": "/users/suggestions/slug/members"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/friendships/create",
+    "want": "/friendships/create",
+    "body": "/friendships/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/friendships/destroy",
+    "want": "/friendships/destroy",
+    "body": "/friendships/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/friendships/update",
+    "want": "/friendships/update",
+    "body": "/friendships/update"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/account/settings",
+    "want": "/account/settings",
+    "body": "/account/settings"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/account/verify_credentials",
+    "want": "/account/verify_credentials",
+    "body": "/account/verify_credentials"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/saved_searches/list",
+    "want": "/saved_searches/list",
+    "body": "/saved_searches/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/saved_searches/show/id",
+    "want": "/saved_searches/show/{id}",
+    "body": "/saved_searches/show/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/profile_banner",
+    "want": "/users/profile_banner",
+    "body": "/users/profile_banner"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/remove_profile_banner",
+    "want": "/account/remove_profile_banner",
+    "body": "/account/remove_profile_banner"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/settings",
+    "want": "/account/settings",
+    "body": "/account/settings"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile",
+    "want": "/account/update_profile",
+    "body": "/account/update_profile"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile_background_image",
+    "want": "/account/update_profile_background_image",
+    "body": "/account/update_profile_background_image"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile_banner",
+    "want": "/account/update_profile_banner",
+    "body": "/account/update_profile_banner"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile_image",
+    "want": "/account/update_profile_image",
+    "body": "/account/update_profile_image"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/saved_searches/create",
+    "want": "/saved_searches/create",
+    "body": "/saved_searches/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/saved_searches/destroy/id",
+    "want": "/saved_searches/destroy/{id}",
+    "body": "/saved_searches/destroy/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/blocks/ids",
+    "want": "/blocks/ids",
+    "body": "/blocks/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/blocks/list",
+    "want": "/blocks/list",
+    "body": "/blocks/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/mutes/users/ids",
+    "want": "/mutes/users/ids",
+    "body": "/mutes/users/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/mutes/users/list",
+    "want": "/mutes/users/list",
+    "body": "/mutes/users/list"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/blocks/create",
+    "want": "/blocks/create",
+    "body": "/blocks/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/blocks/destroy",
+    "want": "/blocks/destroy",
+    "body": "/blocks/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/mutes/users/create",
+    "want": "/mutes/users/create",
+    "body": "/mutes/users/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/mutes/users/destroy",
+    "want": "/mutes/users/destroy",
+    "body": "/mutes/users/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/users/report_spam",
+    "want": "/users/report_spam",
+    "body": "/users/report_spam"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/collections/entries",
+    "want": "/collections/entries",
+    "body": "/collections/entries"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/collections/list",
+    "want": "/collections/list",
+    "body": "/collections/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/collections/show",
+    "want": "/collections/show",
+    "body": "/collections/show"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/create",
+    "want": "/collections/create",
+    "body": "/collections/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/destroy",
+    "want": "/collections/destroy",
+    "body": "/collections/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/add",
+    "want": "/collections/entries/add",
+    "body": "/collections/entries/add"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/curate",
+    "want": "/collections/entries/curate",
+    "body": "/collections/entries/curate"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/move",
+    "want": "/collections/entries/move",
+    "body": "/collections/entries/move"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/remove",
+    "want": "/collections/entries/remove",
+    "body": "/collections/entries/remove"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/update",
+    "want": "/collections/update",
+    "body": "/collections/update"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/filter",
+    "want": "/statuses/filter",
+    "body": "/statuses/filter"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/home_timeline",
+    "want": "/statuses/home_timeline",
+    "body": "/statuses/home_timeline"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/mentions_timeline",
+    "want": "/statuses/mentions_timeline",
+    "body": "/statuses/mentions_timeline"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/user_timeline",
+    "want": "/statuses/user_timeline",
+    "body": "/statuses/user_timeline"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/favorites/list",
+    "want": "/favorites/list",
+    "body": "/favorites/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/lookup",
+    "want": "/statuses/lookup",
+    "body": "/statuses/lookup"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/oembed",
+    "want": "/statuses/oembed",
+    "body": "/statuses/oembed"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/retweeters/ids",
+    "want": "/statuses/retweeters/ids",
+    "body": "/statuses/retweeters/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/retweets/id",
+    "want": "/statuses/retweets/{id}",
+    "body": "/statuses/retweets/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/retweets_of_me",
+    "want": "/statuses/retweets_of_me",
+    "body": "/statuses/retweets_of_me"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/show/id",
+    "want": "/statuses/show/{id}",
+    "body": "/statuses/show/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/favorites/create",
+    "want": "/favorites/create",
+    "body": "/favorites/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/favorites/destroy",
+    "want": "/favorites/destroy",
+    "body": "/favorites/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/destroy/id",
+    "want": "/statuses/destroy/{id}",
+    "body": "/statuses/destroy/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/retweet/id",
+    "want": "/statuses/retweet/{id}",
+    "body": "/statuses/retweet/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/unretweet/id",
+    "want": "/statuses/unretweet/{id}",
+    "body": "/statuses/unretweet/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/update",
+    "want": "/statuses/update",
+    "body": "/statuses/update"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/update_with_media",
+    "want": "/statuses/update_with_media",
+    "body": "/statuses/update_with_media"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/sample",
+    "want": "/statuses/sample",
+    "body": "/statuses/sample"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/compliance/firehose",
+    "want": "/compliance/firehose",
+    "body": "/compliance/firehose"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/custom_profiles/destroy.json",
+    "want": "/custom_profiles/destroy.json",
+    "body": "/custom_profiles/destroy.json"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/custom_profiles/id",
+    "want": "/custom_profiles/{id}",
+    "body": "/custom_profiles/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/custom_profiles/list",
+    "want": "/custom_profiles/list",
+    "body": "/custom_profiles/list"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/custom_profiles/new.json",
+    "want": "/custom_profiles/new.json",
+    "body": "/custom_profiles/new.json"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/feedback/events.json",
+    "want": "/feedback/events.json",
+    "body": "/feedback/events.json"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/feedback/show/id.json",
+    "want": "/feedback/show/{id}.json",
+    "body": "/feedback/show/id.json"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/feedback/create.json",
+    "want": "/feedback/create.json",
+    "body": "/feedback/create.json"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/direct_messages/events/destroy",
+    "want": "/direct_messages/events/destroy",
+    "body": "/direct_messages/events/destroy"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/events/list",
+    "want": "/direct_messages/events/list",
+    "body": "/direct_messages/events/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/events/show",
+    "want": "/direct_messages/events/show",
+    "body": "/direct_messages/events/show"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/events/new",
+    "want": "/direct_messages/events/new",
+    "body": "/direct_messages/events/new"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/indicate_typing",
+    "want": "/direct_messages/indicate_typing",
+    "body": "/direct_messages/indicate_typing"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/mark_read",
+    "want": "/direct_messages/mark_read",
+    "body": "/direct_messages/mark_read"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/direct_messages/welcome_messages/destroy",
+    "want": "/direct_messages/welcome_messages/destroy",
+    "body": "/direct_messages/welcome_messages/destroy"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/direct_messages/welcome_messages/rules/destroy",
+    "want": "/direct_messages/welcome_messages/rules/destroy",
+    "body": "/direct_messages/welcome_messages/rules/destroy"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/direct_messages/welcome_messages/update",
+    "want": "/direct_messages/welcome_messages/update",
+    "body": "/direct_messages/welcome_messages/update"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/list",
+    "want": "/direct_messages/welcome_messages/list",
+    "body": "/direct_messages/welcome_messages/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/rules/list",
+    "want": "/direct_messages/welcome_messages/rules/list",
+    "body": "/direct_messages/welcome_messages/rules/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/rules/show",
+    "want": "/direct_messages/welcome_messages/rules/show",
+    "body": "/direct_messages/welcome_messages/rules/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/show",
+    "want": "/direct_messages/welcome_messages/show",
+    "body": "/direct_messages/welcome_messages/show"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/welcome_messages/new",
+    "want": "/direct_messages/welcome_messages/new",
+    "body": "/direct_messages/welcome_messages/new"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/welcome_messages/rules/new",
+    "want": "/direct_messages/welcome_messages/rules/new",
+    "body": "/direct_messages/welcome_messages/rules/new"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/media/upload",
+    "want": "/media/upload",
+    "body": "/media/upload"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/metadata/create",
+    "want": "/media/metadata/create",
+    "body": "/media/metadata/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/subtitles/create",
+    "want": "/media/subtitles/create",
+    "body": "/media/subtitles/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/subtitles/delete",
+    "want": "/media/subtitles/delete",
+    "body": "/media/subtitles/delete"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/upload",
+    "want": "/media/upload",
+    "body": "/media/upload"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/trends/available",
+    "want": "/trends/available",
+    "body": "/trends/available"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/trends/closest",
+    "want": "/trends/closest",
+    "body": "/trends/closest"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/geo/id/place_id",
+    "want": "/geo/id/{place_id}",
+    "body": "/geo/id/place_id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/geo/reverse_geocode",
+    "want": "/geo/reverse_geocode",
+    "body": "/geo/reverse_geocode"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/geo/search",
+    "want": "/geo/search",
+    "body": "/geo/search"
   }
 ]

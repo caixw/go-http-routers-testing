@@ -3,7 +3,7 @@ github.com/dimfeld/httptreemux/v5 v5.0.2/go.mod h1:QeEylH57C0v3VO0tkKraVz9oD3Uu9
 github.com/issue9/assert v1.3.1/go.mod h1:9Ger+iz8X7r1zMYYwEhh++2wMGWcNN2oVI+zIQXxcio=
 github.com/issue9/assert v1.3.2 h1:IaTa37u4m1fUuTH9K9ldO5IONKVDXjLiUO1T9vj0OF0=
 github.com/issue9/assert v1.3.2/go.mod h1:9Ger+iz8X7r1zMYYwEhh++2wMGWcNN2oVI+zIQXxcio=
-github.com/issue9/mux/v2 v2.2.0 h1:DyO4JGu/1sisCuryh56DEVVPr4jggsfT5RH8dluVePk=
-github.com/issue9/mux/v2 v2.2.0/go.mod h1:VX+9EkwwAz8IfFNJj67BgAFa48D7IipqVxz5z3ke4c8=
+github.com/issue9/mux/v2 v2.3.1 h1:jKR9Y81PHxBvuJb0i7LOd9y6/2lyg2yhgQGR9L4L/cY=
+github.com/issue9/mux/v2 v2.3.1/go.mod h1:VX+9EkwwAz8IfFNJj67BgAFa48D7IipqVxz5z3ke4c8=
 github.com/issue9/utils v1.0.2 h1:hNkU15xe8P/pnVWlqjPBmugTXNY7VThLv6jWsjhdFMk=
 github.com/issue9/utils v1.0.2/go.mod h1:MvsOIwyRB+9dbtaqDl20cxcG8hpd2wZUFgQXYxUw9uo=

@@ -13,6 +13,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"sort"
 	"strconv"
 	"testing"
 
@@ -29,6 +30,10 @@ func JSON(dir string, log io.Writer) error {
 			return err
 		}
 	}
+
+	sort.SliceStable(apis.APIS, func(i, j int) bool {
+		return apis.APIS[i].Name > apis.APIS[j].Name
+	})
 
 	env := getEnv()
 	env.Data = make([]string, 0, len(apis.APIS))
