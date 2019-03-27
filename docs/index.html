@@ -66,7 +66,7 @@
           section.appendChild(h)
 
           // table
-          const table = new Table('路由', ['性能测试', 3], '内存分配', '命中率')
+          const table = new Table('路由', ['性能测试', 3], '占用内存', '命中率')
           section.appendChild(table.inst())
 
           for (let i in data) {
@@ -74,7 +74,7 @@
             const b = item.bench
             const link = `<a href="${item.routerURL}">${item.routerName}</a>`
             const hit = `<a href="hit.html?${item.hitFile}">${item.hitPrecent}%</a>`
-            table.append(link, b.nsPerOp + ' ns/op', b.allocedBytesPerOp + ' alloced/op', b.allocsPerOp + ' allocs/op', item.memBytes+' Bytes', hit)
+            table.append(link, b.nsPerOp + ' ns/op', b.allocedBytesPerOp + ' B/op', b.allocsPerOp + ' allocs/op', item.memBytes+' Bytes', hit)
           }
         }).catch(reason=>{
           throw reason
