@@ -4,11 +4,11 @@
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "Twitter API",
     "apiCount": 128,
-    "memBytes": 63696,
+    "memBytes": 18446744073709538928,
     "bench": {
-      "nsPerOp": 4068,
+      "nsPerOp": 4266,
       "allocsPerOp": 18,
-      "allocedBytesPerOp": 5816
+      "allocedBytesPerOp": 5832
     },
     "hitPrecent": 100,
     "hitFile": "1-0.json"
@@ -18,11 +18,11 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Twitter API",
     "apiCount": 128,
-    "memBytes": 79192,
+    "memBytes": 56088,
     "bench": {
-      "nsPerOp": 4409,
+      "nsPerOp": 4579,
       "allocsPerOp": 19,
-      "allocedBytesPerOp": 5899
+      "allocedBytesPerOp": 5916
     },
     "hitPrecent": 100,
     "hitFile": "1-1.json"

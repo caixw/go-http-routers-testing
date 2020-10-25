@@ -4,11 +4,11 @@
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "所有",
     "apiCount": 478,
-    "memBytes": 198088,
+    "memBytes": 197248,
     "bench": {
-      "nsPerOp": 4773,
+      "nsPerOp": 4988,
       "allocsPerOp": 20,
-      "allocedBytesPerOp": 6062
+      "allocedBytesPerOp": 6078
     },
     "hitPrecent": 99,
     "hitFile": "0-0.json"
@@ -18,11 +18,11 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "所有",
     "apiCount": 478,
-    "memBytes": 228240,
+    "memBytes": 143680,
     "bench": {
-      "nsPerOp": 5169,
+      "nsPerOp": 5366,
       "allocsPerOp": 21,
-      "allocedBytesPerOp": 6319
+      "allocedBytesPerOp": 6345
     },
     "hitPrecent": 100,
     "hitFile": "0-1.json"
