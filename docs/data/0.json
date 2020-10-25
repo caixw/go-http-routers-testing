@@ -4,9 +4,9 @@
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "所有",
     "apiCount": 478,
-    "memBytes": 197248,
+    "memBytes": 212912,
     "bench": {
-      "nsPerOp": 4988,
+      "nsPerOp": 5039,
       "allocsPerOp": 20,
       "allocedBytesPerOp": 6078
     },
@@ -14,17 +14,31 @@
     "hitFile": "0-0.json"
   },
   {
+    "routerName": "gorilla-mux",
+    "routerURL": "https://github.com/gorilla/mux",
+    "apiName": "所有",
+    "apiCount": 478,
+    "memBytes": 3574200,
+    "bench": {
+      "nsPerOp": 40851,
+      "allocsPerOp": 27,
+      "allocedBytesPerOp": 7096
+    },
+    "hitPrecent": 100,
+    "hitFile": "0-1.json"
+  },
+  {
     "routerName": "issue9-mux",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "所有",
     "apiCount": 478,
-    "memBytes": 143680,
+    "memBytes": 453416,
     "bench": {
-      "nsPerOp": 5366,
+      "nsPerOp": 5634,
       "allocsPerOp": 21,
       "allocedBytesPerOp": 6345
     },
     "hitPrecent": 100,
-    "hitFile": "0-1.json"
+    "hitFile": "0-2.json"
   }
 ]

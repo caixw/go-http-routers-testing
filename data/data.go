@@ -174,7 +174,6 @@ func loadAPIS(apis []*apis.API, load routers.Load) (http.Handler, uint64) {
 
 	h := load(apis)
 
-	runtime.GC()
 	runtime.ReadMemStats(stats)
 	after := stats.HeapAlloc
 

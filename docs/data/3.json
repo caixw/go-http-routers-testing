@@ -4,9 +4,9 @@
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "Discuz Routes",
     "apiCount": 2,
-    "memBytes": 18446744073709468160,
+    "memBytes": 1160,
     "bench": {
-      "nsPerOp": 3772,
+      "nsPerOp": 3785,
       "allocsPerOp": 19,
       "allocedBytesPerOp": 5825
     },
@@ -14,17 +14,31 @@
     "hitFile": "3-0.json"
   },
   {
+    "routerName": "gorilla-mux",
+    "routerURL": "https://github.com/gorilla/mux",
+    "apiName": "Discuz Routes",
+    "apiCount": 2,
+    "memBytes": 32216,
+    "bench": {
+      "nsPerOp": 9012,
+      "allocsPerOp": 28,
+      "allocedBytesPerOp": 7167
+    },
+    "hitPrecent": 100,
+    "hitFile": "3-1.json"
+  },
+  {
     "routerName": "issue9-mux",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Discuz Routes",
     "apiCount": 2,
-    "memBytes": 1680,
+    "memBytes": 5192,
     "bench": {
-      "nsPerOp": 4679,
+      "nsPerOp": 4804,
       "allocsPerOp": 23,
       "allocedBytesPerOp": 6592
     },
     "hitPrecent": 100,
-    "hitFile": "3-1.json"
+    "hitFile": "3-2.json"
   }
 ]

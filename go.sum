@@ -1,5 +1,7 @@
 github.com/dimfeld/httptreemux/v5 v5.2.2 h1:8JAUcuNrLbL5uwmvQ4lZVCjuQ/Ioojc+7VGt89aMElU=
 github.com/dimfeld/httptreemux/v5 v5.2.2/go.mod h1:QeEylH57C0v3VO0tkKraVz9oD3Uu93CKPnTLbsidvSw=
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
 github.com/issue9/assert v1.3.4 h1:m9O+Nmi0ejRsLaTfQa349WTQtryQYHynBn6DFv6+sNY=
 github.com/issue9/assert v1.3.4/go.mod h1:9Ger+iz8X7r1zMYYwEhh++2wMGWcNN2oVI+zIQXxcio=
 github.com/issue9/errwrap v0.1.1 h1:akAQ1z726dnwhNzI7eAmCvYXYPbvF6OTGwct/vRVev0=
@@ -14,6 +16,8 @@ github.com/issue9/source v0.1.0 h1:+zbu5kH9Rwhko/DFL4jb7msIjvAail6B/Jy4aLW+B+w=
 github.com/issue9/source v0.1.0/go.mod h1:/dQhfcVFiwNLIdXlQZE7i54dbTDOuc7AAT+NEaZZZyQ=
 github.com/issue9/utils v1.4.2 h1:zITaLL13mk5foniA7ax2/jW2nITQIihUvSXC8UgJwa4=
 github.com/issue9/utils v1.4.2/go.mod h1:nZbYLpptfAymepVcktXMveHOU8zWZxFdVgpRs9wX170=
+github.com/julienschmidt/httprouter v1.3.0 h1:U0609e9tgbseu3rBINet9P48AI/D3oJs4dN7jwJOQ1U=
+github.com/julienschmidt/httprouter v1.3.0/go.mod h1:JR6WtHb+2LUe8TCKY3cZOxFyyO8IZAc4RVcycCCAKdM=
 golang.org/x/text v0.3.3 h1:cokOdA+Jmi5PJGXLlLllQSgYigAEfHXJAERHVMaCc2k=
 golang.org/x/text v0.3.3/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
 golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=

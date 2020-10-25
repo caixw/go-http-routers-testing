@@ -1,0 +1,3348 @@
+[
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/forum-fid-page.html",
+    "want": "/forum-{fid}-{page}.html",
+    "body": "/forum-fid-page.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/thread-tid-page-ordertype.html",
+    "want": "/thread-{tid}-{page}-{ordertype}.html",
+    "body": "/thread-tid-page-ordertype.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/events",
+    "want": "/events",
+    "body": "/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/events",
+    "want": "/repos/{owner}/{repo}/events",
+    "body": "/repos/owner/repo/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/networks/owner/repo/events",
+    "want": "/networks/{owner}/{repo}/events",
+    "body": "/networks/owner/repo/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/events",
+    "want": "/orgs/{org}/events",
+    "body": "/orgs/org/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/received_events",
+    "want": "/users/{username}/received_events",
+    "body": "/users/username/received_events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/received_events/public",
+    "want": "/users/{username}/received_events/public",
+    "body": "/users/username/received_events/public"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/events",
+    "want": "/users/{username}/events",
+    "body": "/users/username/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/events/public",
+    "want": "/users/{username}/events/public",
+    "body": "/users/username/events/public"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/events/orgs/org",
+    "want": "/users/{username}/events/orgs/{org}",
+    "body": "/users/username/events/orgs/org"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/feeds",
+    "want": "/feeds",
+    "body": "/feeds"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/notifications",
+    "want": "/notifications",
+    "body": "/notifications"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/notifications",
+    "want": "/repos/{owner}/{repo}/notifications",
+    "body": "/repos/owner/repo/notifications"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/notifications",
+    "want": "/notifications",
+    "body": "/notifications"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/notifications/threads/id",
+    "want": "/notifications/threads/{id}",
+    "body": "/notifications/threads/id"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/notifications/threads/id",
+    "want": "/notifications/threads/{id}",
+    "body": "/notifications/threads/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/notifications/threads/id/subscription",
+    "want": "/notifications/threads/{id}/subscription",
+    "body": "/notifications/threads/id/subscription"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/notifications/threads/id/subscription",
+    "want": "/notifications/threads/{id}/subscription",
+    "body": "/notifications/threads/id/subscription"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/notifications/threads/id/subscription",
+    "want": "/notifications/threads/{id}/subscription",
+    "body": "/notifications/threads/id/subscription"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/stargazers",
+    "want": "/repos/{owner}/{repo}/stargazers",
+    "body": "/repos/owner/repo/stargazers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/starred",
+    "want": "/users/{username}/starred",
+    "body": "/users/username/starred"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/starred",
+    "want": "/user/starred",
+    "body": "/user/starred"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/starred/owner/repo",
+    "want": "/user/starred/{owner}/{repo}",
+    "body": "/user/starred/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/user/starred/owner/repo",
+    "want": "/user/starred/{owner}/{repo}",
+    "body": "/user/starred/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/starred/owner/repo",
+    "want": "/user/starred/{owner}/{repo}",
+    "body": "/user/starred/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/subscribers",
+    "want": "/repos/{owner}/{repo}/subscribers",
+    "body": "/repos/owner/repo/subscribers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/subscriptions",
+    "want": "/users/{username}/subscriptions",
+    "body": "/users/username/subscriptions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/subscriptions",
+    "want": "/user/subscriptions",
+    "body": "/user/subscriptions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/subscription",
+    "want": "/repos/{owner}/{repo}/subscription",
+    "body": "/repos/owner/repo/subscription"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/subscription",
+    "want": "/repos/{owner}/{repo}/subscription",
+    "body": "/repos/owner/repo/subscription"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/subscription",
+    "want": "/repos/{owner}/{repo}/subscription",
+    "body": "/repos/owner/repo/subscription"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/subscriptions/owner/repo",
+    "want": "/user/subscriptions/{owner}/{repo}",
+    "body": "/user/subscriptions/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/user/subscriptions/owner/repo",
+    "want": "/user/subscriptions/{owner}/{repo}",
+    "body": "/user/subscriptions/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/subscriptions/owner/repo",
+    "want": "/user/subscriptions/{owner}/{repo}",
+    "body": "/user/subscriptions/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/gists/gist_id/comments",
+    "want": "/gists/{gist_id}/comments",
+    "body": "/gists/gist_id/comments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/gists/gist_id/comments/id",
+    "want": "/gists/{gist_id}/comments/{id}",
+    "body": "/gists/gist_id/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/gists/gist_id/comments",
+    "want": "/gists/{gist_id}/comments",
+    "body": "/gists/gist_id/comments"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/gists/gist_id/comments/id",
+    "want": "/gists/{gist_id}/comments/{id}",
+    "body": "/gists/gist_id/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/gists/gist_id/comments/id",
+    "want": "/gists/{gist_id}/comments/{id}",
+    "body": "/gists/gist_id/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/blobs/sha",
+    "want": "/repos/{owner}/{repo}/git/blobs/{sha}",
+    "body": "/repos/owner/repo/git/blobs/sha"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/git/blobs",
+    "want": "/repos/{owner}/{repo}/git/blobs",
+    "body": "/repos/owner/repo/git/blobs"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/commits/sha",
+    "want": "/repos/{owner}/{repo}/git/commits/{sha}",
+    "body": "/repos/owner/repo/git/commits/sha"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/git/commits",
+    "want": "/repos/{owner}/{repo}/git/commits",
+    "body": "/repos/owner/repo/git/commits"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/refs/ref",
+    "want": "/repos/{owner}/{repo}/git/refs/{ref}",
+    "body": "/repos/owner/repo/git/refs/ref"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/refs/heads/feature",
+    "want": "/repos/{owner}/{repo}/git/refs/heads/feature",
+    "body": "/repos/owner/repo/git/refs/heads/feature"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/refs",
+    "want": "/repos/{owner}/{repo}/git/refs",
+    "body": "/repos/owner/repo/git/refs"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/refs/tags",
+    "want": "/repos/{owner}/{repo}/git/refs/tags",
+    "body": "/repos/owner/repo/git/refs/tags"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/git/refs",
+    "want": "/repos/{owner}/{repo}/git/refs",
+    "body": "/repos/owner/repo/git/refs"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/git/refs/ref",
+    "want": "/repos/{owner}/{repo}/git/refs/{ref}",
+    "body": "/repos/owner/repo/git/refs/ref"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/git/refs/ref",
+    "want": "/repos/{owner}/{repo}/git/refs/{ref}",
+    "body": "/repos/owner/repo/git/refs/ref"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/git/tags",
+    "want": "/repos/{owner}/{repo}/git/tags",
+    "body": "/repos/owner/repo/git/tags"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/tags/sha",
+    "want": "/repos/{owner}/{repo}/git/tags/{sha}",
+    "body": "/repos/owner/repo/git/tags/sha"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/git/trees/sha",
+    "want": "/repos/{owner}/{repo}/git/trees/{sha}",
+    "body": "/repos/owner/repo/git/trees/sha"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/git/trees",
+    "want": "/repos/{owner}/{repo}/git/trees",
+    "body": "/repos/owner/repo/git/trees"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/integration/installations",
+    "want": "/integration/installations",
+    "body": "/integration/installations"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/integration/installations/installation_id",
+    "want": "/integration/installations/{installation_id}",
+    "body": "/integration/installations/installation_id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/installations",
+    "want": "/user/installations",
+    "body": "/user/installations"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/installations/installation_id/access_tokens",
+    "want": "/installations/{installation_id}/access_tokens",
+    "body": "/installations/installation_id/access_tokens"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/installation/repositories",
+    "want": "/installation/repositories",
+    "body": "/installation/repositories"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/installations/installation_id/repositories",
+    "want": "/user/installations/{installation_id}/repositories",
+    "body": "/user/installations/installation_id/repositories"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/installations/installation_id/repositories/repository_id",
+    "want": "/installations/{installation_id}/repositories/{repo}sitory_id",
+    "body": "/installations/installation_id/repositories/repository_id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/installations/installation_id/repositories/repository_id",
+    "want": "/installations/{installation_id}/repositories/{repo}sitory_id",
+    "body": "/installations/installation_id/repositories/repository_id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/assignees",
+    "want": "/repos/{owner}/{repo}/assignees",
+    "body": "/repos/owner/repo/assignees"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/assignees/assignee",
+    "want": "/repos/{owner}/{repo}/assignees/{assignee}",
+    "body": "/repos/owner/repo/assignees/assignee"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/issues/number/assignees",
+    "want": "/repos/{owner}/{repo}/issues/{number}/assignees",
+    "body": "/repos/owner/repo/issues/number/assignees"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/issues/number/assignees",
+    "want": "/repos/{owner}/{repo}/issues/{number}/assignees",
+    "body": "/repos/owner/repo/issues/number/assignees"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/number/comments",
+    "want": "/repos/{owner}/{repo}/issues/{number}/comments",
+    "body": "/repos/owner/repo/issues/number/comments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/comments",
+    "want": "/repos/{owner}/{repo}/issues/comments",
+    "body": "/repos/owner/repo/issues/comments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/comments/id",
+    "want": "/repos/{owner}/{repo}/issues/comments/{id}",
+    "body": "/repos/owner/repo/issues/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/issues/number/comments",
+    "want": "/repos/{owner}/{repo}/issues/{number}/comments",
+    "body": "/repos/owner/repo/issues/number/comments"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/issues/comments/id",
+    "want": "/repos/{owner}/{repo}/issues/comments/{id}",
+    "body": "/repos/owner/repo/issues/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/issues/comments/id",
+    "want": "/repos/{owner}/{repo}/issues/comments/{id}",
+    "body": "/repos/owner/repo/issues/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/issue_number/events",
+    "want": "/repos/{owner}/{repo}/issues/{issue_number}/events",
+    "body": "/repos/owner/repo/issues/issue_number/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/events",
+    "want": "/repos/{owner}/{repo}/issues/events",
+    "body": "/repos/owner/repo/issues/events"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/events/id",
+    "want": "/repos/{owner}/{repo}/issues/events/{id}",
+    "body": "/repos/owner/repo/issues/events/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/labels",
+    "want": "/repos/{owner}/{repo}/labels",
+    "body": "/repos/owner/repo/labels"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/labels/name",
+    "want": "/repos/{owner}/{repo}/labels/{name}",
+    "body": "/repos/owner/repo/labels/name"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/labels",
+    "want": "/repos/{owner}/{repo}/labels",
+    "body": "/repos/owner/repo/labels"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/labels/name",
+    "want": "/repos/{owner}/{repo}/labels/{name}",
+    "body": "/repos/owner/repo/labels/name"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/labels/name",
+    "want": "/repos/{owner}/{repo}/labels/{name}",
+    "body": "/repos/owner/repo/labels/name"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/number/labels",
+    "want": "/repos/{owner}/{repo}/issues/{number}/labels",
+    "body": "/repos/owner/repo/issues/number/labels"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/issues/number/labels",
+    "want": "/repos/{owner}/{repo}/issues/{number}/labels",
+    "body": "/repos/owner/repo/issues/number/labels"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/issues/number/labels/name",
+    "want": "/repos/{owner}/{repo}/issues/{number}/labels/{name}",
+    "body": "/repos/owner/repo/issues/number/labels/name"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/issues/number/labels",
+    "want": "/repos/{owner}/{repo}/issues/{number}/labels",
+    "body": "/repos/owner/repo/issues/number/labels"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/issues/number/labels",
+    "want": "/repos/{owner}/{repo}/issues/{number}/labels",
+    "body": "/repos/owner/repo/issues/number/labels"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/milestones/number/labels",
+    "want": "/repos/{owner}/{repo}/milestones/{number}/labels",
+    "body": "/repos/owner/repo/milestones/number/labels"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/milestones",
+    "want": "/repos/{owner}/{repo}/milestones",
+    "body": "/repos/owner/repo/milestones"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/milestones/number",
+    "want": "/repos/{owner}/{repo}/milestones/{number}",
+    "body": "/repos/owner/repo/milestones/number"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/milestones",
+    "want": "/repos/{owner}/{repo}/milestones",
+    "body": "/repos/owner/repo/milestones"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/milestones/number",
+    "want": "/repos/{owner}/{repo}/milestones/{number}",
+    "body": "/repos/owner/repo/milestones/number"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/milestones/number",
+    "want": "/repos/{owner}/{repo}/milestones/{number}",
+    "body": "/repos/owner/repo/milestones/number"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/issue_number/timeline",
+    "want": "/repos/{owner}/{repo}/issues/{issue_number}/timeline",
+    "body": "/repos/owner/repo/issues/issue_number/timeline"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/orgs/org/migrations",
+    "want": "/orgs/{org}/migrations",
+    "body": "/orgs/org/migrations"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/migrations",
+    "want": "/orgs/{org}/migrations",
+    "body": "/orgs/org/migrations"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/migrations/id",
+    "want": "/orgs/{org}/migrations/{id}",
+    "body": "/orgs/org/migrations/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/migrations/id/archive",
+    "want": "/orgs/{org}/migrations/{id}/archive",
+    "body": "/orgs/org/migrations/id/archive"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/migrations/id/archive",
+    "want": "/orgs/{org}/migrations/{id}/archive",
+    "body": "/orgs/org/migrations/id/archive"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/migrations/id/repos/repo_name/lock",
+    "want": "/orgs/{org}/migrations/{id}/repos/{repo}_name/lock",
+    "body": "/orgs/org/migrations/id/repos/repo_name/lock"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/import",
+    "want": "/repos/{owner}/{repo}/import",
+    "body": "/repos/owner/repo/import"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/import",
+    "want": "/repos/{owner}/{repo}/import",
+    "body": "/repos/owner/repo/import"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/import",
+    "want": "/repos/{owner}/{repo}/import",
+    "body": "/repos/owner/repo/import"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/import/authors",
+    "want": "/repos/{owner}/{repo}/import/authors",
+    "body": "/repos/owner/repo/import/authors"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/import/authors/author_id",
+    "want": "/repos/{owner}/{repo}/import/authors/{author_id}",
+    "body": "/repos/owner/repo/import/authors/author_id"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/owner/name/import/lfs",
+    "want": "/{owner}/{name}/import/lfs",
+    "body": "/owner/name/import/lfs"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/owner/name/import/large_files",
+    "want": "/{owner}/{name}/import/large_files",
+    "body": "/owner/name/import/large_files"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/import",
+    "want": "/repos/{owner}/{repo}/import",
+    "body": "/repos/owner/repo/import"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/emojis",
+    "want": "/emojis",
+    "body": "/emojis"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/gitignore/templates",
+    "want": "/gitignore/templates",
+    "body": "/gitignore/templates"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/gitignore/templates/C",
+    "want": "/gitignore/templates/C",
+    "body": "/gitignore/templates/C"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/licenses",
+    "want": "/licenses",
+    "body": "/licenses"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/licenses/license",
+    "want": "/licenses/{license}",
+    "body": "/licenses/license"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo",
+    "want": "/repos/{owner}/{repo}",
+    "body": "/repos/owner/repo"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/license",
+    "want": "/repos/{owner}/{repo}/license",
+    "body": "/repos/owner/repo/license"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/markdown",
+    "want": "/markdown",
+    "body": "/markdown"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/markdown/raw",
+    "want": "/markdown/raw",
+    "body": "/markdown/raw"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/meta",
+    "want": "/meta",
+    "body": "/meta"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/rate_limit",
+    "want": "/rate_limit",
+    "body": "/rate_limit"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/members",
+    "want": "/orgs/{org}/members",
+    "body": "/orgs/org/members"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/members/username",
+    "want": "/orgs/{org}/members/{username}",
+    "body": "/orgs/org/members/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/members/username",
+    "want": "/orgs/{org}/members/{username}",
+    "body": "/orgs/org/members/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/public_members",
+    "want": "/orgs/{org}/public_members",
+    "body": "/orgs/org/public_members"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/public_members/username",
+    "want": "/orgs/{org}/public_members/{username}",
+    "body": "/orgs/org/public_members/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/orgs/org/public_members/username",
+    "want": "/orgs/{org}/public_members/{username}",
+    "body": "/orgs/org/public_members/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/public_members/username",
+    "want": "/orgs/{org}/public_members/{username}",
+    "body": "/orgs/org/public_members/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/memberships/username",
+    "want": "/orgs/{org}/memberships/{username}",
+    "body": "/orgs/org/memberships/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/orgs/org/memberships/username",
+    "want": "/orgs/{org}/memberships/{username}",
+    "body": "/orgs/org/memberships/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/memberships/username",
+    "want": "/orgs/{org}/memberships/{username}",
+    "body": "/orgs/org/memberships/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/invitations",
+    "want": "/orgs/{org}/invitations",
+    "body": "/orgs/org/invitations"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/memberships/orgs",
+    "want": "/user/memberships/orgs",
+    "body": "/user/memberships/orgs"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/memberships/orgs/org",
+    "want": "/user/memberships/orgs/{org}",
+    "body": "/user/memberships/orgs/org"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/user/memberships/orgs/org",
+    "want": "/user/memberships/orgs/{org}",
+    "body": "/user/memberships/orgs/org"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/outside_collaborators",
+    "want": "/orgs/{org}/outside_collaborators",
+    "body": "/orgs/org/outside_collaborators"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/outside_collaborators/username",
+    "want": "/orgs/{org}/outside_collaborators/{username}",
+    "body": "/orgs/org/outside_collaborators/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/orgs/org/outside_collaborators/username",
+    "want": "/orgs/{org}/outside_collaborators/{username}",
+    "body": "/orgs/org/outside_collaborators/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/teams",
+    "want": "/orgs/{org}/teams",
+    "body": "/orgs/org/teams"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/teams/id",
+    "want": "/teams/{id}",
+    "body": "/teams/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/orgs/org/teams",
+    "want": "/orgs/{org}/teams",
+    "body": "/orgs/org/teams"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/teams/id",
+    "want": "/teams/{id}",
+    "body": "/teams/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/teams/id",
+    "want": "/teams/{id}",
+    "body": "/teams/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/teams/id/members/username",
+    "want": "/teams/{id}/members/{username}",
+    "body": "/teams/id/members/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/teams/id/members/username",
+    "want": "/teams/{id}/members/{username}",
+    "body": "/teams/id/members/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/teams/id/members/username",
+    "want": "/teams/{id}/members/{username}",
+    "body": "/teams/id/members/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/teams/id/memberships/username",
+    "want": "/teams/{id}/memberships/{username}",
+    "body": "/teams/id/memberships/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/teams/id/memberships/username",
+    "want": "/teams/{id}/memberships/{username}",
+    "body": "/teams/id/memberships/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/teams/id/memberships/username",
+    "want": "/teams/{id}/memberships/{username}",
+    "body": "/teams/id/memberships/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/teams/id/repos",
+    "want": "/teams/{id}/repos",
+    "body": "/teams/id/repos"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/teams/id/invitations",
+    "want": "/teams/{id}/invitations",
+    "body": "/teams/id/invitations"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/teams/id/repos/org/repo",
+    "want": "/teams/{id}/repos/{org}/{repo}",
+    "body": "/teams/id/repos/org/repo"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/hooks",
+    "want": "/orgs/{org}/hooks",
+    "body": "/orgs/org/hooks"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/hooks/id",
+    "want": "/orgs/{org}/hooks/{id}",
+    "body": "/orgs/org/hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/orgs/org/hooks",
+    "want": "/orgs/{org}/hooks",
+    "body": "/orgs/org/hooks"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/orgs/org/hooks/id",
+    "want": "/orgs/{org}/hooks/{id}",
+    "body": "/orgs/org/hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/orgs/org/hooks/id/pings",
+    "want": "/orgs/{org}/hooks/{id}/pings",
+    "body": "/orgs/org/hooks/id/pings"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/hooks/id",
+    "want": "/orgs/{org}/hooks/{id}",
+    "body": "/orgs/org/hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/blocks",
+    "want": "/orgs/{org}/blocks",
+    "body": "/orgs/org/blocks"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/orgs/org/blocks/username",
+    "want": "/orgs/{org}/blocks/{username}",
+    "body": "/orgs/org/blocks/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/orgs/org/blocks/username",
+    "want": "/orgs/{org}/blocks/{username}",
+    "body": "/orgs/org/blocks/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/orgs/org/blocks/username",
+    "want": "/orgs/{org}/blocks/{username}",
+    "body": "/orgs/org/blocks/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/projects/columns/column_id/cards",
+    "want": "/projects/columns/{column_id}/cards",
+    "body": "/projects/columns/column_id/cards"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/projects/columns/cards/id",
+    "want": "/projects/columns/cards/{id}",
+    "body": "/projects/columns/cards/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/projects/columns/column_id/cards",
+    "want": "/projects/columns/{column_id}/cards",
+    "body": "/projects/columns/column_id/cards"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/projects/columns/cards/id",
+    "want": "/projects/columns/cards/{id}",
+    "body": "/projects/columns/cards/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/projects/columns/cards/id",
+    "want": "/projects/columns/cards/{id}",
+    "body": "/projects/columns/cards/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/projects/columns/cards/id/moves",
+    "want": "/projects/columns/cards/{id}/moves",
+    "body": "/projects/columns/cards/id/moves"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/projects/project_id/columns",
+    "want": "/projects/{project_id}/columns",
+    "body": "/projects/project_id/columns"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/projects/project_id/columns",
+    "want": "/projects/{project_id}/columns",
+    "body": "/projects/project_id/columns"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/projects/columns/id",
+    "want": "/projects/columns/{id}",
+    "body": "/projects/columns/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/projects/columns/id/moves",
+    "want": "/projects/columns/{id}/moves",
+    "body": "/projects/columns/id/moves"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/number/reviews",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews",
+    "body": "/repos/owner/repo/pulls/number/reviews"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/number/reviews/id",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews/{id}",
+    "body": "/repos/owner/repo/pulls/number/reviews/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/pulls/number/reviews/id",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews/{id}",
+    "body": "/repos/owner/repo/pulls/number/reviews/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/number/reviews/id/comments",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews/{id}/comments",
+    "body": "/repos/owner/repo/pulls/number/reviews/id/comments"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/pulls/number/reviews",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews",
+    "body": "/repos/owner/repo/pulls/number/reviews"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/pulls/number/reviews/id/events",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews/{id}/events",
+    "body": "/repos/owner/repo/pulls/number/reviews/id/events"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/pulls/number/reviews/id/dismissals",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/reviews/{id}/dismissals",
+    "body": "/repos/owner/repo/pulls/number/reviews/id/dismissals"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/number/comments",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/comments",
+    "body": "/repos/owner/repo/pulls/number/comments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/comments",
+    "want": "/repos/{owner}/{repo}/pulls/comments",
+    "body": "/repos/owner/repo/pulls/comments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/comments/id",
+    "want": "/repos/{owner}/{repo}/pulls/comments/{id}",
+    "body": "/repos/owner/repo/pulls/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/pulls/number/comments",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/comments",
+    "body": "/repos/owner/repo/pulls/number/comments"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/pulls/comments/id",
+    "want": "/repos/{owner}/{repo}/pulls/comments/{id}",
+    "body": "/repos/owner/repo/pulls/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/pulls/comments/id",
+    "want": "/repos/{owner}/{repo}/pulls/comments/{id}",
+    "body": "/repos/owner/repo/pulls/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/number/requested_reviewers",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/requested_reviewers",
+    "body": "/repos/owner/repo/pulls/number/requested_reviewers"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/pulls/number/requested_reviewers",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/requested_reviewers",
+    "body": "/repos/owner/repo/pulls/number/requested_reviewers"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/pulls/number/requested_reviewers",
+    "want": "/repos/{owner}/{repo}/pulls/{number}/requested_reviewers",
+    "body": "/repos/owner/repo/pulls/number/requested_reviewers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/comments/id/reactions",
+    "want": "/repos/{owner}/{repo}/comments/{id}/reactions",
+    "body": "/repos/owner/repo/comments/id/reactions"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/comments/id/reactions",
+    "want": "/repos/{owner}/{repo}/comments/{id}/reactions",
+    "body": "/repos/owner/repo/comments/id/reactions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/number/reactions",
+    "want": "/repos/{owner}/{repo}/issues/{number}/reactions",
+    "body": "/repos/owner/repo/issues/number/reactions"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/issues/number/reactions",
+    "want": "/repos/{owner}/{repo}/issues/{number}/reactions",
+    "body": "/repos/owner/repo/issues/number/reactions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/issues/comments/id/reactions",
+    "want": "/repos/{owner}/{repo}/issues/comments/{id}/reactions",
+    "body": "/repos/owner/repo/issues/comments/id/reactions"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/issues/comments/id/reactions",
+    "want": "/repos/{owner}/{repo}/issues/comments/{id}/reactions",
+    "body": "/repos/owner/repo/issues/comments/id/reactions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pulls/comments/id/reactions",
+    "want": "/repos/{owner}/{repo}/pulls/comments/{id}/reactions",
+    "body": "/repos/owner/repo/pulls/comments/id/reactions"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/pulls/comments/id/reactions",
+    "want": "/repos/{owner}/{repo}/pulls/comments/{id}/reactions",
+    "body": "/repos/owner/repo/pulls/comments/id/reactions"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/reactions/id",
+    "want": "/reactions/{id}",
+    "body": "/reactions/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches",
+    "want": "/repos/{owner}/{repo}/branches",
+    "body": "/repos/owner/repo/branches"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch",
+    "want": "/repos/{owner}/{repo}/branches/{branch}",
+    "body": "/repos/owner/repo/branches/branch"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch/protection",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection",
+    "body": "/repos/owner/repo/branches/branch/protection"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/branches/branch/protection",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection",
+    "body": "/repos/owner/repo/branches/branch/protection"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection",
+    "body": "/repos/owner/repo/branches/branch/protection"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/branches/branch/protection/required_status_checks",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+    "body": "/repos/owner/repo/branches/branch/protection/required_status_checks"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/required_status_checks",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+    "body": "/repos/owner/repo/branches/branch/protection/required_status_checks"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "body": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "body": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "body": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+    "body": "/repos/owner/repo/branches/branch/protection/required_status_checks/contexts"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch/protection/required_pull_request_reviews",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+    "body": "/repos/owner/repo/branches/branch/protection/required_pull_request_reviews"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/branches/branch/protection/required_pull_request_reviews",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+    "body": "/repos/owner/repo/branches/branch/protection/required_pull_request_reviews"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/required_pull_request_reviews",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+    "body": "/repos/owner/repo/branches/branch/protection/required_pull_request_reviews"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch/protection/enforce_admins",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins",
+    "body": "/repos/owner/repo/branches/branch/protection/enforce_admins"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/branches/branch/protection/enforce_admins",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins",
+    "body": "/repos/owner/repo/branches/branch/protection/enforce_admins"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/enforce_admins",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins",
+    "body": "/repos/owner/repo/branches/branch/protection/enforce_admins"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/teams",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/teams"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/teams",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/teams"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/teams",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/teams"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/teams",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/teams"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/users",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/users"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/users",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/users"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/users",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/users"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/branches/branch/protection/restrictions/users",
+    "want": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users",
+    "body": "/repos/owner/repo/branches/branch/protection/restrictions/users"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/collaborators/username",
+    "want": "/repos/{owner}/{repo}/collaborators/{username}",
+    "body": "/repos/owner/repo/collaborators/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/collaborators/username/permission",
+    "want": "/repos/{owner}/{repo}/collaborators/{username}/permission",
+    "body": "/repos/owner/repo/collaborators/username/permission"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/collaborators/username",
+    "want": "/repos/{owner}/{repo}/collaborators/{username}",
+    "body": "/repos/owner/repo/collaborators/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/collaborators/username",
+    "want": "/repos/{owner}/{repo}/collaborators/{username}",
+    "body": "/repos/owner/repo/collaborators/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/comments",
+    "want": "/repos/{owner}/{repo}/comments",
+    "body": "/repos/owner/repo/comments"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/commits/sha/comments",
+    "want": "/repos/{owner}/{repo}/commits/{sha}/comments",
+    "body": "/repos/owner/repo/commits/sha/comments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/comments/id",
+    "want": "/repos/{owner}/{repo}/comments/{id}",
+    "body": "/repos/owner/repo/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/comments/id",
+    "want": "/repos/{owner}/{repo}/comments/{id}",
+    "body": "/repos/owner/repo/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/comments/id",
+    "want": "/repos/{owner}/{repo}/comments/{id}",
+    "body": "/repos/owner/repo/comments/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/name/community/profile",
+    "want": "/repos/{owner}/{name}/community/profile",
+    "body": "/repos/owner/name/community/profile"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/commits",
+    "want": "/repos/{owner}/{repo}/commits",
+    "body": "/repos/owner/repo/commits"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/commits/sha",
+    "want": "/repos/{owner}/{repo}/commits/{sha}",
+    "body": "/repos/owner/repo/commits/sha"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/compare/base...head",
+    "want": "/repos/{owner}/{repo}/compare/{base}...{head}",
+    "body": "/repos/owner/repo/compare/base...head"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/readme",
+    "want": "/repos/{owner}/{repo}/readme",
+    "body": "/repos/owner/repo/readme"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/repos/owner/repo/contents/path",
+    "want": "/repos/{owner}/{repo}/contents/{path}",
+    "body": "/repos/owner/repo/contents/path"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/contents/path",
+    "want": "/repos/{owner}/{repo}/contents/{path}",
+    "body": "/repos/owner/repo/contents/path"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/archive_format/ref",
+    "want": "/repos/{owner}/{repo}/{archive_format}/{ref}",
+    "body": "/repos/owner/repo/archive_format/ref"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/keys",
+    "want": "/repos/{owner}/{repo}/keys",
+    "body": "/repos/owner/repo/keys"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/keys/id",
+    "want": "/repos/{owner}/{repo}/keys/{id}",
+    "body": "/repos/owner/repo/keys/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/keys",
+    "want": "/repos/{owner}/{repo}/keys",
+    "body": "/repos/owner/repo/keys"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/keys/id",
+    "want": "/repos/{owner}/{repo}/keys/{id}",
+    "body": "/repos/owner/repo/keys/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/deployments",
+    "want": "/repos/{owner}/{repo}/deployments",
+    "body": "/repos/owner/repo/deployments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/deployments/deployment_id",
+    "want": "/repos/{owner}/{repo}/deployments/{deployment_id}",
+    "body": "/repos/owner/repo/deployments/deployment_id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/deployments",
+    "want": "/repos/{owner}/{repo}/deployments",
+    "body": "/repos/owner/repo/deployments"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/deployments/id/statuses",
+    "want": "/repos/{owner}/{repo}/deployments/{id}/statuses",
+    "body": "/repos/owner/repo/deployments/id/statuses"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/deployments/id/statuses/status_id",
+    "want": "/repos/{owner}/{repo}/deployments/{id}/statuses/{status_id}",
+    "body": "/repos/owner/repo/deployments/id/statuses/status_id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/deployments/id/statuses",
+    "want": "/repos/{owner}/{repo}/deployments/{id}/statuses",
+    "body": "/repos/owner/repo/deployments/id/statuses"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/downloads",
+    "want": "/repos/{owner}/{repo}/downloads",
+    "body": "/repos/owner/repo/downloads"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/downloads/id",
+    "want": "/repos/{owner}/{repo}/downloads/{id}",
+    "body": "/repos/owner/repo/downloads/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/downloads/id",
+    "want": "/repos/{owner}/{repo}/downloads/{id}",
+    "body": "/repos/owner/repo/downloads/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/forks",
+    "want": "/repos/{owner}/{repo}/forks",
+    "body": "/repos/owner/repo/forks"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/forks",
+    "want": "/repos/{owner}/{repo}/forks",
+    "body": "/repos/owner/repo/forks"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/invitations",
+    "want": "/repos/{owner}/{repo}/invitations",
+    "body": "/repos/owner/repo/invitations"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/invitations/invitation_id",
+    "want": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+    "body": "/repos/owner/repo/invitations/invitation_id"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/invitations/invitation_id",
+    "want": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+    "body": "/repos/owner/repo/invitations/invitation_id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/repository_invitations",
+    "want": "/user/repository_invitations",
+    "body": "/user/repository_invitations"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/user/repository_invitations/invitation_id",
+    "want": "/user/repository_invitations/{invitation_id}",
+    "body": "/user/repository_invitations/invitation_id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/repository_invitations/invitation_id",
+    "want": "/user/repository_invitations/{invitation_id}",
+    "body": "/user/repository_invitations/invitation_id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/merges",
+    "want": "/repos/{owner}/{repo}/merges",
+    "body": "/repos/owner/repo/merges"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pages",
+    "want": "/repos/{owner}/{repo}/pages",
+    "body": "/repos/owner/repo/pages"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/pages/builds",
+    "want": "/repos/{owner}/{repo}/pages/builds",
+    "body": "/repos/owner/repo/pages/builds"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pages/builds/id",
+    "want": "/repos/{owner}/{repo}/pages/builds/{id}",
+    "body": "/repos/owner/repo/pages/builds/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/pages/builds/latest",
+    "want": "/repos/{owner}/{repo}/pages/builds/latest",
+    "body": "/repos/owner/repo/pages/builds/latest"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/releases",
+    "want": "/repos/{owner}/{repo}/releases",
+    "body": "/repos/owner/repo/releases"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/releases/id",
+    "want": "/repos/{owner}/{repo}/releases/{id}",
+    "body": "/repos/owner/repo/releases/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/releases/latest",
+    "want": "/repos/{owner}/{repo}/releases/latest",
+    "body": "/repos/owner/repo/releases/latest"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/releases/tags/tag",
+    "want": "/repos/{owner}/{repo}/releases/tags/{tag}",
+    "body": "/repos/owner/repo/releases/tags/tag"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/releases",
+    "want": "/repos/{owner}/{repo}/releases",
+    "body": "/repos/owner/repo/releases"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/releases/id",
+    "want": "/repos/{owner}/{repo}/releases/{id}",
+    "body": "/repos/owner/repo/releases/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/releases/id/assets",
+    "want": "/repos/{owner}/{repo}/releases/{id}/assets",
+    "body": "/repos/owner/repo/releases/id/assets"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/releases/assets/id",
+    "want": "/repos/{owner}/{repo}/releases/assets/{id}",
+    "body": "/repos/owner/repo/releases/assets/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/releases/assets/id",
+    "want": "/repos/{owner}/{repo}/releases/assets/{id}",
+    "body": "/repos/owner/repo/releases/assets/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/stats/contributors",
+    "want": "/repos/{owner}/{repo}/stats/contributors",
+    "body": "/repos/owner/repo/stats/contributors"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/stats/commit_activity",
+    "want": "/repos/{owner}/{repo}/stats/commit_activity",
+    "body": "/repos/owner/repo/stats/commit_activity"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/stats/code_frequency",
+    "want": "/repos/{owner}/{repo}/stats/code_frequency",
+    "body": "/repos/owner/repo/stats/code_frequency"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/stats/participation",
+    "want": "/repos/{owner}/{repo}/stats/participation",
+    "body": "/repos/owner/repo/stats/participation"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/stats/punch_card",
+    "want": "/repos/{owner}/{repo}/stats/punch_card",
+    "body": "/repos/owner/repo/stats/punch_card"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/statuses/sha",
+    "want": "/repos/{owner}/{repo}/statuses/{sha}",
+    "body": "/repos/owner/repo/statuses/sha"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/commits/ref/statuses",
+    "want": "/repos/{owner}/{repo}/commits/{ref}/statuses",
+    "body": "/repos/owner/repo/commits/ref/statuses"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/commits/ref/status",
+    "want": "/repos/{owner}/{repo}/commits/{ref}/status",
+    "body": "/repos/owner/repo/commits/ref/status"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/traffic/popular/referrers",
+    "want": "/repos/{owner}/{repo}/traffic/popular/referrers",
+    "body": "/repos/owner/repo/traffic/popular/referrers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/traffic/popular/paths",
+    "want": "/repos/{owner}/{repo}/traffic/popular/paths",
+    "body": "/repos/owner/repo/traffic/popular/paths"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/traffic/views",
+    "want": "/repos/{owner}/{repo}/traffic/views",
+    "body": "/repos/owner/repo/traffic/views"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/traffic/clones",
+    "want": "/repos/{owner}/{repo}/traffic/clones",
+    "body": "/repos/owner/repo/traffic/clones"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/hooks",
+    "want": "/repos/{owner}/{repo}/hooks",
+    "body": "/repos/owner/repo/hooks"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/repos/owner/repo/hooks/id",
+    "want": "/repos/{owner}/{repo}/hooks/{id}",
+    "body": "/repos/owner/repo/hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/hooks",
+    "want": "/repos/{owner}/{repo}/hooks",
+    "body": "/repos/owner/repo/hooks"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/repos/owner/repo/hooks/id",
+    "want": "/repos/{owner}/{repo}/hooks/{id}",
+    "body": "/repos/owner/repo/hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/repos/owner/repo/hooks/id/tests",
+    "want": "/repos/{owner}/{repo}/hooks/{id}/tests",
+    "body": "/repos/owner/repo/hooks/id/tests"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/repos/owner/repo/hooks/id",
+    "want": "/repos/{owner}/{repo}/hooks/{id}",
+    "body": "/repos/owner/repo/hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/search/repositories",
+    "want": "/search/repositories",
+    "body": "/search/repositories"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/search/commits",
+    "want": "/search/commits",
+    "body": "/search/commits"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/search/code",
+    "want": "/search/code",
+    "body": "/search/code"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/search/issues",
+    "want": "/search/issues",
+    "body": "/search/issues"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/search/users",
+    "want": "/search/users",
+    "body": "/search/users"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/emails",
+    "want": "/user/emails",
+    "body": "/user/emails"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/public_emails",
+    "want": "/user/public_emails",
+    "body": "/user/public_emails"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/user/emails",
+    "want": "/user/emails",
+    "body": "/user/emails"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/emails",
+    "want": "/user/emails",
+    "body": "/user/emails"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/followers",
+    "want": "/users/{username}/followers",
+    "body": "/users/username/followers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/followers",
+    "want": "/user/followers",
+    "body": "/user/followers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/following",
+    "want": "/users/{username}/following",
+    "body": "/users/username/following"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/following",
+    "want": "/user/following",
+    "body": "/user/following"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/following/username",
+    "want": "/user/following/{username}",
+    "body": "/user/following/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/user/following/username",
+    "want": "/user/following/{username}",
+    "body": "/user/following/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/following/username",
+    "want": "/user/following/{username}",
+    "body": "/user/following/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/keys",
+    "want": "/users/{username}/keys",
+    "body": "/users/username/keys"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/keys",
+    "want": "/user/keys",
+    "body": "/user/keys"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/keys/id",
+    "want": "/user/keys/{id}",
+    "body": "/user/keys/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/user/keys",
+    "want": "/user/keys",
+    "body": "/user/keys"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/keys/id",
+    "want": "/user/keys/{id}",
+    "body": "/user/keys/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/username/gpg_keys",
+    "want": "/users/{username}/gpg_keys",
+    "body": "/users/username/gpg_keys"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/gpg_keys",
+    "want": "/user/gpg_keys",
+    "body": "/user/gpg_keys"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/gpg_keys/id",
+    "want": "/user/gpg_keys/{id}",
+    "body": "/user/gpg_keys/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/user/gpg_keys",
+    "want": "/user/gpg_keys",
+    "body": "/user/gpg_keys"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/gpg_keys/id",
+    "want": "/user/gpg_keys/{id}",
+    "body": "/user/gpg_keys/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/blocks",
+    "want": "/user/blocks",
+    "body": "/user/blocks"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/user/blocks/username",
+    "want": "/user/blocks/{username}",
+    "body": "/user/blocks/username"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/user/blocks/username",
+    "want": "/user/blocks/{username}",
+    "body": "/user/blocks/username"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/user/blocks/username",
+    "want": "/user/blocks/{username}",
+    "body": "/user/blocks/username"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/enterprise/stats/type",
+    "want": "/enterprise/stats/{type}",
+    "body": "/enterprise/stats/type"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/admin/ldap/users/username/mapping",
+    "want": "/admin/ldap/users/{username}/mapping",
+    "body": "/admin/ldap/users/username/mapping"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/admin/ldap/users/username/sync",
+    "want": "/admin/ldap/users/{username}/sync",
+    "body": "/admin/ldap/users/username/sync"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/admin/ldap/teams/team_id/mapping",
+    "want": "/admin/ldap/teams/{team_id}/mapping",
+    "body": "/admin/ldap/teams/team_id/mapping"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/admin/ldap/teams/team_id/sync",
+    "want": "/admin/ldap/teams/{team_id}/sync",
+    "body": "/admin/ldap/teams/team_id/sync"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/enterprise/settings/license",
+    "want": "/enterprise/settings/license",
+    "body": "/enterprise/settings/license"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/setup/api/start",
+    "want": "/setup/api/start",
+    "body": "/setup/api/start"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/setup/api/upgrade",
+    "want": "/setup/api/upgrade",
+    "body": "/setup/api/upgrade"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/setup/api/configcheck",
+    "want": "/setup/api/configcheck",
+    "body": "/setup/api/configcheck"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/setup/api/configure",
+    "want": "/setup/api/configure",
+    "body": "/setup/api/configure"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/setup/api/settings",
+    "want": "/setup/api/settings",
+    "body": "/setup/api/settings"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/setup/api/settings",
+    "want": "/setup/api/settings",
+    "body": "/setup/api/settings"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/setup/api/maintenance",
+    "want": "/setup/api/maintenance",
+    "body": "/setup/api/maintenance"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/setup/api/maintenance",
+    "want": "/setup/api/maintenance",
+    "body": "/setup/api/maintenance"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/setup/api/settings/authorized-keys",
+    "want": "/setup/api/settings/authorized-keys",
+    "body": "/setup/api/settings/authorized-keys"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/setup/api/settings/authorized-keys",
+    "want": "/setup/api/settings/authorized-keys",
+    "body": "/setup/api/settings/authorized-keys"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/setup/api/settings/authorized-keys",
+    "want": "/setup/api/settings/authorized-keys",
+    "body": "/setup/api/settings/authorized-keys"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/admin/pre-receive-environments/id",
+    "want": "/admin/pre-receive-environments/{id}",
+    "body": "/admin/pre-receive-environments/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/admin/pre_receive_environments",
+    "want": "/admin/pre_receive_environments",
+    "body": "/admin/pre_receive_environments"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/admin/pre_receive_environments/id",
+    "want": "/admin/pre_receive_environments/{id}",
+    "body": "/admin/pre_receive_environments/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/admin/pre_receive_environments/id",
+    "want": "/admin/pre_receive_environments/{id}",
+    "body": "/admin/pre_receive_environments/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/admin/pre-receive-environments/id/downloads/latest",
+    "want": "/admin/pre-receive-environments/{id}/downloads/latest",
+    "body": "/admin/pre-receive-environments/id/downloads/latest"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/admin/pre_receive_environments/id/downloads",
+    "want": "/admin/pre_receive_environments/{id}/downloads",
+    "body": "/admin/pre_receive_environments/id/downloads"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/admin/pre-receive-hooks/id",
+    "want": "/admin/pre-receive-hooks/{id}",
+    "body": "/admin/pre-receive-hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/admin/pre-receive-hooks",
+    "want": "/admin/pre-receive-hooks",
+    "body": "/admin/pre-receive-hooks"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/admin/pre-receive-hooks",
+    "want": "/admin/pre-receive-hooks",
+    "body": "/admin/pre-receive-hooks"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/admin/pre_receive_hooks/id",
+    "want": "/admin/pre_receive_hooks/{id}",
+    "body": "/admin/pre_receive_hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/admin/pre_receive_hooks/id",
+    "want": "/admin/pre_receive_hooks/{id}",
+    "body": "/admin/pre_receive_hooks/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/staff/indexing_jobs",
+    "want": "/staff/indexing_jobs",
+    "body": "/staff/indexing_jobs"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/admin/organizations",
+    "want": "/admin/organizations",
+    "body": "/admin/organizations"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/oauth/authenticate",
+    "want": "/oauth/authenticate",
+    "body": "/oauth/authenticate"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/oauth/authorize",
+    "want": "/oauth/authorize",
+    "body": "/oauth/authorize"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth/access_token",
+    "want": "/oauth/access_token",
+    "body": "/oauth/access_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth/invalidate_token",
+    "want": "/oauth/invalidate_token",
+    "body": "/oauth/invalidate_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth/request_token",
+    "want": "/oauth/request_token",
+    "body": "/oauth/request_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth2/invalidate_token",
+    "want": "/oauth2/invalidate_token",
+    "body": "/oauth2/invalidate_token"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/oauth2/token",
+    "want": "/oauth2/token",
+    "body": "/oauth2/token"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/list",
+    "want": "/lists/list",
+    "body": "/lists/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/members",
+    "want": "/lists/members",
+    "body": "/lists/members"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/members/show",
+    "want": "/lists/members/show",
+    "body": "/lists/members/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/memberships",
+    "want": "/lists/memberships",
+    "body": "/lists/memberships"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/ownerships",
+    "want": "/lists/ownerships",
+    "body": "/lists/ownerships"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/show",
+    "want": "/lists/show",
+    "body": "/lists/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/statuses",
+    "want": "/lists/statuses",
+    "body": "/lists/statuses"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/subscribers",
+    "want": "/lists/subscribers",
+    "body": "/lists/subscribers"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/subscribers/show",
+    "want": "/lists/subscribers/show",
+    "body": "/lists/subscribers/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/lists/subscriptions",
+    "want": "/lists/subscriptions",
+    "body": "/lists/subscriptions"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/create",
+    "want": "/lists/create",
+    "body": "/lists/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/destroy",
+    "want": "/lists/destroy",
+    "body": "/lists/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/create",
+    "want": "/lists/members/create",
+    "body": "/lists/members/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/create_all",
+    "want": "/lists/members/create_all",
+    "body": "/lists/members/create_all"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/destroy",
+    "want": "/lists/members/destroy",
+    "body": "/lists/members/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/members/destroy_all",
+    "want": "/lists/members/destroy_all",
+    "body": "/lists/members/destroy_all"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/subscribers/create",
+    "want": "/lists/subscribers/create",
+    "body": "/lists/subscribers/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/subscribers/destroy",
+    "want": "/lists/subscribers/destroy",
+    "body": "/lists/subscribers/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/lists/update",
+    "want": "/lists/update",
+    "body": "/lists/update"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/followers/ids",
+    "want": "/followers/ids",
+    "body": "/followers/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/followers/list",
+    "want": "/followers/list",
+    "body": "/followers/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friends/ids",
+    "want": "/friends/ids",
+    "body": "/friends/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friends/list",
+    "want": "/friends/list",
+    "body": "/friends/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/incoming",
+    "want": "/friendships/incoming",
+    "body": "/friendships/incoming"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/lookup",
+    "want": "/friendships/lookup",
+    "body": "/friendships/lookup"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/no_retweets/ids",
+    "want": "/friendships/no_retweets/ids",
+    "body": "/friendships/no_retweets/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/outgoing",
+    "want": "/friendships/outgoing",
+    "body": "/friendships/outgoing"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/friendships/show",
+    "want": "/friendships/show",
+    "body": "/friendships/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/lookup",
+    "want": "/users/lookup",
+    "body": "/users/lookup"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/search",
+    "want": "/users/search",
+    "body": "/users/search"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/show",
+    "want": "/users/show",
+    "body": "/users/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/suggestions",
+    "want": "/users/suggestions",
+    "body": "/users/suggestions"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/suggestions/slug",
+    "want": "/users/suggestions/{slug}",
+    "body": "/users/suggestions/slug"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/suggestions/slug/members",
+    "want": "/users/suggestions/{slug}/members",
+    "body": "/users/suggestions/slug/members"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/friendships/create",
+    "want": "/friendships/create",
+    "body": "/friendships/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/friendships/destroy",
+    "want": "/friendships/destroy",
+    "body": "/friendships/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/friendships/update",
+    "want": "/friendships/update",
+    "body": "/friendships/update"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/account/settings",
+    "want": "/account/settings",
+    "body": "/account/settings"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/account/verify_credentials",
+    "want": "/account/verify_credentials",
+    "body": "/account/verify_credentials"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/saved_searches/list",
+    "want": "/saved_searches/list",
+    "body": "/saved_searches/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/saved_searches/show/id",
+    "want": "/saved_searches/show/{id}",
+    "body": "/saved_searches/show/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/users/profile_banner",
+    "want": "/users/profile_banner",
+    "body": "/users/profile_banner"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/remove_profile_banner",
+    "want": "/account/remove_profile_banner",
+    "body": "/account/remove_profile_banner"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/settings",
+    "want": "/account/settings",
+    "body": "/account/settings"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile",
+    "want": "/account/update_profile",
+    "body": "/account/update_profile"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile_background_image",
+    "want": "/account/update_profile_background_image",
+    "body": "/account/update_profile_background_image"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile_banner",
+    "want": "/account/update_profile_banner",
+    "body": "/account/update_profile_banner"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/account/update_profile_image",
+    "want": "/account/update_profile_image",
+    "body": "/account/update_profile_image"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/saved_searches/create",
+    "want": "/saved_searches/create",
+    "body": "/saved_searches/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/saved_searches/destroy/id",
+    "want": "/saved_searches/destroy/{id}",
+    "body": "/saved_searches/destroy/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/blocks/ids",
+    "want": "/blocks/ids",
+    "body": "/blocks/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/blocks/list",
+    "want": "/blocks/list",
+    "body": "/blocks/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/mutes/users/ids",
+    "want": "/mutes/users/ids",
+    "body": "/mutes/users/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/mutes/users/list",
+    "want": "/mutes/users/list",
+    "body": "/mutes/users/list"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/blocks/create",
+    "want": "/blocks/create",
+    "body": "/blocks/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/blocks/destroy",
+    "want": "/blocks/destroy",
+    "body": "/blocks/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/mutes/users/create",
+    "want": "/mutes/users/create",
+    "body": "/mutes/users/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/mutes/users/destroy",
+    "want": "/mutes/users/destroy",
+    "body": "/mutes/users/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/users/report_spam",
+    "want": "/users/report_spam",
+    "body": "/users/report_spam"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/collections/entries",
+    "want": "/collections/entries",
+    "body": "/collections/entries"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/collections/list",
+    "want": "/collections/list",
+    "body": "/collections/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/collections/show",
+    "want": "/collections/show",
+    "body": "/collections/show"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/create",
+    "want": "/collections/create",
+    "body": "/collections/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/destroy",
+    "want": "/collections/destroy",
+    "body": "/collections/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/add",
+    "want": "/collections/entries/add",
+    "body": "/collections/entries/add"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/curate",
+    "want": "/collections/entries/curate",
+    "body": "/collections/entries/curate"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/move",
+    "want": "/collections/entries/move",
+    "body": "/collections/entries/move"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/entries/remove",
+    "want": "/collections/entries/remove",
+    "body": "/collections/entries/remove"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/collections/update",
+    "want": "/collections/update",
+    "body": "/collections/update"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/filter",
+    "want": "/statuses/filter",
+    "body": "/statuses/filter"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/home_timeline",
+    "want": "/statuses/home_timeline",
+    "body": "/statuses/home_timeline"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/mentions_timeline",
+    "want": "/statuses/mentions_timeline",
+    "body": "/statuses/mentions_timeline"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/user_timeline",
+    "want": "/statuses/user_timeline",
+    "body": "/statuses/user_timeline"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/favorites/list",
+    "want": "/favorites/list",
+    "body": "/favorites/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/lookup",
+    "want": "/statuses/lookup",
+    "body": "/statuses/lookup"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/oembed",
+    "want": "/statuses/oembed",
+    "body": "/statuses/oembed"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/retweeters/ids",
+    "want": "/statuses/retweeters/ids",
+    "body": "/statuses/retweeters/ids"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/retweets/id",
+    "want": "/statuses/retweets/{id}",
+    "body": "/statuses/retweets/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/retweets_of_me",
+    "want": "/statuses/retweets_of_me",
+    "body": "/statuses/retweets_of_me"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/show/id",
+    "want": "/statuses/show/{id}",
+    "body": "/statuses/show/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/favorites/create",
+    "want": "/favorites/create",
+    "body": "/favorites/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/favorites/destroy",
+    "want": "/favorites/destroy",
+    "body": "/favorites/destroy"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/destroy/id",
+    "want": "/statuses/destroy/{id}",
+    "body": "/statuses/destroy/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/retweet/id",
+    "want": "/statuses/retweet/{id}",
+    "body": "/statuses/retweet/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/unretweet/id",
+    "want": "/statuses/unretweet/{id}",
+    "body": "/statuses/unretweet/id"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/update",
+    "want": "/statuses/update",
+    "body": "/statuses/update"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/statuses/update_with_media",
+    "want": "/statuses/update_with_media",
+    "body": "/statuses/update_with_media"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/statuses/sample",
+    "want": "/statuses/sample",
+    "body": "/statuses/sample"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/compliance/firehose",
+    "want": "/compliance/firehose",
+    "body": "/compliance/firehose"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/custom_profiles/destroy.json",
+    "want": "/custom_profiles/destroy.json",
+    "body": "/custom_profiles/destroy.json"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/custom_profiles/id",
+    "want": "/custom_profiles/{id}",
+    "body": "/custom_profiles/id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/custom_profiles/list",
+    "want": "/custom_profiles/list",
+    "body": "/custom_profiles/list"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/custom_profiles/new.json",
+    "want": "/custom_profiles/new.json",
+    "body": "/custom_profiles/new.json"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/feedback/events.json",
+    "want": "/feedback/events.json",
+    "body": "/feedback/events.json"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/feedback/show/id.json",
+    "want": "/feedback/show/{id}.json",
+    "body": "/feedback/show/id.json"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/feedback/create.json",
+    "want": "/feedback/create.json",
+    "body": "/feedback/create.json"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/direct_messages/events/destroy",
+    "want": "/direct_messages/events/destroy",
+    "body": "/direct_messages/events/destroy"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/events/list",
+    "want": "/direct_messages/events/list",
+    "body": "/direct_messages/events/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/events/show",
+    "want": "/direct_messages/events/show",
+    "body": "/direct_messages/events/show"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/events/new",
+    "want": "/direct_messages/events/new",
+    "body": "/direct_messages/events/new"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/indicate_typing",
+    "want": "/direct_messages/indicate_typing",
+    "body": "/direct_messages/indicate_typing"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/mark_read",
+    "want": "/direct_messages/mark_read",
+    "body": "/direct_messages/mark_read"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/direct_messages/welcome_messages/destroy",
+    "want": "/direct_messages/welcome_messages/destroy",
+    "body": "/direct_messages/welcome_messages/destroy"
+  },
+  {
+    "ok": true,
+    "method": "DELETE",
+    "path": "/direct_messages/welcome_messages/rules/destroy",
+    "want": "/direct_messages/welcome_messages/rules/destroy",
+    "body": "/direct_messages/welcome_messages/rules/destroy"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/direct_messages/welcome_messages/update",
+    "want": "/direct_messages/welcome_messages/update",
+    "body": "/direct_messages/welcome_messages/update"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/list",
+    "want": "/direct_messages/welcome_messages/list",
+    "body": "/direct_messages/welcome_messages/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/rules/list",
+    "want": "/direct_messages/welcome_messages/rules/list",
+    "body": "/direct_messages/welcome_messages/rules/list"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/rules/show",
+    "want": "/direct_messages/welcome_messages/rules/show",
+    "body": "/direct_messages/welcome_messages/rules/show"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/direct_messages/welcome_messages/show",
+    "want": "/direct_messages/welcome_messages/show",
+    "body": "/direct_messages/welcome_messages/show"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/welcome_messages/new",
+    "want": "/direct_messages/welcome_messages/new",
+    "body": "/direct_messages/welcome_messages/new"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/direct_messages/welcome_messages/rules/new",
+    "want": "/direct_messages/welcome_messages/rules/new",
+    "body": "/direct_messages/welcome_messages/rules/new"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/media/upload",
+    "want": "/media/upload",
+    "body": "/media/upload"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/metadata/create",
+    "want": "/media/metadata/create",
+    "body": "/media/metadata/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/subtitles/create",
+    "want": "/media/subtitles/create",
+    "body": "/media/subtitles/create"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/subtitles/delete",
+    "want": "/media/subtitles/delete",
+    "body": "/media/subtitles/delete"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/media/upload",
+    "want": "/media/upload",
+    "body": "/media/upload"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/trends/available",
+    "want": "/trends/available",
+    "body": "/trends/available"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/trends/closest",
+    "want": "/trends/closest",
+    "body": "/trends/closest"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/geo/id/place_id",
+    "want": "/geo/id/{place_id}",
+    "body": "/geo/id/place_id"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/geo/reverse_geocode",
+    "want": "/geo/reverse_geocode",
+    "body": "/geo/reverse_geocode"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/geo/search",
+    "want": "/geo/search",
+    "body": "/geo/search"
+  }
+]
