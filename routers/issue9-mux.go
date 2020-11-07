@@ -8,7 +8,7 @@ import (
 	"net/http"
 
 	"github.com/caixw/go-http-routers-testing/apis"
-	"github.com/issue9/mux/v2"
+	"github.com/issue9/mux/v3"
 )
 
 func init() {

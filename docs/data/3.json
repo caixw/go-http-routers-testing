@@ -6,7 +6,7 @@
     "apiCount": 2,
     "memBytes": 1160,
     "bench": {
-      "nsPerOp": 3785,
+      "nsPerOp": 3643,
       "allocsPerOp": 19,
       "allocedBytesPerOp": 5825
     },
@@ -20,9 +20,9 @@
     "apiCount": 2,
     "memBytes": 32216,
     "bench": {
-      "nsPerOp": 9012,
+      "nsPerOp": 9073,
       "allocsPerOp": 28,
-      "allocedBytesPerOp": 7167
+      "allocedBytesPerOp": 7164
     },
     "hitPrecent": 100,
     "hitFile": "3-1.json"
@@ -32,9 +32,9 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Discuz Routes",
     "apiCount": 2,
-    "memBytes": 5192,
+    "memBytes": 5304,
     "bench": {
-      "nsPerOp": 4804,
+      "nsPerOp": 4623,
       "allocsPerOp": 23,
       "allocedBytesPerOp": 6592
     },

@@ -6,7 +6,7 @@
     "apiCount": 128,
     "memBytes": 64872,
     "bench": {
-      "nsPerOp": 4233,
+      "nsPerOp": 4165,
       "allocsPerOp": 18,
       "allocedBytesPerOp": 5832
     },
@@ -18,11 +18,11 @@
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "Twitter API",
     "apiCount": 128,
-    "memBytes": 1041088,
+    "memBytes": 1040848,
     "bench": {
-      "nsPerOp": 10537,
+      "nsPerOp": 10656,
       "allocsPerOp": 27,
-      "allocedBytesPerOp": 6882
+      "allocedBytesPerOp": 6881
     },
     "hitPrecent": 100,
     "hitFile": "1-1.json"
@@ -32,9 +32,9 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Twitter API",
     "apiCount": 128,
-    "memBytes": 122920,
+    "memBytes": 132088,
     "bench": {
-      "nsPerOp": 4576,
+      "nsPerOp": 4424,
       "allocsPerOp": 19,
       "allocedBytesPerOp": 5916
     },

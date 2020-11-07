@@ -17,20 +17,12 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/issue9/utils"
-
 	"github.com/caixw/go-http-routers-testing/apis"
 	"github.com/caixw/go-http-routers-testing/routers"
 )
 
 // JSON 输出 JSON 数据，数据按路由进行分组。
 func JSON(dir string, log io.Writer) error {
-	if !utils.FileExists(dir) {
-		if err := os.Mkdir(dir, os.ModePerm); err != nil {
-			return err
-		}
-	}
-
 	sort.SliceStable(apis.APIS, func(i, j int) bool {
 		return apis.APIS[i].Name > apis.APIS[j].Name
 	})
