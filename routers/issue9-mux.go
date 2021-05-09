@@ -7,8 +7,10 @@ package routers
 import (
 	"net/http"
 
+	"github.com/issue9/mux/v4"
+	"github.com/issue9/mux/v4/group"
+
 	"github.com/caixw/go-http-routers-testing/apis"
-	"github.com/issue9/mux/v3"
 )
 
 func init() {
@@ -20,10 +22,14 @@ func init() {
 }
 
 func issue9MuxLoad(apis []*apis.API) http.Handler {
-	mux := mux.New(false, false, false, nil, nil)
+	mux := mux.Default()
+	r, ok := mux.NewRouter("any", group.MatcherFunc(group.Any))
+	if !ok {
+		panic("初始化 issue9-mux 出错")
+	}
 
 	for _, api := range apis {
-		err := mux.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
+		err := r.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
 		if err != nil {
 			panic(err)
 		}

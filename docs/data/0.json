@@ -6,9 +6,9 @@
     "apiCount": 478,
     "memBytes": 212912,
     "bench": {
-      "nsPerOp": 4924,
+      "nsPerOp": 6086,
       "allocsPerOp": 20,
-      "allocedBytesPerOp": 6078
+      "allocedBytesPerOp": 6076
     },
     "hitPrecent": 99,
     "hitFile": "0-0.json"
@@ -18,11 +18,11 @@
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "所有",
     "apiCount": 478,
-    "memBytes": 3567696,
+    "memBytes": 3556592,
     "bench": {
-      "nsPerOp": 39542,
+      "nsPerOp": 44267,
       "allocsPerOp": 27,
-      "allocedBytesPerOp": 7105
+      "allocedBytesPerOp": 7101
     },
     "hitPrecent": 100,
     "hitFile": "0-1.json"
@@ -32,11 +32,11 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "所有",
     "apiCount": 478,
-    "memBytes": 504176,
+    "memBytes": 493256,
     "bench": {
-      "nsPerOp": 5258,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 6345
+      "nsPerOp": 6551,
+      "allocsPerOp": 22,
+      "allocedBytesPerOp": 6377
     },
     "hitPrecent": 100,
     "hitFile": "0-2.json"

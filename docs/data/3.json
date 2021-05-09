@@ -6,7 +6,7 @@
     "apiCount": 2,
     "memBytes": 1160,
     "bench": {
-      "nsPerOp": 3643,
+      "nsPerOp": 4188,
       "allocsPerOp": 19,
       "allocedBytesPerOp": 5825
     },
@@ -18,11 +18,11 @@
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "Discuz Routes",
     "apiCount": 2,
-    "memBytes": 32216,
+    "memBytes": 31984,
     "bench": {
-      "nsPerOp": 9073,
+      "nsPerOp": 11441,
       "allocsPerOp": 28,
-      "allocedBytesPerOp": 7164
+      "allocedBytesPerOp": 7166
     },
     "hitPrecent": 100,
     "hitFile": "3-1.json"
@@ -32,11 +32,11 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Discuz Routes",
     "apiCount": 2,
-    "memBytes": 5304,
+    "memBytes": 2920,
     "bench": {
-      "nsPerOp": 4623,
-      "allocsPerOp": 23,
-      "allocedBytesPerOp": 6592
+      "nsPerOp": 5159,
+      "allocsPerOp": 24,
+      "allocedBytesPerOp": 6616
     },
     "hitPrecent": 100,
     "hitFile": "3-2.json"
