@@ -15,15 +15,15 @@ import (
 
 func init() {
 	Routers = append(Routers, &Router{
-		Name: "issue9-mux",
+		Name: "issue9-mux/v4",
 		URL:  "https://github.com/issue9/mux",
 		Load: issue9MuxLoad,
 	})
 }
 
 func issue9MuxLoad(apis []*apis.API) http.Handler {
-	mux := mux.Default()
-	r, ok := mux.NewRouter("any", group.MatcherFunc(group.Any))
+	m := mux.Default()
+	r, ok := m.NewRouter("any", group.MatcherFunc(group.Any))
 	if !ok {
 		panic("初始化 issue9-mux 出错")
 	}
@@ -35,5 +35,5 @@ func issue9MuxLoad(apis []*apis.API) http.Handler {
 		}
 	}
 
-	return mux
+	return m
 }

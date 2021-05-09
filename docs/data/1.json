@@ -1,12 +1,12 @@
 [
   {
-    "routerName": "dimfeld-httptreemux",
+    "routerName": "dimfeld-httptreemux/v5",
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "Twitter API",
     "apiCount": 128,
     "memBytes": 64872,
     "bench": {
-      "nsPerOp": 4727,
+      "nsPerOp": 4643,
       "allocsPerOp": 18,
       "allocedBytesPerOp": 5828
     },
@@ -14,27 +14,27 @@
     "hitFile": "1-0.json"
   },
   {
-    "routerName": "gorilla-mux",
+    "routerName": "gorilla-mux/v1.8",
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "Twitter API",
     "apiCount": 128,
     "memBytes": 1036808,
     "bench": {
-      "nsPerOp": 11649,
+      "nsPerOp": 11550,
       "allocsPerOp": 27,
-      "allocedBytesPerOp": 6884
+      "allocedBytesPerOp": 6882
     },
     "hitPrecent": 100,
     "hitFile": "1-1.json"
   },
   {
-    "routerName": "issue9-mux",
+    "routerName": "issue9-mux/v4",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Twitter API",
     "apiCount": 128,
     "memBytes": 127440,
     "bench": {
-      "nsPerOp": 5242,
+      "nsPerOp": 5332,
       "allocsPerOp": 20,
       "allocedBytesPerOp": 5938
     },

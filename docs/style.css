@@ -25,10 +25,11 @@
 }
 
 body {
-    max-width: 1024px;
+    max-width: 1000px;
     margin: auto;
     color: var(--primary);
     background-color: var(--background);
+    padding: 5px;
 }
 
 a, a:link {

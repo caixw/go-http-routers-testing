@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT
 // license that can be found in the LICENSE file.
 
-// Package routers 各类路由包的定义处。
+// Package routers 各类路由包的定义处
 package routers
 
 import (
@@ -19,8 +19,7 @@ type Load func(apis []*apis.API) http.Handler
 
 // Router 路由的相关信息
 type Router struct {
-	// 路由的名称，建议使用 owner-reop 的形式命名，
-	Name string
+	Name string // 路由的名称，建议使用 owner-repo 的形式命名。
 	URL  string
 	Load Load
 }

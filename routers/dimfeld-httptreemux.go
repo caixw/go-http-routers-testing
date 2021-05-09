@@ -7,13 +7,14 @@ package routers
 import (
 	"net/http"
 
-	"github.com/caixw/go-http-routers-testing/apis"
 	"github.com/dimfeld/httptreemux/v5"
+
+	"github.com/caixw/go-http-routers-testing/apis"
 )
 
 func init() {
 	Routers = append(Routers, &Router{
-		Name: "dimfeld-httptreemux",
+		Name: "dimfeld-httptreemux/v5",
 		URL:  "https://github.com/dimfeld/httptreemux",
 		Load: dimfeldHTTPTreeMuxLoad,
 	})

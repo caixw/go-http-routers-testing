@@ -5,24 +5,25 @@ package routers
 import (
 	"net/http"
 
-	"github.com/caixw/go-http-routers-testing/apis"
 	"github.com/gorilla/mux"
+
+	"github.com/caixw/go-http-routers-testing/apis"
 )
 
 func init() {
 	Routers = append(Routers, &Router{
-		Name: "gorilla-mux",
+		Name: "gorilla-mux/v1.8",
 		URL:  "https://github.com/gorilla/mux",
 		Load: gorillaMuxLoad,
 	})
 }
 
 func gorillaMuxLoad(apis []*apis.API) http.Handler {
-	mux := mux.NewRouter()
+	router := mux.NewRouter()
 
 	for _, api := range apis {
-		mux.HandleFunc(api.Brace, defaultHandleFunc).Methods(api.Method)
+		router.HandleFunc(api.Brace, defaultHandleFunc).Methods(api.Method)
 	}
 
-	return mux
+	return router
 }
