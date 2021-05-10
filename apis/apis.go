@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT
 // license that can be found in the LICENSE file.
 
-// Package apis 预定义的各类型的 API 数据。
+// Package apis 预定义的各类型的 API 数据
 package apis
 
 import "strings"

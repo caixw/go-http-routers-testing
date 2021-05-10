@@ -3,22 +3,6 @@
 *.a
 *.so
 
-# Folders
-_obj
-_test
-
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
-
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
-
-_testmain.go
-
 *.exe
 *.test
 *.prof
@@ -26,8 +10,10 @@ _testmain.go
 # osx
 .DS_Store
 
-#vim
+# ide
 *.swp
+.idea/
+.vscode/
 
 # app
 go-http-routers-testing

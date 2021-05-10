@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT
 // license that can be found in the LICENSE file.
 
+// Package data 处理数据
 package data
 
 import (
@@ -60,9 +61,7 @@ func JSON(dir string, log io.Writer) error {
 		fmt.Fprintf(log, "完成 %v 测试\n\n", c.Name)
 	} // end for routers.Routers
 
-	writeJSON(filepath.Join(dir, "env.json"), env)
-
-	return nil
+	return writeJSON(filepath.Join(dir, "env.json"), env)
 }
 
 func writeJSON(path string, obj interface{}) error {
@@ -75,10 +74,10 @@ func writeJSON(path string, obj interface{}) error {
 	if err != nil {
 		return err
 	}
-	f.Write(bs)
-	f.Close()
+	defer f.Close()
 
-	return nil
+	_, err = f.Write(bs)
+	return err
 }
 
 func getEnv() *env {
