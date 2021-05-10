@@ -29,7 +29,7 @@ body {
     margin: auto;
     color: var(--primary);
     background-color: var(--background);
-    padding: 5px;
+    padding: 10px;
 }
 
 a, a:link {
@@ -58,6 +58,7 @@ table {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
+    word-break: break-all;
 }
 
 table th {
