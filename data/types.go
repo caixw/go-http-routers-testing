@@ -20,7 +20,7 @@ type item struct {
 	APICount   int    `json:"apiCount"`       // 本次测试的 API 数量
 	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
 	Bench      *bench `json:"bench"`          // 所有的性能数据
-	HitPrecent int    `json:"hitPrecent"`     // 命中率
+	HitPercent int    `json:"hitPercent"`     // 命中率
 	HitFile    string `json:"hitFile"`        // 保存 hit 记录的文件名
 	Hits       []*hit `json:"hits,omitempty"` // 所有的命中数据
 }
