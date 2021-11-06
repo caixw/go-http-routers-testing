@@ -74,7 +74,7 @@
             const item = data[i]
             const b = item.bench
             const link = `<a href="${item.routerURL}">${item.routerName}</a>`
-            const hit = `<a href="hit.html?${item.hitFile}">${item.hitPrecent}%</a>`
+            const hit = `<a href="hit.html?${item.hitFile}">${item.hitPercent}%</a>`
             table.append(link, b.nsPerOp + ' ns/op', b.allocedBytesPerOp + ' B/op', b.allocsPerOp + ' allocs/op', item.memBytes+' Bytes', hit)
           }
         }).catch(reason=>{
