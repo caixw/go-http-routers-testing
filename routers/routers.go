@@ -12,7 +12,7 @@ import (
 )
 
 // Routers 所有的路由
-var Routers = []*Router{}
+var Routers = make([]*Router, 0, 10)
 
 // Load 加载路由的函数
 type Load func(apis []*apis.API) http.Handler

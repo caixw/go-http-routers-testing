@@ -1,0 +1,127 @@
+// SPDX-License-Identifier: MIT
+
+package apis
+
+import "net/http"
+
+func init() {
+	params5.init()
+}
+
+var params5 = &Collection{
+	Name: "5 Params",
+	Desc: "五个参数的路由",
+	APIS: []*API{
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/01/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/02/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/03/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/04/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/05/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/06/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/07/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/08/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/09/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/00/{p2}/10/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v0/{p1}/01/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/02/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/03/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/04/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/05/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/06/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/07/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/08/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/09/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/10/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v0/{p1}/11/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/12/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/13/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/14/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/15/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/16/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/17/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/18/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/19/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/20/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v0/{p1}/21/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/22/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/23/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/24/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/25/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/26/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/27/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/28/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/29/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v0/{p1}/30/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		// v1
+
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/01/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/02/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/03/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/04/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/05/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/06/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/07/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/08/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/09/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/00/{p2}/10/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v1/{p1}/01/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/02/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/03/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/04/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/05/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/06/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/07/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/08/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/09/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/10/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v1/{p1}/11/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/12/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/13/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/14/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/15/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/16/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/17/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/18/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/19/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/20/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html"},
+
+		{Method: http.MethodGet, Brace: "/v1/{p1}/21/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/22/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/23/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/24/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/25/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/26/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/27/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/28/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/29/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html"},
+		{Method: http.MethodGet, Brace: "/v1/{p1}/30/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html"},
+	},
+}
