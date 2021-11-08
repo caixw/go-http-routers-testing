@@ -14,5 +14,7 @@ import (
 const docsDir = "./docs"
 
 func main() {
-	data.JSON(filepath.Join(docsDir, "data"), os.Stdout)
+	if err := data.JSON(filepath.Join(docsDir, "data"), os.Stdout); err != nil {
+		panic(err)
+	}
 }

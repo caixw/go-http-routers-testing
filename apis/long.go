@@ -13,7 +13,7 @@ var long = &Collection{
 	Desc: "路径很长的路由项",
 	APIS: []*API{
 		{Method: http.MethodGet, Brace: "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},
-		{Method: http.MethodGet, Brace: "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},
+		{Method: http.MethodPut, Brace: "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},
 		{Method: http.MethodPut, Brace: "/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},
 		{Method: http.MethodPut, Brace: "/looooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},
 		{Method: http.MethodPut, Brace: "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},

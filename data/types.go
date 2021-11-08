@@ -14,9 +14,10 @@ type env struct {
 
 // 每个 API 对应的路由测试数据
 type item struct {
-	RouterName string `json:"routerName"`     // 路由的名称
-	RouterURL  string `json:"routerURL"`      // 路由工具的 URL
-	APIName    string `json:"apiName"`        // API 名称
+	RouterName string `json:"routerName"` // 路由的名称
+	RouterURL  string `json:"routerURL"`  // 路由工具的 URL
+	APIName    string `json:"apiName"`    // API 名称
+	APIDesc    string `json:"apiDesc"`
 	APICount   int    `json:"apiCount"`       // 本次测试的 API 数量
 	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
 	Bench      *bench `json:"bench"`          // 所有的性能数据

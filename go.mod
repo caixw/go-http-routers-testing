@@ -6,4 +6,6 @@ require (
 	github.com/issue9/mux/v4 v4.0.0
 )
 
-go 1.16
+go 1.17
+
+replace github.com/issue9/mux/v5 => /Users/caixw/dev.localized/issue9/mux

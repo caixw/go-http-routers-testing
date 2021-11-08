@@ -94,6 +94,7 @@ func single(c *apis.Collection, r *routers.Router) *item {
 		RouterName: r.Name,
 		RouterURL:  r.URL,
 		APIName:    c.Name,
+		APIDesc:    c.Desc,
 		APICount:   len(c.APIS),
 	}
 

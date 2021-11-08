@@ -1,35 +1,35 @@
 <html lang="zh-cnm-Hans">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8"/>
     <title>Go 路由功能测试数据</title>
-    <meta name="generator" content="https://github.com/caixw/go-http-routers-testing" />
-    <meta name="author" content="https://caixw.io" />
-    <meta name="keywords" content="go,golang,benchmark,testing,route,routes,router,mux" />
-    <meta name="description" content="Google Go 语言主要路由功能、性能测试工具。" />
-    <link rel="icon" href="./favicon.ico" />
-    <link href="./style.css" type="text/css" rel="stylesheet" />
+    <meta name="generator" content="https://github.com/caixw/go-http-routers-testing"/>
+    <meta name="author" content="https://caixw.io"/>
+    <meta name="keywords" content="go,golang,benchmark,testing,route,routes,router,mux"/>
+    <meta name="description" content="Google Go 语言主要路由功能、性能测试工具。"/>
+    <link rel="icon" href="./favicon.ico"/>
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
     <script src="./table.js"></script>
-  </head>
+</head>
 
-  <body>
-    <article id="article">
-      <h1>Go 路由功能测试数据</h1>
-    </article>
+<body>
+<article id="article">
+    <h1>Go 路由功能测试数据</h1>
+</article>
 
-    <footer>
-      <p>&copy; 2017-2021 by
+<footer>
+    <p>&copy; 2017-2021 by
         <a href="https://caixw.io">caixw</a> &middot;
         <a href="https://github.com/caixw/go-http-routers-testing">Github</a>
-      </p>
-    </footer>
-    <script>
-      const root = './data/'
-      const file = window.location.search.substr(1)
-      console.info('加载数据文件：', file)
+    </p>
+</footer>
+<script>
+    const root = './data/'
+    const file = window.location.search.substr(1)
+    console.info('加载数据文件：', file)
 
-      fetch(root + file).then(resp => {
+    fetch(root + file).then(resp => {
         return resp.json()
-      }).then(data => {
+    }).then(data => {
         // section
         const section = document.createElement('section')
         document.getElementById('article').appendChild(section)
@@ -39,13 +39,13 @@
         section.appendChild(table.inst())
 
         for (let i in data) {
-          const item = data[i]
-          table.append(item.method + ' ' + item.want, item.path, item.body, item.ok)
+            const item = data[i]
+            table.append(item.method + ' ' + item.want, item.path, item.body, item.ok)
         }
-      }).catch(reason => {
+    }).catch(reason => {
         throw reason
-      })
-    </script>
-  </body>
+    })
+</script>
+</body>
 </html>
 

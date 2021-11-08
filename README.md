@@ -18,6 +18,12 @@ go get github.com/caixw/go-http-routers-testing
 go run main.go -test.benchtime=5s
 ```
 
+如果要本地查看数据，请运行：
+
+```shell
+go run ./serve.go
+```
+
 ## 协作
 
 不要提交 /docs/data 下的数据，该数据由本人统一产生。
