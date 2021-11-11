@@ -3,42 +3,45 @@
     "routerName": "dimfeld-httptreemux/v5",
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "所有",
-    "apiCount": 478,
-    "memBytes": 212912,
+    "apiDesc": "所有接口混合测试",
+    "apiCount": 841,
+    "memBytes": 512224,
     "bench": {
-      "nsPerOp": 5372,
-      "allocsPerOp": 20,
-      "allocedBytesPerOp": 6075
+      "nsPerOp": 6529,
+      "allocsPerOp": 21,
+      "allocedBytesPerOp": 6190
     },
-    "hitPrecent": 99,
+    "hitPercent": 99,
     "hitFile": "0-0.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "所有",
-    "apiCount": 478,
-    "memBytes": 3556360,
+    "apiDesc": "所有接口混合测试",
+    "apiCount": 841,
+    "memBytes": 7240608,
     "bench": {
-      "nsPerOp": 42462,
+      "nsPerOp": 57034,
       "allocsPerOp": 27,
-      "allocedBytesPerOp": 7095
+      "allocedBytesPerOp": 7140
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "0-1.json"
   },
   {
-    "routerName": "issue9-mux/v4",
+    "routerName": "issue9-mux/v5",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "所有",
-    "apiCount": 478,
-    "memBytes": 493408,
+    "apiDesc": "所有接口混合测试",
+    "apiCount": 841,
+    "memBytes": 3024736,
     "bench": {
-      "nsPerOp": 5899,
-      "allocsPerOp": 22,
-      "allocedBytesPerOp": 6377
+      "nsPerOp": 5739,
+      "allocsPerOp": 20,
+      "allocedBytesPerOp": 6191
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "0-2.json"
   }
 ]

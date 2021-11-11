@@ -1,0 +1,47 @@
+[
+  {
+    "routerName": "dimfeld-httptreemux/v5",
+    "routerURL": "https://github.com/dimfeld/httptreemux",
+    "apiName": "Discuz Routes",
+    "apiDesc": "DZ 风格的路由定义",
+    "apiCount": 2,
+    "memBytes": 1160,
+    "bench": {
+      "nsPerOp": 3836,
+      "allocsPerOp": 19,
+      "allocedBytesPerOp": 5825
+    },
+    "hitPercent": 0,
+    "hitFile": "4-0.json"
+  },
+  {
+    "routerName": "gorilla-mux/v1.8",
+    "routerURL": "https://github.com/gorilla/mux",
+    "apiName": "Discuz Routes",
+    "apiDesc": "DZ 风格的路由定义",
+    "apiCount": 2,
+    "memBytes": 31712,
+    "bench": {
+      "nsPerOp": 8911,
+      "allocsPerOp": 28,
+      "allocedBytesPerOp": 7154
+    },
+    "hitPercent": 100,
+    "hitFile": "4-1.json"
+  },
+  {
+    "routerName": "issue9-mux/v5",
+    "routerURL": "https://github.com/issue9/mux",
+    "apiName": "Discuz Routes",
+    "apiDesc": "DZ 风格的路由定义",
+    "apiCount": 2,
+    "memBytes": 4992,
+    "bench": {
+      "nsPerOp": 4852,
+      "allocsPerOp": 21,
+      "allocedBytesPerOp": 6253
+    },
+    "hitPercent": 100,
+    "hitFile": "4-2.json"
+  }
+]

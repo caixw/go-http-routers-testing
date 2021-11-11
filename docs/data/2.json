@@ -2,43 +2,46 @@
   {
     "routerName": "dimfeld-httptreemux/v5",
     "routerURL": "https://github.com/dimfeld/httptreemux",
-    "apiName": "Github API",
-    "apiCount": 348,
-    "memBytes": 146608,
+    "apiName": "Long Routes",
+    "apiDesc": "路径很长的路由项",
+    "apiCount": 13,
+    "memBytes": 17520,
     "bench": {
-      "nsPerOp": 5550,
+      "nsPerOp": 6539,
       "allocsPerOp": 21,
-      "allocedBytesPerOp": 6166
+      "allocedBytesPerOp": 6999
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "2-0.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
     "routerURL": "https://github.com/gorilla/mux",
-    "apiName": "Github API",
-    "apiCount": 348,
-    "memBytes": 3591288,
+    "apiName": "Long Routes",
+    "apiDesc": "路径很长的路由项",
+    "apiCount": 13,
+    "memBytes": 836688,
     "bench": {
-      "nsPerOp": 43789,
-      "allocsPerOp": 27,
-      "allocedBytesPerOp": 7164
+      "nsPerOp": 14308,
+      "allocsPerOp": 28,
+      "allocedBytesPerOp": 7983
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "2-1.json"
   },
   {
-    "routerName": "issue9-mux/v4",
+    "routerName": "issue9-mux/v5",
     "routerURL": "https://github.com/issue9/mux",
-    "apiName": "Github API",
-    "apiCount": 348,
-    "memBytes": 353408,
+    "apiName": "Long Routes",
+    "apiDesc": "路径很长的路由项",
+    "apiCount": 13,
+    "memBytes": 30824,
     "bench": {
-      "nsPerOp": 5982,
-      "allocsPerOp": 23,
-      "allocedBytesPerOp": 6536
+      "nsPerOp": 6478,
+      "allocsPerOp": 21,
+      "allocedBytesPerOp": 7071
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "2-2.json"
   }
 ]

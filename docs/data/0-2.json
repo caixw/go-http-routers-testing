@@ -2452,6 +2452,2547 @@
   {
     "ok": true,
     "method": "GET",
+    "path": "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/looooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/looooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/looooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/looooooooooooooooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/looooooooooooooooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/looooooooooooooooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/looooooooooooooooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html",
+    "want": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p2}.html",
+    "body": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogooooooooooooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html",
+    "want": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html",
+    "body": "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/loooooooooooogoooooooooooooooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html",
+    "want": "/loooooooooooogoooooooooooooooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html",
+    "body": "/loooooooooooogoooooooooooooooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/p1/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/loooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/p1/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html",
+    "want": "/loooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html",
+    "body": "/loooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/p1/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/0/p2.html",
+    "want": "/v0/{p1}/0/{p2}.html",
+    "body": "/v0/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/1/p2.html",
+    "want": "/v0/{p1}/1/{p2}.html",
+    "body": "/v0/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/2/p2.html",
+    "want": "/v0/{p1}/2/{p2}.html",
+    "body": "/v0/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/3/p2.html",
+    "want": "/v0/{p1}/3/{p2}.html",
+    "body": "/v0/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/4/p2.html",
+    "want": "/v0/{p1}/4/{p2}.html",
+    "body": "/v0/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/5/p2.html",
+    "want": "/v0/{p1}/5/{p2}.html",
+    "body": "/v0/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/6/p2.html",
+    "want": "/v0/{p1}/6/{p2}.html",
+    "body": "/v0/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/7/p2.html",
+    "want": "/v0/{p1}/7/{p2}.html",
+    "body": "/v0/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/8/p2.html",
+    "want": "/v0/{p1}/8/{p2}.html",
+    "body": "/v0/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/9/p2.html",
+    "want": "/v0/{p1}/9/{p2}.html",
+    "body": "/v0/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/0/p2.html",
+    "want": "/v1/{p1}/0/{p2}.html",
+    "body": "/v1/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/1/p2.html",
+    "want": "/v1/{p1}/1/{p2}.html",
+    "body": "/v1/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/2/p2.html",
+    "want": "/v1/{p1}/2/{p2}.html",
+    "body": "/v1/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/3/p2.html",
+    "want": "/v1/{p1}/3/{p2}.html",
+    "body": "/v1/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/4/p2.html",
+    "want": "/v1/{p1}/4/{p2}.html",
+    "body": "/v1/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/5/p2.html",
+    "want": "/v1/{p1}/5/{p2}.html",
+    "body": "/v1/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/6/p2.html",
+    "want": "/v1/{p1}/6/{p2}.html",
+    "body": "/v1/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/7/p2.html",
+    "want": "/v1/{p1}/7/{p2}.html",
+    "body": "/v1/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/8/p2.html",
+    "want": "/v1/{p1}/8/{p2}.html",
+    "body": "/v1/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/9/p2.html",
+    "want": "/v1/{p1}/9/{p2}.html",
+    "body": "/v1/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/0/p2.html",
+    "want": "/v2/{p1}/0/{p2}.html",
+    "body": "/v2/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/1/p2.html",
+    "want": "/v2/{p1}/1/{p2}.html",
+    "body": "/v2/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/2/p2.html",
+    "want": "/v2/{p1}/2/{p2}.html",
+    "body": "/v2/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/3/p2.html",
+    "want": "/v2/{p1}/3/{p2}.html",
+    "body": "/v2/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/4/p2.html",
+    "want": "/v2/{p1}/4/{p2}.html",
+    "body": "/v2/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/5/p2.html",
+    "want": "/v2/{p1}/5/{p2}.html",
+    "body": "/v2/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/6/p2.html",
+    "want": "/v2/{p1}/6/{p2}.html",
+    "body": "/v2/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/7/p2.html",
+    "want": "/v2/{p1}/7/{p2}.html",
+    "body": "/v2/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/8/p2.html",
+    "want": "/v2/{p1}/8/{p2}.html",
+    "body": "/v2/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v2/p1/9/p2.html",
+    "want": "/v2/{p1}/9/{p2}.html",
+    "body": "/v2/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/0/p2.html",
+    "want": "/v3/{p1}/0/{p2}.html",
+    "body": "/v3/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/1/p2.html",
+    "want": "/v3/{p1}/1/{p2}.html",
+    "body": "/v3/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/2/p2.html",
+    "want": "/v3/{p1}/2/{p2}.html",
+    "body": "/v3/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/3/p2.html",
+    "want": "/v3/{p1}/3/{p2}.html",
+    "body": "/v3/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/4/p2.html",
+    "want": "/v3/{p1}/4/{p2}.html",
+    "body": "/v3/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/5/p2.html",
+    "want": "/v3/{p1}/5/{p2}.html",
+    "body": "/v3/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/6/p2.html",
+    "want": "/v3/{p1}/6/{p2}.html",
+    "body": "/v3/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/7/p2.html",
+    "want": "/v3/{p1}/7/{p2}.html",
+    "body": "/v3/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/8/p2.html",
+    "want": "/v3/{p1}/8/{p2}.html",
+    "body": "/v3/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v3/p1/9/p2.html",
+    "want": "/v3/{p1}/9/{p2}.html",
+    "body": "/v3/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/0/p2.html",
+    "want": "/v4/{p1}/0/{p2}.html",
+    "body": "/v4/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/1/p2.html",
+    "want": "/v4/{p1}/1/{p2}.html",
+    "body": "/v4/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/2/p2.html",
+    "want": "/v4/{p1}/2/{p2}.html",
+    "body": "/v4/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/3/p2.html",
+    "want": "/v4/{p1}/3/{p2}.html",
+    "body": "/v4/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/4/p2.html",
+    "want": "/v4/{p1}/4/{p2}.html",
+    "body": "/v4/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/5/p2.html",
+    "want": "/v4/{p1}/5/{p2}.html",
+    "body": "/v4/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/6/p2.html",
+    "want": "/v4/{p1}/6/{p2}.html",
+    "body": "/v4/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/7/p2.html",
+    "want": "/v4/{p1}/7/{p2}.html",
+    "body": "/v4/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/8/p2.html",
+    "want": "/v4/{p1}/8/{p2}.html",
+    "body": "/v4/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v4/p1/9/p2.html",
+    "want": "/v4/{p1}/9/{p2}.html",
+    "body": "/v4/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/0/p2.html",
+    "want": "/v0/{p1}/0/{p2}.html",
+    "body": "/v0/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/1/p2.html",
+    "want": "/v0/{p1}/1/{p2}.html",
+    "body": "/v0/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/2/p2.html",
+    "want": "/v0/{p1}/2/{p2}.html",
+    "body": "/v0/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/3/p2.html",
+    "want": "/v0/{p1}/3/{p2}.html",
+    "body": "/v0/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/4/p2.html",
+    "want": "/v0/{p1}/4/{p2}.html",
+    "body": "/v0/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/5/p2.html",
+    "want": "/v0/{p1}/5/{p2}.html",
+    "body": "/v0/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/6/p2.html",
+    "want": "/v0/{p1}/6/{p2}.html",
+    "body": "/v0/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/7/p2.html",
+    "want": "/v0/{p1}/7/{p2}.html",
+    "body": "/v0/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/8/p2.html",
+    "want": "/v0/{p1}/8/{p2}.html",
+    "body": "/v0/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v0/p1/9/p2.html",
+    "want": "/v0/{p1}/9/{p2}.html",
+    "body": "/v0/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/0/p2.html",
+    "want": "/v1/{p1}/0/{p2}.html",
+    "body": "/v1/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/1/p2.html",
+    "want": "/v1/{p1}/1/{p2}.html",
+    "body": "/v1/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/2/p2.html",
+    "want": "/v1/{p1}/2/{p2}.html",
+    "body": "/v1/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/3/p2.html",
+    "want": "/v1/{p1}/3/{p2}.html",
+    "body": "/v1/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/4/p2.html",
+    "want": "/v1/{p1}/4/{p2}.html",
+    "body": "/v1/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/5/p2.html",
+    "want": "/v1/{p1}/5/{p2}.html",
+    "body": "/v1/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/6/p2.html",
+    "want": "/v1/{p1}/6/{p2}.html",
+    "body": "/v1/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/7/p2.html",
+    "want": "/v1/{p1}/7/{p2}.html",
+    "body": "/v1/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/8/p2.html",
+    "want": "/v1/{p1}/8/{p2}.html",
+    "body": "/v1/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v1/p1/9/p2.html",
+    "want": "/v1/{p1}/9/{p2}.html",
+    "body": "/v1/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/0/p2.html",
+    "want": "/v2/{p1}/0/{p2}.html",
+    "body": "/v2/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/1/p2.html",
+    "want": "/v2/{p1}/1/{p2}.html",
+    "body": "/v2/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/2/p2.html",
+    "want": "/v2/{p1}/2/{p2}.html",
+    "body": "/v2/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/3/p2.html",
+    "want": "/v2/{p1}/3/{p2}.html",
+    "body": "/v2/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/4/p2.html",
+    "want": "/v2/{p1}/4/{p2}.html",
+    "body": "/v2/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/5/p2.html",
+    "want": "/v2/{p1}/5/{p2}.html",
+    "body": "/v2/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/6/p2.html",
+    "want": "/v2/{p1}/6/{p2}.html",
+    "body": "/v2/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/7/p2.html",
+    "want": "/v2/{p1}/7/{p2}.html",
+    "body": "/v2/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/8/p2.html",
+    "want": "/v2/{p1}/8/{p2}.html",
+    "body": "/v2/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v2/p1/9/p2.html",
+    "want": "/v2/{p1}/9/{p2}.html",
+    "body": "/v2/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/0/p2.html",
+    "want": "/v3/{p1}/0/{p2}.html",
+    "body": "/v3/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/1/p2.html",
+    "want": "/v3/{p1}/1/{p2}.html",
+    "body": "/v3/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/2/p2.html",
+    "want": "/v3/{p1}/2/{p2}.html",
+    "body": "/v3/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/3/p2.html",
+    "want": "/v3/{p1}/3/{p2}.html",
+    "body": "/v3/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/4/p2.html",
+    "want": "/v3/{p1}/4/{p2}.html",
+    "body": "/v3/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/5/p2.html",
+    "want": "/v3/{p1}/5/{p2}.html",
+    "body": "/v3/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/6/p2.html",
+    "want": "/v3/{p1}/6/{p2}.html",
+    "body": "/v3/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/7/p2.html",
+    "want": "/v3/{p1}/7/{p2}.html",
+    "body": "/v3/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/8/p2.html",
+    "want": "/v3/{p1}/8/{p2}.html",
+    "body": "/v3/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v3/p1/9/p2.html",
+    "want": "/v3/{p1}/9/{p2}.html",
+    "body": "/v3/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/0/p2.html",
+    "want": "/v4/{p1}/0/{p2}.html",
+    "body": "/v4/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/1/p2.html",
+    "want": "/v4/{p1}/1/{p2}.html",
+    "body": "/v4/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/2/p2.html",
+    "want": "/v4/{p1}/2/{p2}.html",
+    "body": "/v4/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/3/p2.html",
+    "want": "/v4/{p1}/3/{p2}.html",
+    "body": "/v4/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/4/p2.html",
+    "want": "/v4/{p1}/4/{p2}.html",
+    "body": "/v4/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/5/p2.html",
+    "want": "/v4/{p1}/5/{p2}.html",
+    "body": "/v4/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/6/p2.html",
+    "want": "/v4/{p1}/6/{p2}.html",
+    "body": "/v4/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/7/p2.html",
+    "want": "/v4/{p1}/7/{p2}.html",
+    "body": "/v4/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/8/p2.html",
+    "want": "/v4/{p1}/8/{p2}.html",
+    "body": "/v4/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "POST",
+    "path": "/v4/p1/9/p2.html",
+    "want": "/v4/{p1}/9/{p2}.html",
+    "body": "/v4/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/0/p2.html",
+    "want": "/v0/{p1}/0/{p2}.html",
+    "body": "/v0/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/1/p2.html",
+    "want": "/v0/{p1}/1/{p2}.html",
+    "body": "/v0/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/2/p2.html",
+    "want": "/v0/{p1}/2/{p2}.html",
+    "body": "/v0/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/3/p2.html",
+    "want": "/v0/{p1}/3/{p2}.html",
+    "body": "/v0/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/4/p2.html",
+    "want": "/v0/{p1}/4/{p2}.html",
+    "body": "/v0/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/5/p2.html",
+    "want": "/v0/{p1}/5/{p2}.html",
+    "body": "/v0/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/6/p2.html",
+    "want": "/v0/{p1}/6/{p2}.html",
+    "body": "/v0/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/7/p2.html",
+    "want": "/v0/{p1}/7/{p2}.html",
+    "body": "/v0/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/8/p2.html",
+    "want": "/v0/{p1}/8/{p2}.html",
+    "body": "/v0/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v0/p1/9/p2.html",
+    "want": "/v0/{p1}/9/{p2}.html",
+    "body": "/v0/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/0/p2.html",
+    "want": "/v1/{p1}/0/{p2}.html",
+    "body": "/v1/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/1/p2.html",
+    "want": "/v1/{p1}/1/{p2}.html",
+    "body": "/v1/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/2/p2.html",
+    "want": "/v1/{p1}/2/{p2}.html",
+    "body": "/v1/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/3/p2.html",
+    "want": "/v1/{p1}/3/{p2}.html",
+    "body": "/v1/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/4/p2.html",
+    "want": "/v1/{p1}/4/{p2}.html",
+    "body": "/v1/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/5/p2.html",
+    "want": "/v1/{p1}/5/{p2}.html",
+    "body": "/v1/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/6/p2.html",
+    "want": "/v1/{p1}/6/{p2}.html",
+    "body": "/v1/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/7/p2.html",
+    "want": "/v1/{p1}/7/{p2}.html",
+    "body": "/v1/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/8/p2.html",
+    "want": "/v1/{p1}/8/{p2}.html",
+    "body": "/v1/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v1/p1/9/p2.html",
+    "want": "/v1/{p1}/9/{p2}.html",
+    "body": "/v1/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/0/p2.html",
+    "want": "/v2/{p1}/0/{p2}.html",
+    "body": "/v2/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/1/p2.html",
+    "want": "/v2/{p1}/1/{p2}.html",
+    "body": "/v2/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/2/p2.html",
+    "want": "/v2/{p1}/2/{p2}.html",
+    "body": "/v2/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/3/p2.html",
+    "want": "/v2/{p1}/3/{p2}.html",
+    "body": "/v2/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/4/p2.html",
+    "want": "/v2/{p1}/4/{p2}.html",
+    "body": "/v2/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/5/p2.html",
+    "want": "/v2/{p1}/5/{p2}.html",
+    "body": "/v2/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/6/p2.html",
+    "want": "/v2/{p1}/6/{p2}.html",
+    "body": "/v2/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/7/p2.html",
+    "want": "/v2/{p1}/7/{p2}.html",
+    "body": "/v2/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/8/p2.html",
+    "want": "/v2/{p1}/8/{p2}.html",
+    "body": "/v2/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v2/p1/9/p2.html",
+    "want": "/v2/{p1}/9/{p2}.html",
+    "body": "/v2/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/0/p2.html",
+    "want": "/v3/{p1}/0/{p2}.html",
+    "body": "/v3/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/1/p2.html",
+    "want": "/v3/{p1}/1/{p2}.html",
+    "body": "/v3/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/2/p2.html",
+    "want": "/v3/{p1}/2/{p2}.html",
+    "body": "/v3/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/3/p2.html",
+    "want": "/v3/{p1}/3/{p2}.html",
+    "body": "/v3/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/4/p2.html",
+    "want": "/v3/{p1}/4/{p2}.html",
+    "body": "/v3/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/5/p2.html",
+    "want": "/v3/{p1}/5/{p2}.html",
+    "body": "/v3/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/6/p2.html",
+    "want": "/v3/{p1}/6/{p2}.html",
+    "body": "/v3/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/7/p2.html",
+    "want": "/v3/{p1}/7/{p2}.html",
+    "body": "/v3/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/8/p2.html",
+    "want": "/v3/{p1}/8/{p2}.html",
+    "body": "/v3/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v3/p1/9/p2.html",
+    "want": "/v3/{p1}/9/{p2}.html",
+    "body": "/v3/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/0/p2.html",
+    "want": "/v4/{p1}/0/{p2}.html",
+    "body": "/v4/p1/0/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/1/p2.html",
+    "want": "/v4/{p1}/1/{p2}.html",
+    "body": "/v4/p1/1/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/2/p2.html",
+    "want": "/v4/{p1}/2/{p2}.html",
+    "body": "/v4/p1/2/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/3/p2.html",
+    "want": "/v4/{p1}/3/{p2}.html",
+    "body": "/v4/p1/3/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/4/p2.html",
+    "want": "/v4/{p1}/4/{p2}.html",
+    "body": "/v4/p1/4/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/5/p2.html",
+    "want": "/v4/{p1}/5/{p2}.html",
+    "body": "/v4/p1/5/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/6/p2.html",
+    "want": "/v4/{p1}/6/{p2}.html",
+    "body": "/v4/p1/6/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/7/p2.html",
+    "want": "/v4/{p1}/7/{p2}.html",
+    "body": "/v4/p1/7/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/8/p2.html",
+    "want": "/v4/{p1}/8/{p2}.html",
+    "body": "/v4/p1/8/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "PATCH",
+    "path": "/v4/p1/9/p2.html",
+    "want": "/v4/{p1}/9/{p2}.html",
+    "body": "/v4/p1/9/p2.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/01/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/00/{p2}/01/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/00/p2/01/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/02/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/00/{p2}/02/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/00/p2/02/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/03/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/00/{p2}/03/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/00/p2/03/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/04/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/00/{p2}/04/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/00/p2/04/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/05/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/00/{p2}/05/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/00/p2/05/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/06/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/00/{p2}/06/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/00/p2/06/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/07/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/00/{p2}/07/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/00/p2/07/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/08/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/00/{p2}/08/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/00/p2/08/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/09/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/00/{p2}/09/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/00/p2/09/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/00/p2/10/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/00/{p2}/10/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/00/p2/10/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/01/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/01/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/01/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/02/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/02/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/02/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/03/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/03/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/03/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/04/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/04/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/04/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/05/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/05/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/05/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/06/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/06/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/06/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/07/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/07/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/07/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/08/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/08/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/08/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/09/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/09/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/09/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/10/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/10/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/10/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/11/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/11/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/11/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/12/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/12/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/12/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/13/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/13/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/13/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/14/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/14/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/14/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/15/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/15/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/15/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/16/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/16/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/16/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/17/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/17/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/17/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/18/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/18/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/18/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/19/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/19/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/19/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/20/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/20/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/20/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/21/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/21/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/21/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/22/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/22/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/22/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/23/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/23/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/23/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/24/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/24/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/24/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/25/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/25/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/25/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/26/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/26/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/26/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/27/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/27/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/27/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/28/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/28/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/28/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/29/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/29/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/29/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v0/p1/30/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/30/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/30/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/01/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/00/{p2}/01/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/00/p2/01/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/02/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/00/{p2}/02/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/00/p2/02/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/03/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/00/{p2}/03/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/00/p2/03/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/04/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/00/{p2}/04/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/00/p2/04/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/05/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/00/{p2}/05/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/00/p2/05/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/06/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/00/{p2}/06/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/00/p2/06/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/07/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/00/{p2}/07/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/00/p2/07/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/08/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/00/{p2}/08/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/00/p2/08/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/09/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/00/{p2}/09/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/00/p2/09/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/00/p2/10/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/00/{p2}/10/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/00/p2/10/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/01/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/01/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/01/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/02/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/02/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/02/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/03/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/03/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/03/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/04/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/04/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/04/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/05/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/05/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/05/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/06/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/06/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/06/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/07/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/07/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/07/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/08/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/08/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/08/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/09/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/09/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/09/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/10/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/10/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/10/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/11/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/11/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/11/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/12/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/12/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/12/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/13/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/13/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/13/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/14/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/14/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/14/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/15/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/15/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/15/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/16/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/16/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/16/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/17/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/17/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/17/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/18/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/18/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/18/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/19/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/19/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/19/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/20/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/20/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/20/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/21/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/21/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/21/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/22/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/22/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/22/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/23/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/23/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/23/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/24/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/24/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/24/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/25/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/25/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/25/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/26/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/26/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/26/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/27/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/27/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/27/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/28/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/28/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/28/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/29/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/29/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/29/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
+    "path": "/v1/p1/30/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/30/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/30/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/00/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/00/{p2}/00/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/00/p2/00/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/01/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/00/{p2}/01/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/00/p2/01/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/02/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/00/{p2}/02/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/00/p2/02/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/03/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/00/{p2}/03/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/00/p2/03/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/04/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/00/{p2}/04/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/00/p2/04/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/05/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/00/{p2}/05/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/00/p2/05/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/06/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/00/{p2}/06/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/00/p2/06/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/07/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/00/{p2}/07/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/00/p2/07/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/08/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/00/{p2}/08/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/00/p2/08/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/09/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/00/{p2}/09/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/00/p2/09/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/00/p2/10/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/00/{p2}/10/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/00/p2/10/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/01/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/01/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/01/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/02/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/02/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/02/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/03/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/03/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/03/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/04/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/04/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/04/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/05/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/05/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/05/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/06/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/06/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/06/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/07/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/07/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/07/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/08/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/08/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/08/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/09/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/09/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/09/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/10/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/10/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/10/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/11/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/11/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/11/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/12/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/12/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/12/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/13/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/13/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/13/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/14/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/14/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/14/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/15/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/15/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/15/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/16/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/16/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/16/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/17/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/17/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/17/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/18/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/18/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/18/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/19/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/19/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/19/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/20/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/20/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/20/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/21/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v0/{p1}/21/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v0/p1/21/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/22/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v0/{p1}/22/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v0/p1/22/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/23/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v0/{p1}/23/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v0/p1/23/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/24/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v0/{p1}/24/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v0/p1/24/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/25/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v0/{p1}/25/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v0/p1/25/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/26/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v0/{p1}/26/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v0/p1/26/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/27/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v0/{p1}/27/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v0/p1/27/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/28/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v0/{p1}/28/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v0/p1/28/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/29/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v0/{p1}/29/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v0/p1/29/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v0/p1/30/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v0/{p1}/30/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v0/p1/30/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/00/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/00/{p2}/00/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/00/p2/00/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/01/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/00/{p2}/01/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/00/p2/01/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/02/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/00/{p2}/02/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/00/p2/02/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/03/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/00/{p2}/03/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/00/p2/03/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/04/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/00/{p2}/04/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/00/p2/04/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/05/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/00/{p2}/05/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/00/p2/05/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/06/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/00/{p2}/06/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/00/p2/06/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/07/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/00/{p2}/07/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/00/p2/07/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/08/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/00/{p2}/08/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/00/p2/08/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/09/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/00/{p2}/09/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/00/p2/09/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/00/p2/10/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/00/{p2}/10/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/00/p2/10/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/01/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/01/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/01/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/02/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/02/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/02/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/03/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/03/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/03/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/04/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/04/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/04/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/05/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/05/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/05/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/06/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/06/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/06/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/07/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/07/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/07/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/08/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/08/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/08/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/09/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/09/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/09/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/10/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/10/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/10/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/11/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/11/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/11/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/12/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/12/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/12/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/13/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/13/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/13/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/14/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/14/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/14/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/15/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/15/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/15/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/16/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/16/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/16/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/17/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/17/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/17/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/18/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/18/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/18/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/19/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/19/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/19/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/20/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/20/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/20/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/21/p2/00/p3/0000/p4/00000/p5.html",
+    "want": "/v1/{p1}/21/{p2}/00/{p3}/0000/{p4}/00000/{p5}.html",
+    "body": "/v1/p1/21/p2/00/p3/0000/p4/00000/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/22/p2/01/p3/0000/p4/00001/p5.html",
+    "want": "/v1/{p1}/22/{p2}/01/{p3}/0000/{p4}/00001/{p5}.html",
+    "body": "/v1/p1/22/p2/01/p3/0000/p4/00001/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/23/p2/02/p3/0000/p4/00002/p5.html",
+    "want": "/v1/{p1}/23/{p2}/02/{p3}/0000/{p4}/00002/{p5}.html",
+    "body": "/v1/p1/23/p2/02/p3/0000/p4/00002/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/24/p2/03/p3/0000/p4/00003/p5.html",
+    "want": "/v1/{p1}/24/{p2}/03/{p3}/0000/{p4}/00003/{p5}.html",
+    "body": "/v1/p1/24/p2/03/p3/0000/p4/00003/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/25/p2/04/p3/0000/p4/00004/p5.html",
+    "want": "/v1/{p1}/25/{p2}/04/{p3}/0000/{p4}/00004/{p5}.html",
+    "body": "/v1/p1/25/p2/04/p3/0000/p4/00004/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/26/p2/05/p3/0000/p4/00005/p5.html",
+    "want": "/v1/{p1}/26/{p2}/05/{p3}/0000/{p4}/00005/{p5}.html",
+    "body": "/v1/p1/26/p2/05/p3/0000/p4/00005/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/27/p2/06/p3/0000/p4/00006/p5.html",
+    "want": "/v1/{p1}/27/{p2}/06/{p3}/0000/{p4}/00006/{p5}.html",
+    "body": "/v1/p1/27/p2/06/p3/0000/p4/00006/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/28/p2/07/p3/0000/p4/00007/p5.html",
+    "want": "/v1/{p1}/28/{p2}/07/{p3}/0000/{p4}/00007/{p5}.html",
+    "body": "/v1/p1/28/p2/07/p3/0000/p4/00007/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/29/p2/08/p3/0000/p4/00008/p5.html",
+    "want": "/v1/{p1}/29/{p2}/08/{p3}/0000/{p4}/00008/{p5}.html",
+    "body": "/v1/p1/29/p2/08/p3/0000/p4/00008/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "PUT",
+    "path": "/v1/p1/30/p2/09/p3/0000/p4/00009/p5.html",
+    "want": "/v1/{p1}/30/{p2}/09/{p3}/0000/{p4}/00009/{p5}.html",
+    "body": "/v1/p1/30/p2/09/p3/0000/p4/00009/p5.html"
+  },
+  {
+    "ok": true,
+    "method": "GET",
     "path": "/oauth/authenticate",
     "want": "/oauth/authenticate",
     "body": "/oauth/authenticate"

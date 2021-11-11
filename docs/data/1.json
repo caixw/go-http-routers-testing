@@ -3,42 +3,45 @@
     "routerName": "dimfeld-httptreemux/v5",
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "Twitter API",
+    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
     "memBytes": 64872,
     "bench": {
-      "nsPerOp": 4643,
+      "nsPerOp": 4543,
       "allocsPerOp": 18,
       "allocedBytesPerOp": 5828
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "1-0.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "Twitter API",
+    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
     "memBytes": 1036808,
     "bench": {
-      "nsPerOp": 11550,
+      "nsPerOp": 10726,
       "allocsPerOp": 27,
-      "allocedBytesPerOp": 6882
+      "allocedBytesPerOp": 6881
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "1-1.json"
   },
   {
-    "routerName": "issue9-mux/v4",
+    "routerName": "issue9-mux/v5",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Twitter API",
+    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 127440,
+    "memBytes": 300848,
     "bench": {
-      "nsPerOp": 5332,
-      "allocsPerOp": 20,
-      "allocedBytesPerOp": 5938
+      "nsPerOp": 4615,
+      "allocsPerOp": 18,
+      "allocedBytesPerOp": 5838
     },
-    "hitPrecent": 100,
+    "hitPercent": 100,
     "hitFile": "1-2.json"
   }
 ]
