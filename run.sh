@@ -1,1 +1,1 @@
-go run main.go -test.benchtime=10s
+go run main.go -test.benchtime=30s

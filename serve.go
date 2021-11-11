@@ -12,7 +12,7 @@ import (
 const docsDir = "./docs"
 
 func main() {
-	p := flag.String("p", ":8080", "运行本地服务的端口，如果不指定则表示生成数据。")
+	p := flag.String("p", ":8080", "运行本地服务的端口")
 	flag.Parse()
 	if *p != "" {
 		if (*p)[0] != ':' {
