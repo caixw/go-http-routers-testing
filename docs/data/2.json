@@ -5,14 +5,29 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 17520,
+    "memBytes": 17544,
     "bench": {
-      "nsPerOp": 6539,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 6999
+      "nsPerOp": 4416,
+      "allocsPerOp": 17,
+      "allocedBytesPerOp": 2499
     },
     "hitPercent": 100,
     "hitFile": "2-0.json"
+  },
+  {
+    "routerName": "fasthttp-router",
+    "routerURL": "https://github.com/fasthttp/router",
+    "apiName": "Long Routes",
+    "apiDesc": "路径很长的路由项",
+    "apiCount": 13,
+    "memBytes": 77280,
+    "bench": {
+      "nsPerOp": 3315,
+      "allocsPerOp": 16,
+      "allocedBytesPerOp": 2640
+    },
+    "hitPercent": 100,
+    "hitFile": "2-1.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
@@ -20,14 +35,14 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 836688,
+    "memBytes": 836712,
     "bench": {
-      "nsPerOp": 14308,
-      "allocsPerOp": 28,
-      "allocedBytesPerOp": 7983
+      "nsPerOp": 12875,
+      "allocsPerOp": 24,
+      "allocedBytesPerOp": 3465
     },
     "hitPercent": 100,
-    "hitFile": "2-1.json"
+    "hitFile": "2-2.json"
   },
   {
     "routerName": "issue9-mux/v5",
@@ -35,13 +50,13 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 30824,
+    "memBytes": 30848,
     "bench": {
-      "nsPerOp": 6478,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 7071
+      "nsPerOp": 4442,
+      "allocsPerOp": 17,
+      "allocedBytesPerOp": 2571
     },
     "hitPercent": 100,
-    "hitFile": "2-2.json"
+    "hitFile": "2-3.json"
   }
 ]

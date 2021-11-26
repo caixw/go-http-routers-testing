@@ -6,6 +6,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"net/http"
 )
 
@@ -20,6 +21,7 @@ func main() {
 		}
 
 		http.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir(docsDir))))
+		fmt.Printf("运行服务: %s\n", *p)
 
 		err := http.ListenAndServe(*p, nil)
 		if err != nil && err != http.ErrServerClosed {

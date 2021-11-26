@@ -5,14 +5,29 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 146608,
+    "memBytes": 146632,
     "bench": {
-      "nsPerOp": 5345,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 6166
+      "nsPerOp": 3126,
+      "allocsPerOp": 17,
+      "allocedBytesPerOp": 1870
     },
     "hitPercent": 100,
     "hitFile": "3-0.json"
+  },
+  {
+    "routerName": "fasthttp-router",
+    "routerURL": "https://github.com/fasthttp/router",
+    "apiName": "Github API",
+    "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
+    "apiCount": 348,
+    "memBytes": 347480,
+    "bench": {
+      "nsPerOp": 2161,
+      "allocsPerOp": 14,
+      "allocedBytesPerOp": 1800
+    },
+    "hitPercent": 100,
+    "hitFile": "3-1.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
@@ -20,14 +35,14 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 3605480,
+    "memBytes": 3757528,
     "bench": {
-      "nsPerOp": 38240,
-      "allocsPerOp": 27,
-      "allocedBytesPerOp": 7183
+      "nsPerOp": 34136,
+      "allocsPerOp": 23,
+      "allocedBytesPerOp": 2841
     },
     "hitPercent": 100,
-    "hitFile": "3-1.json"
+    "hitFile": "3-2.json"
   },
   {
     "routerName": "issue9-mux/v5",
@@ -35,13 +50,13 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 1811352,
+    "memBytes": 1811224,
     "bench": {
-      "nsPerOp": 5340,
-      "allocsPerOp": 20,
-      "allocedBytesPerOp": 6207
+      "nsPerOp": 3090,
+      "allocsPerOp": 16,
+      "allocedBytesPerOp": 1910
     },
     "hitPercent": 100,
-    "hitFile": "3-2.json"
+    "hitFile": "3-3.json"
   }
 ]

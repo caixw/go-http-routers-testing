@@ -5,14 +5,29 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 1160,
+    "memBytes": 1184,
     "bench": {
-      "nsPerOp": 3836,
-      "allocsPerOp": 19,
-      "allocedBytesPerOp": 5825
+      "nsPerOp": 2013,
+      "allocsPerOp": 15,
+      "allocedBytesPerOp": 1528
     },
     "hitPercent": 0,
     "hitFile": "4-0.json"
+  },
+  {
+    "routerName": "fasthttp-router",
+    "routerURL": "https://github.com/fasthttp/router",
+    "apiName": "Discuz Routes",
+    "apiDesc": "DZ 风格的路由定义",
+    "apiCount": 2,
+    "memBytes": 35944,
+    "bench": {
+      "nsPerOp": 3796,
+      "allocsPerOp": 20,
+      "allocedBytesPerOp": 1969
+    },
+    "hitPercent": 100,
+    "hitFile": "4-1.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
@@ -20,14 +35,14 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 31712,
+    "memBytes": 31736,
     "bench": {
-      "nsPerOp": 8911,
-      "allocsPerOp": 28,
-      "allocedBytesPerOp": 7154
+      "nsPerOp": 7266,
+      "allocsPerOp": 24,
+      "allocedBytesPerOp": 2862
     },
     "hitPercent": 100,
-    "hitFile": "4-1.json"
+    "hitFile": "4-2.json"
   },
   {
     "routerName": "issue9-mux/v5",
@@ -35,13 +50,13 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 4992,
+    "memBytes": 5016,
     "bench": {
-      "nsPerOp": 4852,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 6253
+      "nsPerOp": 2701,
+      "allocsPerOp": 17,
+      "allocedBytesPerOp": 1960
     },
     "hitPercent": 100,
-    "hitFile": "4-2.json"
+    "hitFile": "4-3.json"
   }
 ]

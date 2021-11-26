@@ -5,14 +5,29 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 64872,
+    "memBytes": 64896,
     "bench": {
-      "nsPerOp": 4543,
-      "allocsPerOp": 18,
-      "allocedBytesPerOp": 5828
+      "nsPerOp": 2384,
+      "allocsPerOp": 14,
+      "allocedBytesPerOp": 1539
     },
     "hitPercent": 100,
     "hitFile": "1-0.json"
+  },
+  {
+    "routerName": "fasthttp-router",
+    "routerURL": "https://github.com/fasthttp/router",
+    "apiName": "Twitter API",
+    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
+    "apiCount": 128,
+    "memBytes": 73408,
+    "bench": {
+      "nsPerOp": 1466,
+      "allocsPerOp": 7,
+      "allocedBytesPerOp": 1557
+    },
+    "hitPercent": 100,
+    "hitFile": "1-1.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
@@ -20,14 +35,14 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 1036808,
+    "memBytes": 1036832,
     "bench": {
-      "nsPerOp": 10726,
-      "allocsPerOp": 27,
-      "allocedBytesPerOp": 6881
+      "nsPerOp": 7499,
+      "allocsPerOp": 23,
+      "allocedBytesPerOp": 2567
     },
     "hitPercent": 100,
-    "hitFile": "1-1.json"
+    "hitFile": "1-2.json"
   },
   {
     "routerName": "issue9-mux/v5",
@@ -35,13 +50,13 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 300848,
+    "memBytes": 300872,
     "bench": {
-      "nsPerOp": 4615,
-      "allocsPerOp": 18,
-      "allocedBytesPerOp": 5838
+      "nsPerOp": 2551,
+      "allocsPerOp": 14,
+      "allocedBytesPerOp": 1549
     },
     "hitPercent": 100,
-    "hitFile": "1-2.json"
+    "hitFile": "1-3.json"
   }
 ]

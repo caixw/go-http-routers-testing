@@ -5,14 +5,29 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 240544,
+    "memBytes": 240568,
     "bench": {
-      "nsPerOp": 5768,
-      "allocsPerOp": 24,
-      "allocedBytesPerOp": 6433
+      "nsPerOp": 3646,
+      "allocsPerOp": 20,
+      "allocedBytesPerOp": 2128
     },
     "hitPercent": 100,
     "hitFile": "5-0.json"
+  },
+  {
+    "routerName": "fasthttp-router",
+    "routerURL": "https://github.com/fasthttp/router",
+    "apiName": "5 Params",
+    "apiDesc": "五个参数的路由",
+    "apiCount": 200,
+    "memBytes": 1767720,
+    "bench": {
+      "nsPerOp": 3862,
+      "allocsPerOp": 29,
+      "allocedBytesPerOp": 2458
+    },
+    "hitPercent": 100,
+    "hitFile": "5-1.json"
   },
   {
     "routerName": "gorilla-mux/v1.8",
@@ -20,14 +35,14 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 3404192,
+    "memBytes": 2313208,
     "bench": {
-      "nsPerOp": 34099,
-      "allocsPerOp": 28,
-      "allocedBytesPerOp": 7304
+      "nsPerOp": 31209,
+      "allocsPerOp": 24,
+      "allocedBytesPerOp": 2955
     },
     "hitPercent": 100,
-    "hitFile": "5-1.json"
+    "hitFile": "5-2.json"
   },
   {
     "routerName": "issue9-mux/v5",
@@ -35,13 +50,13 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 1323528,
+    "memBytes": 1323552,
     "bench": {
-      "nsPerOp": 6241,
-      "allocsPerOp": 21,
-      "allocedBytesPerOp": 6305
+      "nsPerOp": 3380,
+      "allocsPerOp": 17,
+      "allocedBytesPerOp": 2000
     },
     "hitPercent": 100,
-    "hitFile": "5-2.json"
+    "hitFile": "5-3.json"
   }
 ]
