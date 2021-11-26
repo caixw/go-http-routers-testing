@@ -20,14 +20,12 @@ func init() {
 	})
 }
 
-func dimfeldHTTPTreeMuxLoad(apis []*apis.API) http.Handler {
+func dimfeldHTTPTreeMuxLoad(apis []*apis.API) ServeFunc {
 	mux := httptreemux.New()
-
 	for _, api := range apis {
 		mux.Handle(api.Method, api.Colon, dimfeldHTTPTreeMuxHandler)
 	}
-
-	return mux
+	return stdServeFunc(mux)
 }
 
 func dimfeldHTTPTreeMuxHandler(w http.ResponseWriter, r *http.Request, p map[string]string) {

@@ -7,6 +7,7 @@ package routers
 
 import (
 	"net/http"
+	"net/http/httptest"
 
 	"github.com/caixw/go-http-routers-testing/apis"
 )
@@ -15,7 +16,10 @@ import (
 var Routers = make([]*Router, 0, 10)
 
 // Load 加载路由的函数
-type Load func(apis []*apis.API) http.Handler
+type Load func(apis []*apis.API) ServeFunc
+
+// ServeFunc 传入一个 api，返回处理之后的内容。
+type ServeFunc func(*apis.API) string
 
 // Router 路由的相关信息
 type Router struct {
@@ -26,4 +30,13 @@ type Router struct {
 
 func defaultHandleFunc(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(r.URL.Path))
+}
+
+func stdServeFunc(h http.Handler) ServeFunc {
+	return func(api *apis.API) string {
+		w := httptest.NewRecorder()
+		r, _ := http.NewRequest(api.Method, api.Test, nil)
+		h.ServeHTTP(w, r)
+		return w.Body.String()
+	}
 }

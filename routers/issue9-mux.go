@@ -5,8 +5,6 @@
 package routers
 
 import (
-	"net/http"
-
 	"github.com/issue9/mux/v5"
 
 	"github.com/caixw/go-http-routers-testing/apis"
@@ -20,11 +18,10 @@ func init() {
 	})
 }
 
-func issue9MuxLoad(apis []*apis.API) http.Handler {
-	r := mux.NewRouter("")
+func issue9MuxLoad(apis []*apis.API) ServeFunc {
+	router := mux.NewRouter("")
 	for _, api := range apis {
-		r.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
+		router.HandleFunc(api.Brace, defaultHandleFunc, api.Method)
 	}
-
-	return r
+	return stdServeFunc(router)
 }

@@ -99,11 +99,11 @@ func single(c *apis.Collection, r *routers.Router) *item {
 	}
 
 	// 加载
-	h, size := loadAPIS(c.APIS, r.Load)
+	s, size := loadAPIS(c.APIS, r.Load)
 	ret.MemBytes = size
 
 	// 命中情况
-	ret.Hits = testHit(c.APIS, h)
+	ret.Hits = testHit(c.APIS, s)
 	var cnt int
 	for _, hit := range ret.Hits {
 		if hit.OK {
@@ -119,12 +119,10 @@ func single(c *apis.Collection, r *routers.Router) *item {
 
 		for i := 0; i < b.N; i++ {
 			api := c.APIS[i%len(c.APIS)]
-
-			w := httptest.NewRecorder()
-			r := httptest.NewRequest(api.Method, api.Test, nil)
-			h.ServeHTTP(w, r)
+			s(api)
 		}
 	})
+
 	ret.Bench = &bench{
 		NsPerOp:           rslt.NsPerOp(),
 		AllocsPerOp:       rslt.AllocsPerOp(),
@@ -134,20 +132,23 @@ func single(c *apis.Collection, r *routers.Router) *item {
 	return ret
 }
 
-func testHit(apis []*apis.API, h http.Handler) []*hit {
+func testHit(apis []*apis.API, s routers.ServeFunc) []*hit {
 	w := httptest.NewRecorder()
 	hits := make([]*hit, 0, len(apis))
 
 	for _, api := range apis {
-		r := httptest.NewRequest(api.Method, api.Test, nil)
-		h.ServeHTTP(w, r)
+		r, err := http.NewRequest(api.Method, api.Test, nil)
+		if err != nil {
+			panic(err)
+		}
 
+		body := s(api)
 		hits = append(hits, &hit{
-			OK:     w.Body.String() == r.URL.Path,
+			OK:     body == r.URL.Path,
 			Method: r.Method,
 			Path:   api.Test,
 			Want:   api.Brace,
-			Body:   w.Body.String(),
+			Body:   body,
 		})
 
 		w.Body.Reset()
@@ -157,17 +158,17 @@ func testHit(apis []*apis.API, h http.Handler) []*hit {
 }
 
 // 加载一组 API 到指定的路由中，返回该路由的 http.Handler 接口和所消耗的内存
-func loadAPIS(apis []*apis.API, load routers.Load) (http.Handler, uint64) {
+func loadAPIS(apis []*apis.API, load routers.Load) (routers.ServeFunc, uint64) {
 	stats := &runtime.MemStats{}
 
 	runtime.GC()
 	runtime.ReadMemStats(stats)
 	before := stats.HeapAlloc
 
-	h := load(apis)
+	s := load(apis)
 
 	runtime.ReadMemStats(stats)
 	after := stats.HeapAlloc
 
-	return h, after - before
+	return s, after - before
 }
