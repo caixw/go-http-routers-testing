@@ -7,7 +7,7 @@
     "apiCount": 13,
     "memBytes": 17544,
     "bench": {
-      "nsPerOp": 4416,
+      "nsPerOp": 4378,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2499
     },
@@ -22,9 +22,9 @@
     "apiCount": 13,
     "memBytes": 77280,
     "bench": {
-      "nsPerOp": 3315,
+      "nsPerOp": 3230,
       "allocsPerOp": 16,
-      "allocedBytesPerOp": 2640
+      "allocedBytesPerOp": 2643
     },
     "hitPercent": 100,
     "hitFile": "2-1.json"
@@ -37,9 +37,9 @@
     "apiCount": 13,
     "memBytes": 836712,
     "bench": {
-      "nsPerOp": 12875,
+      "nsPerOp": 11788,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 3465
+      "allocedBytesPerOp": 3464
     },
     "hitPercent": 100,
     "hitFile": "2-2.json"
@@ -52,7 +52,7 @@
     "apiCount": 13,
     "memBytes": 30848,
     "bench": {
-      "nsPerOp": 4442,
+      "nsPerOp": 4436,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2571
     },

@@ -7,7 +7,7 @@
     "apiCount": 128,
     "memBytes": 64896,
     "bench": {
-      "nsPerOp": 2384,
+      "nsPerOp": 2362,
       "allocsPerOp": 14,
       "allocedBytesPerOp": 1539
     },
@@ -22,7 +22,7 @@
     "apiCount": 128,
     "memBytes": 73408,
     "bench": {
-      "nsPerOp": 1466,
+      "nsPerOp": 1476,
       "allocsPerOp": 7,
       "allocedBytesPerOp": 1557
     },
@@ -37,7 +37,7 @@
     "apiCount": 128,
     "memBytes": 1036832,
     "bench": {
-      "nsPerOp": 7499,
+      "nsPerOp": 7189,
       "allocsPerOp": 23,
       "allocedBytesPerOp": 2567
     },
@@ -50,9 +50,9 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 300872,
+    "memBytes": 300720,
     "bench": {
-      "nsPerOp": 2551,
+      "nsPerOp": 2579,
       "allocsPerOp": 14,
       "allocedBytesPerOp": 1549
     },

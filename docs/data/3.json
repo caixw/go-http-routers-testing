@@ -7,7 +7,7 @@
     "apiCount": 348,
     "memBytes": 146632,
     "bench": {
-      "nsPerOp": 3126,
+      "nsPerOp": 3051,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 1870
     },
@@ -22,9 +22,9 @@
     "apiCount": 348,
     "memBytes": 347480,
     "bench": {
-      "nsPerOp": 2161,
+      "nsPerOp": 2146,
       "allocsPerOp": 14,
-      "allocedBytesPerOp": 1800
+      "allocedBytesPerOp": 1802
     },
     "hitPercent": 100,
     "hitFile": "3-1.json"
@@ -35,11 +35,11 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 3757528,
+    "memBytes": 2757432,
     "bench": {
-      "nsPerOp": 34136,
+      "nsPerOp": 32086,
       "allocsPerOp": 23,
-      "allocedBytesPerOp": 2841
+      "allocedBytesPerOp": 2835
     },
     "hitPercent": 100,
     "hitFile": "3-2.json"
@@ -52,7 +52,7 @@
     "apiCount": 348,
     "memBytes": 1811224,
     "bench": {
-      "nsPerOp": 3090,
+      "nsPerOp": 3451,
       "allocsPerOp": 16,
       "allocedBytesPerOp": 1910
     },

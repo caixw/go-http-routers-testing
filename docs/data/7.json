@@ -1,0 +1,62 @@
+[
+  {
+    "routerName": "dimfeld-httptreemux/v5",
+    "routerURL": "https://github.com/dimfeld/httptreemux",
+    "apiName": "10 Params",
+    "apiDesc": "十个参数的路由",
+    "apiCount": 120,
+    "memBytes": 245304,
+    "bench": {
+      "nsPerOp": 5330,
+      "allocsPerOp": 22,
+      "allocedBytesPerOp": 2998
+    },
+    "hitPercent": 100,
+    "hitFile": "7-0.json"
+  },
+  {
+    "routerName": "fasthttp-router",
+    "routerURL": "https://github.com/fasthttp/router",
+    "apiName": "10 Params",
+    "apiDesc": "十个参数的路由",
+    "apiCount": 120,
+    "memBytes": 1364856,
+    "bench": {
+      "nsPerOp": 5176,
+      "allocsPerOp": 45,
+      "allocedBytesPerOp": 3302
+    },
+    "hitPercent": 100,
+    "hitFile": "7-1.json"
+  },
+  {
+    "routerName": "gorilla-mux/v1.8",
+    "routerURL": "https://github.com/gorilla/mux",
+    "apiName": "10 Params",
+    "apiDesc": "十个参数的路由",
+    "apiCount": 120,
+    "memBytes": 2787848,
+    "bench": {
+      "nsPerOp": 26123,
+      "allocsPerOp": 25,
+      "allocedBytesPerOp": 3648
+    },
+    "hitPercent": 100,
+    "hitFile": "7-2.json"
+  },
+  {
+    "routerName": "issue9-mux/v5",
+    "routerURL": "https://github.com/issue9/mux",
+    "apiName": "10 Params",
+    "apiDesc": "十个参数的路由",
+    "apiCount": 120,
+    "memBytes": 1187416,
+    "bench": {
+      "nsPerOp": 3783,
+      "allocsPerOp": 17,
+      "allocedBytesPerOp": 2032
+    },
+    "hitPercent": 100,
+    "hitFile": "7-3.json"
+  }
+]

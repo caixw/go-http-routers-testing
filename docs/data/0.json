@@ -4,12 +4,12 @@
     "routerURL": "https://github.com/dimfeld/httptreemux",
     "apiName": "所有",
     "apiDesc": "所有接口混合测试",
-    "apiCount": 841,
-    "memBytes": 512248,
+    "apiCount": 961,
+    "memBytes": 738080,
     "bench": {
-      "nsPerOp": 3354,
-      "allocsPerOp": 17,
-      "allocedBytesPerOp": 1891
+      "nsPerOp": 3695,
+      "allocsPerOp": 18,
+      "allocedBytesPerOp": 2029
     },
     "hitPercent": 99,
     "hitFile": "0-0.json"
@@ -19,12 +19,12 @@
     "routerURL": "https://github.com/fasthttp/router",
     "apiName": "所有",
     "apiDesc": "所有接口混合测试",
-    "apiCount": 841,
-    "memBytes": 3096064,
+    "apiCount": 961,
+    "memBytes": 2103816,
     "bench": {
-      "nsPerOp": 3119,
-      "allocsPerOp": 17,
-      "allocedBytesPerOp": 1934
+      "nsPerOp": 4050,
+      "allocsPerOp": 20,
+      "allocedBytesPerOp": 2108
     },
     "hitPercent": 100,
     "hitFile": "0-1.json"
@@ -34,12 +34,12 @@
     "routerURL": "https://github.com/gorilla/mux",
     "apiName": "所有",
     "apiDesc": "所有接口混合测试",
-    "apiCount": 841,
-    "memBytes": 8380456,
+    "apiCount": 961,
+    "memBytes": 11101184,
     "bench": {
-      "nsPerOp": 58306,
+      "nsPerOp": 57241,
       "allocsPerOp": 23,
-      "allocedBytesPerOp": 2828
+      "allocedBytesPerOp": 2919
     },
     "hitPercent": 100,
     "hitFile": "0-2.json"
@@ -49,14 +49,14 @@
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "所有",
     "apiDesc": "所有接口混合测试",
-    "apiCount": 841,
-    "memBytes": 3317104,
+    "apiCount": 961,
+    "memBytes": 2644040,
     "bench": {
-      "nsPerOp": 3459,
+      "nsPerOp": 3480,
       "allocsPerOp": 16,
-      "allocedBytesPerOp": 1892
+      "allocedBytesPerOp": 1908
     },
-    "hitPercent": 100,
+    "hitPercent": 99,
     "hitFile": "0-3.json"
   }
 ]

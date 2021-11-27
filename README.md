@@ -18,13 +18,31 @@ go get github.com/caixw/go-http-routers-testing
 go run main.go -test.benchtime=5s
 ```
 
+或是
+
+```shell
+run.sh
+```
+
 如果要本地查看数据，请运行：
 
 ```shell
 go run ./serve.go
 ```
 
+或是
+
+```shell
+serve.sh
+```
+
 ## 协作
+
+apis 定义了各种类型的接口；
+
+data 主要用于生成 json 数据；
+
+routers 路由定义处，新路由只需要在此目录下定义 Load 方法即可；
 
 不要提交 /docs/data 下的数据，该数据由本人统一产生。
 

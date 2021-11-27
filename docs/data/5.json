@@ -7,7 +7,7 @@
     "apiCount": 200,
     "memBytes": 240568,
     "bench": {
-      "nsPerOp": 3646,
+      "nsPerOp": 3632,
       "allocsPerOp": 20,
       "allocedBytesPerOp": 2128
     },
@@ -22,9 +22,9 @@
     "apiCount": 200,
     "memBytes": 1767720,
     "bench": {
-      "nsPerOp": 3862,
+      "nsPerOp": 3744,
       "allocsPerOp": 29,
-      "allocedBytesPerOp": 2458
+      "allocedBytesPerOp": 2457
     },
     "hitPercent": 100,
     "hitFile": "5-1.json"
@@ -35,11 +35,11 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 2313208,
+    "memBytes": 2015344,
     "bench": {
-      "nsPerOp": 31209,
+      "nsPerOp": 28651,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 2955
+      "allocedBytesPerOp": 2948
     },
     "hitPercent": 100,
     "hitFile": "5-2.json"
@@ -52,7 +52,7 @@
     "apiCount": 200,
     "memBytes": 1323552,
     "bench": {
-      "nsPerOp": 3380,
+      "nsPerOp": 3222,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2000
     },
