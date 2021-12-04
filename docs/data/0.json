@@ -7,7 +7,7 @@
     "apiCount": 961,
     "memBytes": 738080,
     "bench": {
-      "nsPerOp": 3695,
+      "nsPerOp": 3953,
       "allocsPerOp": 18,
       "allocedBytesPerOp": 2029
     },
@@ -22,9 +22,9 @@
     "apiCount": 961,
     "memBytes": 2103816,
     "bench": {
-      "nsPerOp": 4050,
+      "nsPerOp": 4061,
       "allocsPerOp": 20,
-      "allocedBytesPerOp": 2108
+      "allocedBytesPerOp": 2110
     },
     "hitPercent": 100,
     "hitFile": "0-1.json"
@@ -35,11 +35,11 @@
     "apiName": "所有",
     "apiDesc": "所有接口混合测试",
     "apiCount": 961,
-    "memBytes": 11101184,
+    "memBytes": 11211624,
     "bench": {
-      "nsPerOp": 57241,
+      "nsPerOp": 64731,
       "allocsPerOp": 23,
-      "allocedBytesPerOp": 2919
+      "allocedBytesPerOp": 2924
     },
     "hitPercent": 100,
     "hitFile": "0-2.json"
@@ -50,13 +50,13 @@
     "apiName": "所有",
     "apiDesc": "所有接口混合测试",
     "apiCount": 961,
-    "memBytes": 2644040,
+    "memBytes": 3019272,
     "bench": {
-      "nsPerOp": 3480,
+      "nsPerOp": 3865,
       "allocsPerOp": 16,
-      "allocedBytesPerOp": 1908
+      "allocedBytesPerOp": 1909
     },
-    "hitPercent": 99,
+    "hitPercent": 100,
     "hitFile": "0-3.json"
   }
 ]

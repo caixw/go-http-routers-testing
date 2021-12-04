@@ -21,6 +21,7 @@ func fasthttpRouterLoad(as []*apis.API) ServeFunc {
 	r := router.New()
 	for _, api := range as {
 		r.Handle(api.Method, api.Brace, func(ctx *fasthttp.RequestCtx) {
+			//_ = ctx.UserValue()
 			ctx.Write(ctx.URI().Path())
 		})
 	}

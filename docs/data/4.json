@@ -7,7 +7,7 @@
     "apiCount": 2,
     "memBytes": 1184,
     "bench": {
-      "nsPerOp": 1988,
+      "nsPerOp": 2267,
       "allocsPerOp": 15,
       "allocedBytesPerOp": 1528
     },
@@ -22,9 +22,9 @@
     "apiCount": 2,
     "memBytes": 35944,
     "bench": {
-      "nsPerOp": 3718,
+      "nsPerOp": 3967,
       "allocsPerOp": 20,
-      "allocedBytesPerOp": 1968
+      "allocedBytesPerOp": 1965
     },
     "hitPercent": 100,
     "hitFile": "4-1.json"
@@ -35,11 +35,11 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 32008,
+    "memBytes": 31736,
     "bench": {
-      "nsPerOp": 6790,
+      "nsPerOp": 7394,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 2860
+      "allocedBytesPerOp": 2863
     },
     "hitPercent": 100,
     "hitFile": "4-2.json"
@@ -50,9 +50,9 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 5016,
+    "memBytes": 4984,
     "bench": {
-      "nsPerOp": 2774,
+      "nsPerOp": 2932,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 1960
     },

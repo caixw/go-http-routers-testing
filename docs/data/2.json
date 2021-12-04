@@ -7,7 +7,7 @@
     "apiCount": 13,
     "memBytes": 17544,
     "bench": {
-      "nsPerOp": 4378,
+      "nsPerOp": 4581,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2499
     },
@@ -22,9 +22,9 @@
     "apiCount": 13,
     "memBytes": 77280,
     "bench": {
-      "nsPerOp": 3230,
+      "nsPerOp": 3492,
       "allocsPerOp": 16,
-      "allocedBytesPerOp": 2643
+      "allocedBytesPerOp": 2641
     },
     "hitPercent": 100,
     "hitFile": "2-1.json"
@@ -35,11 +35,11 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 836712,
+    "memBytes": 836504,
     "bench": {
-      "nsPerOp": 11788,
+      "nsPerOp": 12180,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 3464
+      "allocedBytesPerOp": 3469
     },
     "hitPercent": 100,
     "hitFile": "2-2.json"
@@ -50,9 +50,9 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 30848,
+    "memBytes": 30552,
     "bench": {
-      "nsPerOp": 4436,
+      "nsPerOp": 4562,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2571
     },

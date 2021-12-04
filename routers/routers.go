@@ -28,10 +28,6 @@ type Router struct {
 	Load Load
 }
 
-func defaultHandleFunc(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(r.URL.Path))
-}
-
 func stdServeFunc(h http.Handler) ServeFunc {
 	return func(api *apis.API) string {
 		w := httptest.NewRecorder()
