@@ -5,9 +5,9 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 146632,
+    "memBytes": 202872,
     "bench": {
-      "nsPerOp": 3630,
+      "nsPerOp": 2973,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 1870
     },
@@ -20,11 +20,11 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 347480,
+    "memBytes": 473424,
     "bench": {
-      "nsPerOp": 2258,
+      "nsPerOp": 2033,
       "allocsPerOp": 14,
-      "allocedBytesPerOp": 1801
+      "allocedBytesPerOp": 1799
     },
     "hitPercent": 100,
     "hitFile": "3-1.json"
@@ -35,24 +35,24 @@
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 2754408,
+    "memBytes": 5695568,
     "bench": {
-      "nsPerOp": 33536,
+      "nsPerOp": 33219,
       "allocsPerOp": 23,
-      "allocedBytesPerOp": 2841
+      "allocedBytesPerOp": 2826
     },
     "hitPercent": 100,
     "hitFile": "3-2.json"
   },
   {
-    "routerName": "issue9-mux/v5",
+    "routerName": "issue9-mux/v6",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Github API",
     "apiDesc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
     "apiCount": 348,
-    "memBytes": 1898184,
+    "memBytes": 1999640,
     "bench": {
-      "nsPerOp": 3189,
+      "nsPerOp": 3028,
       "allocsPerOp": 16,
       "allocedBytesPerOp": 1910
     },

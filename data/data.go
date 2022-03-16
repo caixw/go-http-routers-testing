@@ -14,6 +14,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"runtime/metrics"
 	"sort"
 	"strconv"
 	"testing"
@@ -159,16 +160,17 @@ func testHit(apis []*apis.API, s routers.ServeFunc) []*hit {
 
 // 加载一组 API 到指定的路由中，返回该路由的 http.Handler 接口和所消耗的内存
 func loadAPIS(apis []*apis.API, load routers.Load) (routers.ServeFunc, uint64) {
-	stats := &runtime.MemStats{}
+	sample := make([]metrics.Sample, 1)
+	sample[0].Name = "/gc/heap/allocs:bytes"
 
 	runtime.GC()
-	runtime.ReadMemStats(stats)
-	before := stats.HeapAlloc
+	metrics.Read(sample)
+	before := sample[0].Value
 
 	s := load(apis)
 
-	runtime.ReadMemStats(stats)
-	after := stats.HeapAlloc
+	metrics.Read(sample)
+	after := sample[0].Value
 
-	return s, after - before
+	return s, after.Uint64() - before.Uint64()
 }

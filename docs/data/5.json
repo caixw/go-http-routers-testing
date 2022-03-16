@@ -5,9 +5,9 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 240568,
+    "memBytes": 282752,
     "bench": {
-      "nsPerOp": 4085,
+      "nsPerOp": 3649,
       "allocsPerOp": 20,
       "allocedBytesPerOp": 2128
     },
@@ -20,11 +20,11 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 1767720,
+    "memBytes": 1875456,
     "bench": {
-      "nsPerOp": 4096,
+      "nsPerOp": 3616,
       "allocsPerOp": 29,
-      "allocedBytesPerOp": 2457
+      "allocedBytesPerOp": 2449
     },
     "hitPercent": 100,
     "hitFile": "5-1.json"
@@ -35,24 +35,24 @@
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 2194208,
+    "memBytes": 6125368,
     "bench": {
-      "nsPerOp": 31530,
+      "nsPerOp": 29028,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 2954
+      "allocedBytesPerOp": 2950
     },
     "hitPercent": 100,
     "hitFile": "5-2.json"
   },
   {
-    "routerName": "issue9-mux/v5",
+    "routerName": "issue9-mux/v6",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "5 Params",
     "apiDesc": "五个参数的路由",
     "apiCount": 200,
-    "memBytes": 913648,
+    "memBytes": 1006616,
     "bench": {
-      "nsPerOp": 3521,
+      "nsPerOp": 3143,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2000
     },

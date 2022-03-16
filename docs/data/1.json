@@ -5,9 +5,9 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 64896,
+    "memBytes": 122152,
     "bench": {
-      "nsPerOp": 2458,
+      "nsPerOp": 2337,
       "allocsPerOp": 14,
       "allocedBytesPerOp": 1539
     },
@@ -20,11 +20,11 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 73408,
+    "memBytes": 200624,
     "bench": {
-      "nsPerOp": 1534,
+      "nsPerOp": 1354,
       "allocsPerOp": 7,
-      "allocedBytesPerOp": 1557
+      "allocedBytesPerOp": 1555
     },
     "hitPercent": 100,
     "hitFile": "1-1.json"
@@ -35,24 +35,24 @@
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 1036552,
+    "memBytes": 1274392,
     "bench": {
-      "nsPerOp": 7478,
+      "nsPerOp": 7146,
       "allocsPerOp": 23,
-      "allocedBytesPerOp": 2565
+      "allocedBytesPerOp": 2562
     },
     "hitPercent": 100,
     "hitFile": "1-2.json"
   },
   {
-    "routerName": "issue9-mux/v5",
+    "routerName": "issue9-mux/v6",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Twitter API",
     "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
     "apiCount": 128,
-    "memBytes": 299200,
+    "memBytes": 386264,
     "bench": {
-      "nsPerOp": 2681,
+      "nsPerOp": 2447,
       "allocsPerOp": 14,
       "allocedBytesPerOp": 1549
     },

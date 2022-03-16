@@ -5,9 +5,9 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 17544,
+    "memBytes": 72976,
     "bench": {
-      "nsPerOp": 4581,
+      "nsPerOp": 4462,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2499
     },
@@ -20,9 +20,9 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 77280,
+    "memBytes": 162072,
     "bench": {
-      "nsPerOp": 3492,
+      "nsPerOp": 3222,
       "allocsPerOp": 16,
       "allocedBytesPerOp": 2641
     },
@@ -35,24 +35,24 @@
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 836504,
+    "memBytes": 1274440,
     "bench": {
-      "nsPerOp": 12180,
+      "nsPerOp": 11938,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 3469
+      "allocedBytesPerOp": 3461
     },
     "hitPercent": 100,
     "hitFile": "2-2.json"
   },
   {
-    "routerName": "issue9-mux/v5",
+    "routerName": "issue9-mux/v6",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Long Routes",
     "apiDesc": "路径很长的路由项",
     "apiCount": 13,
-    "memBytes": 30552,
+    "memBytes": 102664,
     "bench": {
-      "nsPerOp": 4562,
+      "nsPerOp": 4405,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 2571
     },

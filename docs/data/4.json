@@ -5,9 +5,9 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 1184,
+    "memBytes": 61368,
     "bench": {
-      "nsPerOp": 2267,
+      "nsPerOp": 2011,
       "allocsPerOp": 15,
       "allocedBytesPerOp": 1528
     },
@@ -20,11 +20,11 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 35944,
+    "memBytes": 120928,
     "bench": {
-      "nsPerOp": 3967,
+      "nsPerOp": 3645,
       "allocsPerOp": 20,
-      "allocedBytesPerOp": 1965
+      "allocedBytesPerOp": 1968
     },
     "hitPercent": 100,
     "hitFile": "4-1.json"
@@ -35,24 +35,24 @@
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 31736,
+    "memBytes": 188216,
     "bench": {
-      "nsPerOp": 7394,
+      "nsPerOp": 6895,
       "allocsPerOp": 24,
-      "allocedBytesPerOp": 2863
+      "allocedBytesPerOp": 2865
     },
     "hitPercent": 100,
     "hitFile": "4-2.json"
   },
   {
-    "routerName": "issue9-mux/v5",
+    "routerName": "issue9-mux/v6",
     "routerURL": "https://github.com/issue9/mux",
     "apiName": "Discuz Routes",
     "apiDesc": "DZ 风格的路由定义",
     "apiCount": 2,
-    "memBytes": 4984,
+    "memBytes": 97632,
     "bench": {
-      "nsPerOp": 2932,
+      "nsPerOp": 2636,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 1960
     },
