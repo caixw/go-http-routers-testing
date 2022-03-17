@@ -23,11 +23,6 @@ type Collection struct {
 	APIS []*API
 }
 
-func addCollection(c *Collection) {
-	APIS = append(APIS, c)
-	APIS[0].APIS = append(APIS[0].APIS, c.APIS...)
-}
-
 // API 单个 API 接口的定义
 type API struct {
 	Method string // 请求方法
@@ -36,18 +31,13 @@ type API struct {
 	Test   string // 本条路由对应的测试地址
 }
 
-// 初始化另外两个字段
-func (api *API) init() {
-	path := strings.Replace(api.Brace, "}", "", -1)
-
-	api.Test = strings.Replace(path, "{", "", -1)
-	api.Colon = strings.Replace(path, "{", ":", -1)
-}
-
 func (c *Collection) init() {
-	for _, api := range c.APIS {
-		api.init()
+	for _, api := range c.APIS { // 初始化另外两个字段
+		path := strings.Replace(api.Brace, "}", "", -1)
+		api.Test = strings.Replace(path, "{", "", -1)
+		api.Colon = strings.Replace(path, "{", ":", -1)
 	}
 
-	addCollection(c)
+	APIS = append(APIS, c)
+	APIS[0].APIS = append(APIS[0].APIS, c.APIS...)
 }

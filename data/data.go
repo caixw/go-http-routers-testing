@@ -29,6 +29,10 @@ func JSON(dir string, log io.Writer) error {
 		return apis.APIS[i].Name > apis.APIS[j].Name
 	})
 
+	sort.SliceStable(routers.Routers, func(i, j int) bool {
+		return routers.Routers[i].Name < routers.Routers[j].Name
+	})
+
 	env := getEnv()
 	env.Data = make([]string, 0, len(apis.APIS))
 

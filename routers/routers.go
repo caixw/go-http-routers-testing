@@ -23,7 +23,7 @@ type ServeFunc func(*apis.API) string
 
 // Router 路由的相关信息
 type Router struct {
-	Name string // 路由的名称，建议使用 owner-repo 的形式命名。
+	Name string // 路由的名称，建议使用 owner-repo/version 的形式命名。
 	URL  string
 	Load Load
 }

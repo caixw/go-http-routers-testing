@@ -47,16 +47,19 @@
         document.getElementById('cpu').innerHTML = data.cpu
         document.getElementById('go').innerHTML = data.go
 
+        let p = Promise.all([]);
         for (let index in data.data) {
             const file = data.data[index]
-            loadAPIFile(file)
+            p = p.then(()=>{
+                loadAPIFile(file);
+            });
         }
     }).catch(reason => {
         throw reason
     })
 
     function loadAPIFile(file) {
-        fetch(root + file).then(resp => {
+        return fetch(root + file).then(resp => {
             return resp.json()
         }).then(data => {
             // section
