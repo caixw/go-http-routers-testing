@@ -104,19 +104,16 @@
                 const link = `<a href="${item.routerURL}">${item.routerName}</a>`;
                 const hit = `<a href="hit.html?${item.hitFile}">${item.hitPercent}%</a>`;
 
-                let ns = b.nsPerOp;
                 if (b.nsPerOp === minNS) {
-                    ns += fastFlag;
+                    b.nsPerOp += fastFlag;
                 }
 
-                let alloced = b.allocedBytesPerOp;
                 if (minAlloced === b.allocedBytesPerOp) {
-                    alloced += fastFlag;
+                    b.allocedBytesPerOp += fastFlag;
                 }
 
-                let allocs = b.allocsPerOp;
                 if (minAllocs === b.allocsPerOp) {
-                    allocs += fastFlag;
+                    b.allocsPerOp += fastFlag;
                 }
 
                 let mem = (item.memBytes/1024).toFixed(2);
@@ -124,7 +121,7 @@
                     mem += fastFlag;
                 }
 
-                table.append(link, ns, alloced, allocs, mem, hit);
+                table.append(link, b.nsPerOp, b.allocedBytesPerOp, b.allocsPerOp, mem, hit);
             }
         }).catch(reason => {
             throw reason
