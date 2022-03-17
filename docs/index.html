@@ -29,13 +29,14 @@
 </article>
 
 <footer>
-    <p>&copy; 2017-2021 by
+    <p>&copy; 2017-2022 by
         <a href="https://caixw.io">caixw</a> &middot;
         <a href="https://github.com/caixw/go-http-routers-testing">Github</a>
     </p>
 </footer>
 <script>
-    const root = './data/'
+    const root = './data/';
+    const fastFlag = '&#160;⚡️';
 
     fetch(root + 'env.json').then(resp => {
         return resp.json()
@@ -104,22 +105,22 @@
 
                 let ns = b.nsPerOp + ' ns/op';
                 if (b.nsPerOp === minNS) {
-                    ns = `<span class="min">${ns}</span>`;
+                    ns += fastFlag;
                 }
 
                 let alloced = b.allocedBytesPerOp + ' B/op';
                 if (minAlloced === b.allocedBytesPerOp) {
-                    alloced = `<span class="min">${alloced}</span>`;
+                    alloced += fastFlag;
                 }
 
                 let allocs = b.allocsPerOp + ' allocs/op';
                 if (minAllocs === b.allocsPerOp) {
-                    allocs = `<span class="min">${allocs}</span>`;
+                    allocs += fastFlag;
                 }
 
                 let mem = item.memBytes + ' Bytes';
                 if (minMem === item.memBytes) {
-                    mem = `<span class="min">${mem}</span>`;
+                    mem += fastFlag;
                 }
 
                 table.append(link, ns, alloced, allocs, mem, hit);
