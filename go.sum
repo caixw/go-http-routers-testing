@@ -9,7 +9,6 @@ github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
 github.com/issue9/assert/v2 v2.0.0/go.mod h1:rKr1eVGzXUhAo2af1thiKAhIA8uiSK9Wyn7mcZ4BzAg=
 github.com/issue9/assert/v2 v2.2.1 h1:XQEnAFrGiT1Z55Tav39muM/Jg9ECiSLm7ehHQWoCHmA=
-github.com/issue9/assert/v2 v2.2.1/go.mod h1:rKr1eVGzXUhAo2af1thiKAhIA8uiSK9Wyn7mcZ4BzAg=
 github.com/issue9/errwrap v0.2.1 h1:hrzBGbOCRs8acitpWSg54xNl2oaLGA/WZEf71bKaiEU=
 github.com/issue9/errwrap v0.2.1/go.mod h1:hjjkt9S/owgy48er68ACFfA6YPDO/xax18QE3lsguVQ=
 github.com/issue9/mux/v6 v6.0.0 h1:H2uj8tKpGwItWltfUciokklV3k7WbfMvXdh3z87KGhc=

@@ -31,7 +31,10 @@ type Router struct {
 func stdServeFunc(h http.Handler) ServeFunc {
 	return func(api *apis.API) string {
 		w := httptest.NewRecorder()
-		r, _ := http.NewRequest(api.Method, api.Test, nil)
+		r, err := http.NewRequest(api.Method, api.Test, nil)
+		if err != nil {
+			panic(err)
+		}
 		h.ServeHTTP(w, r)
 		return w.Body.String()
 	}
