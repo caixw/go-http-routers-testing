@@ -74,7 +74,7 @@
             section.appendChild(p);
 
             // table
-            const table = new Table('路由', ['性能', 3], '占用内存', '命中率');
+            const table = new Table('路由', 'ns/op', 'B/op', 'allocs/op', '占用内存(KB)', '命中率');
             section.appendChild(table.inst());
 
 
@@ -104,22 +104,22 @@
                 const link = `<a href="${item.routerURL}">${item.routerName}</a>`;
                 const hit = `<a href="hit.html?${item.hitFile}">${item.hitPercent}%</a>`;
 
-                let ns = b.nsPerOp + ' ns/op';
+                let ns = b.nsPerOp;
                 if (b.nsPerOp === minNS) {
                     ns += fastFlag;
                 }
 
-                let alloced = b.allocedBytesPerOp + ' B/op';
+                let alloced = b.allocedBytesPerOp;
                 if (minAlloced === b.allocedBytesPerOp) {
                     alloced += fastFlag;
                 }
 
-                let allocs = b.allocsPerOp + ' allocs/op';
+                let allocs = b.allocsPerOp;
                 if (minAllocs === b.allocsPerOp) {
                     allocs += fastFlag;
                 }
 
-                let mem = (item.memBytes/1024).toFixed(2) + ' KB';
+                let mem = (item.memBytes/1024).toFixed(2);
                 if (minMem === item.memBytes) {
                     mem += fastFlag;
                 }
