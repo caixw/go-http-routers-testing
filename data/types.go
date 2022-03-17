@@ -12,24 +12,24 @@ type env struct {
 	Data []string `json:"data"` // 测试数据文件列表
 }
 
-// 每个 API 对应的路由测试数据
-type item struct {
-	RouterName string `json:"routerName"` // 路由的名称
-	RouterURL  string `json:"routerURL"`  // 路由工具的 URL
-	APIName    string `json:"apiName"`    // API 名称
-	APIDesc    string `json:"apiDesc"`
-	APICount   int    `json:"apiCount"`       // 本次测试的 API 数量
-	MemBytes   uint64 `json:"memBytes"`       // 分配的内存
-	Bench      *bench `json:"bench"`          // 所有的性能数据
-	HitPercent int    `json:"hitPercent"`     // 命中率
-	HitFile    string `json:"hitFile"`        // 保存 hit 记录的文件名
-	Hits       []*hit `json:"hits,omitempty"` // 所有的命中数据
+type api struct {
+	Name    string    `json:"name"`
+	Desc    string    `json:"desc"`
+	Count   int       `json:"count"`
+	Routers []*router `json:"routers"`
 }
 
-type bench struct {
-	NsPerOp           int64 `json:"nsPerOp"`
-	AllocsPerOp       int64 `json:"allocsPerOp"`
-	AllocedBytesPerOp int64 `json:"allocedBytesPerOp"`
+// 每个 API 对应的路由测试数据
+type router struct {
+	RouterName        string `json:"name"`     // 路由的名称
+	RouterURL         string `json:"url"`      // 路由工具的 URL
+	MemBytes          uint64 `json:"memBytes"` // 分配的内存
+	NsPerOp           int64  `json:"nsPerOp"`
+	AllocsPerOp       int64  `json:"allocsPerOp"`
+	AllocedBytesPerOp int64  `json:"allocedBytesPerOp"`
+	HitPercent        int    `json:"hitPercent"`     // 命中率
+	HitFile           string `json:"hitFile"`        // 保存 hit 记录的文件名
+	Hits              []*hit `json:"hits,omitempty"` // 所有的命中数据
 }
 
 type hit struct {

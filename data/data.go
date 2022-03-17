@@ -35,35 +35,39 @@ func JSON(dir string, log io.Writer) error {
 
 	env := getEnv()
 	env.Data = make([]string, 0, len(apis.APIS))
+	for apiIndex, a := range apis.APIS {
+		fmt.Fprintf(log, "开始测试 %v \n", a.Name)
 
-	for cindex, c := range apis.APIS {
-		cdata := make([]*item, 0, len(routers.Routers))
+		apiFile := &api{
+			Name:    a.Name,
+			Desc:    a.Desc,
+			Count:   len(a.APIS),
+			Routers: make([]*router, 0, len(routers.Routers)),
+		}
 
-		fmt.Fprintf(log, "开始测试 %v \n", c.Name)
-
-		for rindex, r := range routers.Routers {
+		for routerIndex, r := range routers.Routers {
 			fmt.Fprint(log, "    ", r.Name, "......")
 
-			filename := strconv.Itoa(cindex) + "-" + strconv.Itoa(rindex) + ".json"
-			data := single(c, r)
+			filename := strconv.Itoa(apiIndex) + "-" + strconv.Itoa(routerIndex) + ".json"
+			data := single(a, r)
 			data.HitFile = filename
 			if err := writeJSON(filepath.Join(dir, filename), data.Hits); err != nil {
 				return err
 			}
 
 			data.Hits = nil
-			cdata = append(cdata, data)
+			apiFile.Routers = append(apiFile.Routers, data)
 
 			fmt.Fprintln(log, "[OK]")
 		}
 
-		filename := strconv.Itoa(cindex) + ".json"
+		filename := strconv.Itoa(apiIndex) + ".json"
 		env.Data = append(env.Data, filename)
-		if err := writeJSON(filepath.Join(dir, filename), cdata); err != nil {
+		if err := writeJSON(filepath.Join(dir, filename), apiFile); err != nil {
 			return err
 		}
 
-		fmt.Fprintf(log, "完成 %v 测试\n\n", c.Name)
+		fmt.Fprintf(log, "完成 %v 测试\n\n", a.Name)
 	} // end for routers.Routers
 
 	return writeJSON(filepath.Join(dir, "env.json"), env)
@@ -94,13 +98,10 @@ func getEnv() *env {
 	}
 }
 
-func single(c *apis.Collection, r *routers.Router) *item {
-	ret := &item{
+func single(c *apis.Collection, r *routers.Router) *router {
+	ret := &router{
 		RouterName: r.Name,
 		RouterURL:  r.URL,
-		APIName:    c.Name,
-		APIDesc:    c.Desc,
-		APICount:   len(c.APIS),
 	}
 
 	// 加载
@@ -127,12 +128,9 @@ func single(c *apis.Collection, r *routers.Router) *item {
 			s(api)
 		}
 	})
-
-	ret.Bench = &bench{
-		NsPerOp:           rslt.NsPerOp(),
-		AllocsPerOp:       rslt.AllocsPerOp(),
-		AllocedBytesPerOp: rslt.AllocedBytesPerOp(),
-	}
+	ret.NsPerOp = rslt.NsPerOp()
+	ret.AllocsPerOp = rslt.AllocsPerOp()
+	ret.AllocedBytesPerOp = rslt.AllocedBytesPerOp()
 
 	return ret
 }

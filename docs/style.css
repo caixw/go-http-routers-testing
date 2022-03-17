@@ -45,6 +45,10 @@ ul {
     flex-wrap: wrap;
 }
 
+ul span {
+    margin: 0px 5px;
+}
+
 h1 {
     margin-top: 2rem;
     text-align: center;
@@ -78,4 +82,8 @@ table td {
 footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.fast {
+    margin-left: 5px;
 }
