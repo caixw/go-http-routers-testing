@@ -118,7 +118,7 @@
                     allocs += fastFlag;
                 }
 
-                let mem = item.memBytes + ' Bytes';
+                let mem = (item.memBytes/1024).toFixed(2) + ' KB';
                 if (minMem === item.memBytes) {
                     mem += fastFlag;
                 }
