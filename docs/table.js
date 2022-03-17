@@ -7,7 +7,7 @@
 
 
 class Table {
-  // 指定列表名，若元素为数组，则第一个元素表示列名，第二个元素表示所在的占数
+  // 指定列表名，若参数类型为数组，则第一个元素表示列名，第二个元素表示所占的列数
   constructor(...cols) {
     this.table = document.createElement('table')
 
