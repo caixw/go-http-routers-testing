@@ -48,14 +48,17 @@ func JSON(dir string, log io.Writer) error {
 		for routerIndex, r := range routers.Routers {
 			fmt.Fprint(log, "    ", r.Name, "......")
 
-			filename := strconv.Itoa(apiIndex) + "-" + strconv.Itoa(routerIndex) + ".json"
 			data := single(a, r)
-			data.HitFile = filename
-			if err := writeJSON(filepath.Join(dir, filename), data.Hits); err != nil {
-				return err
+
+			if data.Misses > 0 {
+				filename := strconv.Itoa(apiIndex) + "-" + strconv.Itoa(routerIndex) + ".json"
+				data.MissFile = filename
+				if err := writeJSON(filepath.Join(dir, filename), data.missesData); err != nil {
+					return err
+				}
+				data.missesData = nil
 			}
 
-			data.Hits = nil
 			apiFile.Routers = append(apiFile.Routers, data)
 
 			fmt.Fprintln(log, "[OK]")
@@ -109,14 +112,8 @@ func single(c *apis.Collection, r *routers.Router) *router {
 	ret.MemBytes = size
 
 	// 命中情况
-	ret.Hits = testHit(c.APIS, s)
-	var cnt int
-	for _, hit := range ret.Hits {
-		if hit.OK {
-			cnt++
-		}
-	}
-	ret.HitPercent = cnt * 100 / len(ret.Hits)
+	ret.missesData = testMiss(c.APIS, s)
+	ret.Misses = len(ret.missesData)
 
 	// bench
 	rslt := testing.Benchmark(func(b *testing.B) {
@@ -135,9 +132,9 @@ func single(c *apis.Collection, r *routers.Router) *router {
 	return ret
 }
 
-func testHit(apis []*apis.API, s routers.ServeFunc) []*hit {
+func testMiss(apis []*apis.API, s routers.ServeFunc) []*miss {
 	w := httptest.NewRecorder()
-	hits := make([]*hit, 0, len(apis))
+	misses := make([]*miss, 0, len(apis))
 
 	for _, api := range apis {
 		r, err := http.NewRequest(api.Method, api.Test, nil)
@@ -146,18 +143,19 @@ func testHit(apis []*apis.API, s routers.ServeFunc) []*hit {
 		}
 
 		body := s(api)
-		hits = append(hits, &hit{
-			OK:     body == r.URL.Path,
-			Method: r.Method,
-			Path:   api.Test,
-			Want:   api.Brace,
-			Body:   body,
-		})
+		if body != r.URL.Path {
+			misses = append(misses, &miss{
+				Method: r.Method,
+				Path:   api.Test,
+				Want:   api.Brace,
+				Body:   body,
+			})
+		}
 
 		w.Body.Reset()
 	}
 
-	return hits
+	return misses
 }
 
 // 加载一组 API 到指定的路由中，返回该路由的 http.Handler 接口和所消耗的内存

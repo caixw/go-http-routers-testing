@@ -27,13 +27,12 @@ type router struct {
 	NsPerOp           int64  `json:"nsPerOp"`
 	AllocsPerOp       int64  `json:"allocsPerOp"`
 	AllocedBytesPerOp int64  `json:"allocedBytesPerOp"`
-	HitPercent        int    `json:"hitPercent"`     // 命中率
-	HitFile           string `json:"hitFile"`        // 保存 hit 记录的文件名
-	Hits              []*hit `json:"hits,omitempty"` // 所有的命中数据
+	MissFile          string `json:"missFile,omitempty"` // 保存未命中记录的文件名
+	Misses            int    `json:"misses,omitempty"`   // 未命中的数量
+	missesData        []*miss
 }
 
-type hit struct {
-	OK     bool   `json:"ok"`     // 是否正确
+type miss struct {
 	Method string `json:"method"` // 请求方法
 	Path   string `json:"path"`   // 请求地址
 	Want   string `json:"want"`   // 应该匹配的地址

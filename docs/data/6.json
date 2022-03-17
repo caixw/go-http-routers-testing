@@ -1,62 +1,39 @@
-[
-  {
-    "routerName": "dimfeld-httptreemux/v5",
-    "routerURL": "https://github.com/dimfeld/httptreemux",
-    "apiName": "2 Params",
-    "apiDesc": "两个参数的路由",
-    "apiCount": 150,
-    "memBytes": 95304,
-    "bench": {
-      "nsPerOp": 2676,
+{
+  "name": "2 Params",
+  "desc": "两个参数的路由",
+  "count": 150,
+  "routers": [
+    {
+      "name": "dimfeld-httptreemux/v5",
+      "url": "https://github.com/dimfeld/httptreemux",
+      "memBytes": 97448,
+      "nsPerOp": 2700,
       "allocsPerOp": 18,
       "allocedBytesPerOp": 1872
     },
-    "hitPercent": 100,
-    "hitFile": "6-0.json"
-  },
-  {
-    "routerName": "fasthttp-router",
-    "routerURL": "https://github.com/fasthttp/router",
-    "apiName": "2 Params",
-    "apiDesc": "两个参数的路由",
-    "apiCount": 150,
-    "memBytes": 1009208,
-    "bench": {
-      "nsPerOp": 2421,
+    {
+      "name": "fasthttp-router",
+      "url": "https://github.com/fasthttp/router",
+      "memBytes": 1012072,
+      "nsPerOp": 2694,
       "allocsPerOp": 18,
-      "allocedBytesPerOp": 1763
+      "allocedBytesPerOp": 1764
     },
-    "hitPercent": 100,
-    "hitFile": "6-1.json"
-  },
-  {
-    "routerName": "gorilla-mux/v1.8",
-    "routerURL": "https://github.com/gorilla/mux",
-    "apiName": "2 Params",
-    "apiDesc": "两个参数的路由",
-    "apiCount": 150,
-    "memBytes": 2124872,
-    "bench": {
-      "nsPerOp": 16268,
+    {
+      "name": "gorilla-mux/v1.8",
+      "url": "https://github.com/gorilla/mux",
+      "memBytes": 2134680,
+      "nsPerOp": 17442,
       "allocsPerOp": 24,
       "allocedBytesPerOp": 2834
     },
-    "hitPercent": 100,
-    "hitFile": "6-2.json"
-  },
-  {
-    "routerName": "issue9-mux/v6",
-    "routerURL": "https://github.com/issue9/mux",
-    "apiName": "2 Params",
-    "apiDesc": "两个参数的路由",
-    "apiCount": 150,
-    "memBytes": 483568,
-    "bench": {
-      "nsPerOp": 2669,
+    {
+      "name": "issue9-mux/v6",
+      "url": "https://github.com/issue9/mux",
+      "memBytes": 483928,
+      "nsPerOp": 2834,
       "allocsPerOp": 17,
       "allocedBytesPerOp": 1936
-    },
-    "hitPercent": 100,
-    "hitFile": "6-3.json"
-  }
-]
+    }
+  ]
+}

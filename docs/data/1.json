@@ -1,62 +1,39 @@
-[
-  {
-    "routerName": "dimfeld-httptreemux/v5",
-    "routerURL": "https://github.com/dimfeld/httptreemux",
-    "apiName": "Twitter API",
-    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
-    "apiCount": 128,
-    "memBytes": 122152,
-    "bench": {
-      "nsPerOp": 2337,
+{
+  "name": "Twitter API",
+  "desc": "采集自 Twitter 的 API，以静态路由为主。",
+  "count": 128,
+  "routers": [
+    {
+      "name": "dimfeld-httptreemux/v5",
+      "url": "https://github.com/dimfeld/httptreemux",
+      "memBytes": 121560,
+      "nsPerOp": 2680,
       "allocsPerOp": 14,
       "allocedBytesPerOp": 1539
     },
-    "hitPercent": 100,
-    "hitFile": "1-0.json"
-  },
-  {
-    "routerName": "fasthttp-router",
-    "routerURL": "https://github.com/fasthttp/router",
-    "apiName": "Twitter API",
-    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
-    "apiCount": 128,
-    "memBytes": 200624,
-    "bench": {
-      "nsPerOp": 1354,
+    {
+      "name": "fasthttp-router",
+      "url": "https://github.com/fasthttp/router",
+      "memBytes": 190824,
+      "nsPerOp": 1832,
       "allocsPerOp": 7,
-      "allocedBytesPerOp": 1555
+      "allocedBytesPerOp": 1556
     },
-    "hitPercent": 100,
-    "hitFile": "1-1.json"
-  },
-  {
-    "routerName": "gorilla-mux/v1.8",
-    "routerURL": "https://github.com/gorilla/mux",
-    "apiName": "Twitter API",
-    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
-    "apiCount": 128,
-    "memBytes": 1274392,
-    "bench": {
-      "nsPerOp": 7146,
+    {
+      "name": "gorilla-mux/v1.8",
+      "url": "https://github.com/gorilla/mux",
+      "memBytes": 1260160,
+      "nsPerOp": 7330,
       "allocsPerOp": 23,
       "allocedBytesPerOp": 2562
     },
-    "hitPercent": 100,
-    "hitFile": "1-2.json"
-  },
-  {
-    "routerName": "issue9-mux/v6",
-    "routerURL": "https://github.com/issue9/mux",
-    "apiName": "Twitter API",
-    "apiDesc": "采集自 Twitter 的 API，以静态路由为主。",
-    "apiCount": 128,
-    "memBytes": 386264,
-    "bench": {
-      "nsPerOp": 2447,
+    {
+      "name": "issue9-mux/v6",
+      "url": "https://github.com/issue9/mux",
+      "memBytes": 382952,
+      "nsPerOp": 2573,
       "allocsPerOp": 14,
       "allocedBytesPerOp": 1549
-    },
-    "hitPercent": 100,
-    "hitFile": "1-3.json"
-  }
-]
+    }
+  ]
+}

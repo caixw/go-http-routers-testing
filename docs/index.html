@@ -20,26 +20,21 @@
         env: {},
         apis: [],
 
-        mounted(el) {
+        mounted() {
             fetch(root + 'env.json').then(resp => {
                 return resp.json()
-            }).then(data => {
+            }).then(async data => {
                 this.env = data;
-
-                let p = Promise.all([]);
-                for (let index in data.data) {
-                    const file = data.data[index]
-                    p = p.then(()=>{
-                        this.loadAPIFile(file);
-                    });
+                for (const file of data.data) {
+                    await this.loadAPIFile(file);
                 }
             }).catch(reason => {
                 throw reason
             });
         },
 
-        loadAPIFile(file) {
-            return fetch(root + file).then(resp => {
+        async loadAPIFile(file) {
+            return await fetch(root + file).then(resp => {
                 return resp.json();
             }).then(data => {
                 // 求最小值
@@ -88,7 +83,7 @@
                     <th>B/op</th>
                     <th>allocs/op</th>
                     <th>占用内存(KB)</th>
-                    <th>命中</th>
+                    <th>未命中</th>
                 </tr>
             </thead>
             <tbody>
@@ -98,7 +93,10 @@
                     <td>{{router.allocedBytesPerOp}}<span class="fast" v-if="api.minAlloced===router.allocedBytesPerOp">⚡</span></td>
                     <td>{{router.allocsPerOp}}<span class="fast" v-if="api.minAllocs===router.allocsPerOp">⚡</span></td>
                     <td>{{(router.memBytes/1024).toFixed(2)}}<span class="fast" v-if="api.minMem===router.memBytes">⚡</span></td>
-                    <td><a :href="'hit.html?' + router.hitFile">{{router.hitPercent}}%</a></td>
+                    <td>
+                        <a v-if="router.misses>0" :href="'miss.html?' + router.missFile">{{router.misses}}</a>
+                        <span v-if="!router.misses">无</span>
+                    </td>
                 </tr>
             </tbody>
         </table>

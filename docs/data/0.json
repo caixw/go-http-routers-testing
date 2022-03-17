@@ -1,62 +1,41 @@
-[
-  {
-    "routerName": "dimfeld-httptreemux/v5",
-    "routerURL": "https://github.com/dimfeld/httptreemux",
-    "apiName": "所有",
-    "apiDesc": "所有接口混合测试",
-    "apiCount": 961,
-    "memBytes": 793928,
-    "bench": {
-      "nsPerOp": 3539,
+{
+  "name": "所有",
+  "desc": "所有接口混合测试",
+  "count": 961,
+  "routers": [
+    {
+      "name": "dimfeld-httptreemux/v5",
+      "url": "https://github.com/dimfeld/httptreemux",
+      "memBytes": 803376,
+      "nsPerOp": 3737,
       "allocsPerOp": 18,
-      "allocedBytesPerOp": 2029
+      "allocedBytesPerOp": 2029,
+      "missFile": "0-0.json",
+      "misses": 2
     },
-    "hitPercent": 99,
-    "hitFile": "0-0.json"
-  },
-  {
-    "routerName": "fasthttp-router",
-    "routerURL": "https://github.com/fasthttp/router",
-    "apiName": "所有",
-    "apiDesc": "所有接口混合测试",
-    "apiCount": 961,
-    "memBytes": 4836416,
-    "bench": {
-      "nsPerOp": 3706,
+    {
+      "name": "fasthttp-router",
+      "url": "https://github.com/fasthttp/router",
+      "memBytes": 4829960,
+      "nsPerOp": 4006,
       "allocsPerOp": 20,
-      "allocedBytesPerOp": 2109
+      "allocedBytesPerOp": 2101
     },
-    "hitPercent": 100,
-    "hitFile": "0-1.json"
-  },
-  {
-    "routerName": "gorilla-mux/v1.8",
-    "routerURL": "https://github.com/gorilla/mux",
-    "apiName": "所有",
-    "apiDesc": "所有接口混合测试",
-    "apiCount": 961,
-    "memBytes": 22536592,
-    "bench": {
-      "nsPerOp": 57191,
+    {
+      "name": "gorilla-mux/v1.8",
+      "url": "https://github.com/gorilla/mux",
+      "memBytes": 22711248,
+      "nsPerOp": 66359,
       "allocsPerOp": 23,
-      "allocedBytesPerOp": 2933
+      "allocedBytesPerOp": 2924
     },
-    "hitPercent": 100,
-    "hitFile": "0-2.json"
-  },
-  {
-    "routerName": "issue9-mux/v6",
-    "routerURL": "https://github.com/issue9/mux",
-    "apiName": "所有",
-    "apiDesc": "所有接口混合测试",
-    "apiCount": 961,
-    "memBytes": 12669800,
-    "bench": {
-      "nsPerOp": 3365,
+    {
+      "name": "issue9-mux/v6",
+      "url": "https://github.com/issue9/mux",
+      "memBytes": 12649808,
+      "nsPerOp": 4031,
       "allocsPerOp": 16,
       "allocedBytesPerOp": 1909
-    },
-    "hitPercent": 100,
-    "hitFile": "0-3.json"
-  }
-]
+    }
+  ]
+}
