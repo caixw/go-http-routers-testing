@@ -14,13 +14,13 @@
 </head>
 
 <body>
-<article @vue:mounted="mounted()">
+<article>
     <h1>Go 路由功能测试数据</h1>
 
     <p>数据根据测试环境的不同，会有不同的呈现，仅可作为参考用。</p>
 
-    <section>
-        <h3>测试环境</h3>
+    <section id="env">
+        <h3><a href="#env" class="anchor">#</a>测试环境</h3>
         <ul>
             <li>系统: {{.OS}}</li>
             <li>架构: {{.Arch}}</li>
