@@ -36,7 +36,7 @@ func JSON(dir string, log io.Writer) error {
 	env := getEnv()
 	env.Data = make([]string, 0, len(apis.APIS))
 	for apiIndex, a := range apis.APIS {
-		fmt.Fprintf(log, "开始测试 %v \n", a.Name)
+		fmt.Fprintf(log, "开始测试 %s \n", a.Name)
 
 		apiFile := &api{
 			Name:    a.Name,
@@ -48,7 +48,7 @@ func JSON(dir string, log io.Writer) error {
 		for routerIndex, r := range routers.Routers {
 			fmt.Fprint(log, "    ", r.Name, "......")
 
-			data := single(a, r)
+			data := testRouter(a, r)
 
 			if data.Misses > 0 {
 				filename := strconv.Itoa(apiIndex) + "-" + strconv.Itoa(routerIndex) + ".json"
@@ -70,8 +70,8 @@ func JSON(dir string, log io.Writer) error {
 			return err
 		}
 
-		fmt.Fprintf(log, "完成 %v 测试\n\n", a.Name)
-	} // end for routers.Routers
+		fmt.Fprintf(log, "完成 %s 测试\n\n", a.Name)
+	}
 
 	return writeJSON(filepath.Join(dir, "env.json"), env)
 }
@@ -101,7 +101,7 @@ func getEnv() *env {
 	}
 }
 
-func single(c *apis.Collection, r *routers.Router) *router {
+func testRouter(c *apis.Collection, r *routers.Router) *router {
 	ret := &router{
 		RouterName: r.Name,
 		RouterURL:  r.URL,
@@ -110,10 +110,6 @@ func single(c *apis.Collection, r *routers.Router) *router {
 	// 加载
 	s, size := loadAPIS(c.APIS, r.Load)
 	ret.MemBytes = size
-
-	// 命中情况
-	ret.missesData = testMiss(c.APIS, s)
-	ret.Misses = len(ret.missesData)
 
 	// bench
 	rslt := testing.Benchmark(func(b *testing.B) {
@@ -128,6 +124,10 @@ func single(c *apis.Collection, r *routers.Router) *router {
 	ret.NsPerOp = rslt.NsPerOp()
 	ret.AllocsPerOp = rslt.AllocsPerOp()
 	ret.AllocedBytesPerOp = rslt.AllocedBytesPerOp()
+
+	// 命中情况
+	ret.missesData = testMiss(c.APIS, s)
+	ret.Misses = len(ret.missesData)
 
 	return ret
 }
@@ -158,7 +158,7 @@ func testMiss(apis []*apis.API, s routers.ServeFunc) []*miss {
 	return misses
 }
 
-// 加载一组 API 到指定的路由中，返回该路由的 http.Handler 接口和所消耗的内存
+// 加载一组 API 到指定的路由中，返回该路由的处理方法和所消耗的内存。
 func loadAPIS(apis []*apis.API, load routers.Load) (routers.ServeFunc, uint64) {
 	sample := make([]metrics.Sample, 1)
 	sample[0].Name = "/gc/heap/allocs:bytes"

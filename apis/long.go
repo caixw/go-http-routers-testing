@@ -9,7 +9,7 @@ func init() {
 }
 
 var long = &Collection{
-	Name: "Long Routes",
+	Name: "Long Route",
 	Desc: "路径很长的路由项",
 	APIS: []*API{
 		{Method: http.MethodGet, Brace: "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},
@@ -25,5 +25,8 @@ var long = &Collection{
 		{Method: http.MethodPost, Brace: "/loooooooooooogoooooooooooooooooooooogooooooooooooooogoooooooooooooooooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html"},
 		{Method: http.MethodPost, Brace: "/loooooooooooogoooooooooooooooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/looooooooooooooogoooooooooooogooooooooooogoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog.html"},
 		{Method: http.MethodPost, Brace: "/loooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html"},
+		{Method: http.MethodPost, Brace: "/aoooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html"},
+		{Method: http.MethodPost, Brace: "/boooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html"},
+		{Method: http.MethodPost, Brace: "/coooooooooooogooooooooooooooooooooooooooooooooogoooooogoooooooogoooooooooooooooooooog/{p1}/loooooogoooooooogoooooooooooogooooooooooogooooooooooooooooooooooooooooooooooooooooooooooooooog.html"},
 	},
 }
