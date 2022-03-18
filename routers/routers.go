@@ -8,12 +8,14 @@ package routers
 import (
 	"net/http"
 	"net/http/httptest"
+	"sort"
+
+	"github.com/issue9/sliceutil"
 
 	"github.com/caixw/go-http-routers-testing/apis"
 )
 
-// Routers 所有的路由
-var Routers = make([]*Router, 0, 10)
+var routers = make([]*Router, 0, 10)
 
 // Load 加载路由的函数
 type Load func(apis []*apis.API) ServeFunc
@@ -39,4 +41,17 @@ func stdServeFunc(h http.Handler) ServeFunc {
 		h.ServeHTTP(w, r)
 		return w.Body.String()
 	}
+}
+
+func Routers() []*Router {
+	dup := sliceutil.Dup(routers, func(i, j *Router) bool { return i.ID == j.ID })
+	if len(dup) > 0 {
+		panic("存在重复的 ID 值" + routers[dup[0]].ID)
+	}
+
+	sort.SliceStable(routers, func(i, j int) bool {
+		return routers[i].ID < routers[j].ID
+	})
+
+	return routers
 }

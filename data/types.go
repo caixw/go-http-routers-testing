@@ -5,11 +5,12 @@
 package data
 
 type env struct {
-	OS   string   `json:"os"`
-	Arch string   `json:"arch"`
-	CPU  int      `json:"cpu"`
-	Go   string   `json:"go"`   // Go 的版本
-	APIs []string `json:"apis"` // 测试数据文件列表
+	OS       string   `json:"os"`
+	Arch     string   `json:"arch"`
+	CPU      int      `json:"cpu"`
+	Go       string   `json:"go"`       // Go 的版本
+	APIFiles []string `json:"apiFiles"` // 测试数据文件列表
+	APIs     []*api   `json:"-"`        // 仅用于 html 输出
 }
 
 type api struct {

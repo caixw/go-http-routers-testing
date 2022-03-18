@@ -1,0 +1,44 @@
+{
+	"id": "github",
+	"name": "Github API",
+	"desc": "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
+	"count": 348,
+	"routers": [
+		{
+			"id": "dimfeld-httptreemux-v5",
+			"name": "dimfeld-httptreemux/v5",
+			"url": "https://github.com/dimfeld/httptreemux",
+			"memBytes": 202712,
+			"nsPerOp": 2979,
+			"allocsPerOp": 17,
+			"allocedBytesPerOp": 1870
+		},
+		{
+			"id": "fasthttp-router",
+			"name": "fasthttp-router",
+			"url": "https://github.com/fasthttp/router",
+			"memBytes": 470264,
+			"nsPerOp": 2178,
+			"allocsPerOp": 14,
+			"allocedBytesPerOp": 1800
+		},
+		{
+			"id": "gorilla-mux",
+			"name": "gorilla-mux",
+			"url": "https://github.com/gorilla/mux",
+			"memBytes": 5696208,
+			"nsPerOp": 33848,
+			"allocsPerOp": 23,
+			"allocedBytesPerOp": 2836
+		},
+		{
+			"id": "issue9-mux-v6",
+			"name": "issue9-mux/v6",
+			"url": "https://github.com/issue9/mux",
+			"memBytes": 2020424,
+			"nsPerOp": 3161,
+			"allocsPerOp": 16,
+			"allocedBytesPerOp": 1910
+		}
+	]
+}

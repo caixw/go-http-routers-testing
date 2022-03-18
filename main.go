@@ -5,8 +5,7 @@
 package main
 
 import (
-	"os"
-	"path/filepath"
+	"log"
 
 	"github.com/caixw/go-http-routers-testing/data"
 )
@@ -14,7 +13,7 @@ import (
 const docsDir = "./docs"
 
 func main() {
-	if err := data.JSON(filepath.Join(docsDir, "data"), os.Stdout); err != nil {
+	if err := data.JSON(docsDir, log.Default()); err != nil {
 		panic(err)
 	}
 }

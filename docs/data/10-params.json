@@ -1,0 +1,44 @@
+{
+	"id": "10-params",
+	"name": "10 Params",
+	"desc": "十个参数的路由",
+	"count": 120,
+	"routers": [
+		{
+			"id": "dimfeld-httptreemux-v5",
+			"name": "dimfeld-httptreemux/v5",
+			"url": "https://github.com/dimfeld/httptreemux",
+			"memBytes": 295440,
+			"nsPerOp": 5229,
+			"allocsPerOp": 22,
+			"allocedBytesPerOp": 2998
+		},
+		{
+			"id": "fasthttp-router",
+			"name": "fasthttp-router",
+			"url": "https://github.com/fasthttp/router",
+			"memBytes": 1459344,
+			"nsPerOp": 5853,
+			"allocsPerOp": 45,
+			"allocedBytesPerOp": 3293
+		},
+		{
+			"id": "gorilla-mux",
+			"name": "gorilla-mux",
+			"url": "https://github.com/gorilla/mux",
+			"memBytes": 6969848,
+			"nsPerOp": 29745,
+			"allocsPerOp": 25,
+			"allocedBytesPerOp": 3653
+		},
+		{
+			"id": "issue9-mux-v6",
+			"name": "issue9-mux/v6",
+			"url": "https://github.com/issue9/mux",
+			"memBytes": 1588584,
+			"nsPerOp": 4229,
+			"allocsPerOp": 17,
+			"allocedBytesPerOp": 2032
+		}
+	]
+}

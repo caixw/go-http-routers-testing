@@ -5,10 +5,14 @@
 // Package apis 预定义的各类型的 API 数据
 package apis
 
-import "strings"
+import (
+	"sort"
+	"strings"
 
-// APIS 所有 API 的集体
-var APIS = []*Collection{
+	"github.com/issue9/sliceutil"
+)
+
+var apis = []*Collection{
 	{
 		ID:   "all",
 		Name: "所有",
@@ -40,6 +44,20 @@ func (c *Collection) init() {
 		api.Colon = strings.Replace(path, "{", ":", -1)
 	}
 
-	APIS = append(APIS, c)
-	APIS[0].APIS = append(APIS[0].APIS, c.APIS...)
+	apis = append(apis, c)
+	apis[0].APIS = append(apis[0].APIS, c.APIS...)
+
+}
+
+func APIs() []*Collection {
+	dup := sliceutil.Dup(apis, func(i, j *Collection) bool { return i.ID == j.ID })
+	if len(dup) > 0 {
+		panic("存在重复的 ID 值" + apis[dup[0]].ID)
+	}
+
+	sort.SliceStable(apis, func(i, j int) bool {
+		return apis[i].ID > apis[j].ID
+	})
+
+	return apis
 }

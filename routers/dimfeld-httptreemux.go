@@ -13,7 +13,7 @@ import (
 )
 
 func init() {
-	Routers = append(Routers, &Router{
+	routers = append(routers, &Router{
 		ID:   "dimfeld-httptreemux-v5",
 		Name: "dimfeld-httptreemux/v5",
 		URL:  "https://github.com/dimfeld/httptreemux",

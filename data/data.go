@@ -16,6 +16,8 @@ import (
 	"github.com/caixw/go-http-routers-testing/routers"
 )
 
+const dataDirName = "data"
+
 func getEnv() *env {
 	return &env{
 		OS:   runtime.GOOS,

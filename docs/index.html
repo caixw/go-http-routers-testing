@@ -12,52 +12,6 @@
 </head>
 
 <body>
-<script type="module">
-    import { createApp } from 'https://unpkg.com/petite-vue?module';
-    const root = './data/';
-
-    createApp({
-        env: {},
-        apis: [],
-
-        mounted() {
-            fetch(root + 'env.json').then(resp => {
-                return resp.json()
-            }).then(async data => {
-                this.env = data;
-                for (const file of data.apis) {
-                    await this.loadAPIFile(file);
-                }
-            }).catch(reason => {
-                throw reason
-            });
-        },
-
-        async loadAPIFile(file) {
-            return await fetch(root + file).then(resp => {
-                return resp.json();
-            }).then(data => {
-                // 求最小值
-                let nss = [], alloceds = [], allocs = [], mems = [];
-                for(const router of data.routers) {
-                    nss.push(router.nsPerOp);
-                    alloceds.push(router.allocedBytesPerOp);
-                    allocs.push(router.allocsPerOp);
-                    mems.push(router.memBytes);
-                }
-                data.minNS = Math.min(...nss);
-                data.minAlloced = Math.min(...alloceds);
-                data.minAllocs = Math.min(...allocs);
-                data.minMem = Math.min(...mems);
-
-                this.apis.push(data);
-            }).catch(reason => {
-                throw reason
-            });
-        }
-    }).mount();
-</script>
-
 <article @vue:mounted="mounted()">
     <h1>Go 路由功能测试数据</h1>
 
@@ -66,15 +20,15 @@
     <section>
         <h3>测试环境</h3>
         <ul>
-            <li>系统:<span>{{env.os}}</span></li>
-            <li>架构:<span>{{env.arch}}</span></li>
-            <li>CPU:<span>{{env.cpu}}</span>核</li>
-            <li>版本:<span>{{env.go}}</span></li>
+            <li>系统: darwin</li>
+            <li>架构: amd64</li>
+            <li>CPU: 4 核</li>
+            <li>版本: go1.18</li>
         </ul>
     </section>
-    <section v-for="api in apis">
-        <h3>{{api.name}}({{api.count}})</h3>
-        <p>{{api.desc}}</p>
+    <section id="twitter">
+        <h3>Twitter API(128)</h3>
+        <p>采集自 Twitter 的 API，以静态路由为主。</p>
         <table>
             <thead>
                 <tr>
@@ -87,21 +41,391 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="router in api.routers">
-                    <th><a :href="router.url">{{router.name}}</a></th>
-                    <td>{{router.nsPerOp}}<span class="fast" v-if="api.minNS===router.nsPerOp">⚡️️</span></td>
-                    <td>{{router.allocedBytesPerOp}}<span class="fast" v-if="api.minAlloced===router.allocedBytesPerOp">⚡</span></td>
-                    <td>{{router.allocsPerOp}}<span class="fast" v-if="api.minAllocs===router.allocsPerOp">⚡</span></td>
-                    <td>{{(router.memBytes/1024).toFixed(2)}}<span class="fast" v-if="api.minMem===router.memBytes">⚡</span></td>
-                    <td>
-                        <a v-if="router.misses>0" :href="'miss.html?' + router.missFile">{{router.misses}}</a>
-                        <span v-if="!router.misses">无</span>
-                    </td>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>2357</td>
+                    <td>1539</td>
+                    <td>14</td>
+                    <td>113.79</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>1436</td>
+                    <td>1556</td>
+                    <td>7</td>
+                    <td>194.59</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>7315</td>
+                    <td>2561</td>
+                    <td>23</td>
+                    <td>1242.76</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>2541</td>
+                    <td>1549</td>
+                    <td>14</td>
+                    <td>398.3</td>
+                    <td>无</td>
                 </tr>
             </tbody>
         </table>
     </section>
-</article>
+    <section id="long">
+        <h3>Long Routes(16)</h3>
+        <p>路径很长的路由项</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>4314</td>
+                    <td>2466</td>
+                    <td>17</td>
+                    <td>71.4</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>3249</td>
+                    <td>2577</td>
+                    <td>15</td>
+                    <td>146.92000000000002</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>10950</td>
+                    <td>3440</td>
+                    <td>24</td>
+                    <td>1354.94</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>4339</td>
+                    <td>2542</td>
+                    <td>17</td>
+                    <td>114.35000000000001</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="github">
+        <h3>Github API(348)</h3>
+        <p>模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>2991</td>
+                    <td>1870</td>
+                    <td>17</td>
+                    <td>200.66</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>2170</td>
+                    <td>1799</td>
+                    <td>14</td>
+                    <td>456.72</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>32771</td>
+                    <td>2822</td>
+                    <td>23</td>
+                    <td>5562.77</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>3262</td>
+                    <td>1910</td>
+                    <td>16</td>
+                    <td>1974.63</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="discuz">
+        <h3>Discuz Routes(2)</h3>
+        <p>DZ 风格的路由定义</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>2414</td>
+                    <td>1528</td>
+                    <td>15</td>
+                    <td>60.75</td>
+                    <td><a href="miss.html?discuz_dimfeld-httptreemux-v5.json">2</a></td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>4277</td>
+                    <td>1971</td>
+                    <td>20</td>
+                    <td>126.5</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>11861</td>
+                    <td>2863</td>
+                    <td>24</td>
+                    <td>195.35</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>4003</td>
+                    <td>1960</td>
+                    <td>17</td>
+                    <td>90.14</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="all">
+        <h3>所有(964)</h3>
+        <p>所有接口混合测试</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>3940</td>
+                    <td>2030</td>
+                    <td>18</td>
+                    <td>785.28</td>
+                    <td><a href="miss.html?all_dimfeld-httptreemux-v5.json">2</a></td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>3736</td>
+                    <td>2099</td>
+                    <td>20</td>
+                    <td>4720.82</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>68214</td>
+                    <td>2920</td>
+                    <td>23</td>
+                    <td>22138.100000000002</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>3938</td>
+                    <td>1911</td>
+                    <td>16</td>
+                    <td>13165.61</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="5-params">
+        <h3>5 Params(200)</h3>
+        <p>五个参数的路由</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>6405</td>
+                    <td>2128</td>
+                    <td>20</td>
+                    <td>281</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>5653</td>
+                    <td>2448</td>
+                    <td>29</td>
+                    <td>1824.76</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>40207</td>
+                    <td>2949</td>
+                    <td>24</td>
+                    <td>5979.92</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>4691</td>
+                    <td>2000</td>
+                    <td>17</td>
+                    <td>977.9</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="2-params">
+        <h3>2 Params(150)</h3>
+        <p>两个参数的路由</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>2678</td>
+                    <td>1872</td>
+                    <td>18</td>
+                    <td>97.13</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>2703</td>
+                    <td>1763</td>
+                    <td>18</td>
+                    <td>990.75</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>16886</td>
+                    <td>2834</td>
+                    <td>24</td>
+                    <td>2089.57</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>3039</td>
+                    <td>1936</td>
+                    <td>17</td>
+                    <td>464.54</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="10-params">
+        <h3>10 Params(120)</h3>
+        <p>十个参数的路由</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a href="https://github.com/dimfeld/httptreemux">dimfeld-httptreemux/v5</a></th>
+                    <td>5362</td>
+                    <td>2998</td>
+                    <td>22</td>
+                    <td>296.05</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/fasthttp/router">fasthttp-router</a></th>
+                    <td>5846</td>
+                    <td>3291</td>
+                    <td>45</td>
+                    <td>1424.52</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/gorilla/mux">gorilla-mux</a></th>
+                    <td>27565</td>
+                    <td>3648</td>
+                    <td>25</td>
+                    <td>6810.77</td>
+                    <td>无</td>
+                </tr>
+                <tr>
+                    <th><a href="https://github.com/issue9/mux">issue9-mux/v6</a></th>
+                    <td>3833</td>
+                    <td>2032</td>
+                    <td>17</td>
+                    <td>1550.17</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+    </section></article>
 
 <footer>
     <p>&copy; 2017-2022 by

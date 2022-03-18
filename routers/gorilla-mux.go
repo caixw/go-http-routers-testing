@@ -11,7 +11,7 @@ import (
 )
 
 func init() {
-	Routers = append(Routers, &Router{
+	routers = append(routers, &Router{
 		ID:   "gorilla-mux",
 		Name: "gorilla-mux",
 		URL:  "https://github.com/gorilla/mux",

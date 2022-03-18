@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	Routers = append(Routers, &Router{
+	routers = append(routers, &Router{
 		ID:   "fasthttp-router",
 		Name: "fasthttp-router",
 		URL:  "https://github.com/fasthttp/router",

@@ -1,0 +1,114 @@
+<html lang="zh-cnm-Hans">
+<head>
+    <meta charset="utf-8"/>
+    <title>Go 路由功能测试数据</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="generator" content="https://github.com/caixw/go-http-routers-testing"/>
+    <meta name="author" content="https://caixw.io"/>
+    <meta name="keywords" content="go,golang,benchmark,testing,route,routes,router,mux"/>
+    <meta name="description" content="Google Go 路由的性能测试工具。"/>
+    <link rel="icon" href="./favicon.ico"/>
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<script type="module">
+    import { createApp } from 'https://unpkg.com/petite-vue?module';
+    const root = './data/';
+
+    createApp({
+        env: {},
+        apis: [],
+
+        mounted() {
+            fetch(root + 'env.json').then(resp => {
+                return resp.json()
+            }).then(async data => {
+                this.env = data;
+                for (const file of data.apiFiles) {
+                    await this.loadAPIFile(file);
+                }
+            }).catch(reason => {
+                throw reason
+            });
+        },
+
+        async loadAPIFile(file) {
+            return await fetch(root + file).then(resp => {
+                return resp.json();
+            }).then(data => {
+                // 求最小值
+                let nss = [], alloceds = [], allocs = [], mems = [];
+                for(const router of data.routers) {
+                    nss.push(router.nsPerOp);
+                    alloceds.push(router.allocedBytesPerOp);
+                    allocs.push(router.allocsPerOp);
+                    mems.push(router.memBytes);
+                }
+                data.minNS = Math.min(...nss);
+                data.minAlloced = Math.min(...alloceds);
+                data.minAllocs = Math.min(...allocs);
+                data.minMem = Math.min(...mems);
+
+                this.apis.push(data);
+            }).catch(reason => {
+                throw reason
+            });
+        }
+    }).mount();
+</script>
+
+<article @vue:mounted="mounted()">
+    <h1>Go 路由功能测试数据</h1>
+
+    <p>数据根据测试环境的不同，会有不同的呈现，仅可作为参考用。</p>
+
+    <section>
+        <h3>测试环境</h3>
+        <ul>
+            <li>系统:<span>{{env.os}}</span></li>
+            <li>架构:<span>{{env.arch}}</span></li>
+            <li>CPU:<span>{{env.cpu}}</span>核</li>
+            <li>版本:<span>{{env.go}}</span></li>
+        </ul>
+    </section>
+    <section v-for="api in apis">
+        <h3>{{api.name}}({{api.count}})</h3>
+        <p>{{api.desc}}</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>路由</th>
+                    <th>ns/op</th>
+                    <th>B/op</th>
+                    <th>allocs/op</th>
+                    <th>占用内存(KB)</th>
+                    <th>未命中</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="router in api.routers">
+                    <th><a :href="router.url">{{router.name}}</a></th>
+                    <td>{{router.nsPerOp}}<span class="fast" v-if="api.minNS===router.nsPerOp">⚡️️</span></td>
+                    <td>{{router.allocedBytesPerOp}}<span class="fast" v-if="api.minAlloced===router.allocedBytesPerOp">⚡</span></td>
+                    <td>{{router.allocsPerOp}}<span class="fast" v-if="api.minAllocs===router.allocsPerOp">⚡</span></td>
+                    <td>{{(router.memBytes/1024).toFixed(2)}}<span class="fast" v-if="api.minMem===router.memBytes">⚡</span></td>
+                    <td>
+                        <a v-if="router.misses>0" :href="'miss.html?' + router.missFile">{{router.misses}}</a>
+                        <span v-if="!router.misses">无</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</article>
+
+<footer>
+    <p>&copy; 2017-2022 by
+        <a href="https://caixw.io">caixw</a> &middot;
+        <a href="https://github.com/caixw/go-http-routers-testing">Github</a>
+    </p>
+</footer>
+
+</body>
+</html>

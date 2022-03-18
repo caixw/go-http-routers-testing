@@ -1,0 +1,44 @@
+{
+	"id": "long",
+	"name": "Long Routes",
+	"desc": "路径很长的路由项",
+	"count": 16,
+	"routers": [
+		{
+			"id": "dimfeld-httptreemux-v5",
+			"name": "dimfeld-httptreemux/v5",
+			"url": "https://github.com/dimfeld/httptreemux",
+			"memBytes": 75936,
+			"nsPerOp": 4721,
+			"allocsPerOp": 17,
+			"allocedBytesPerOp": 2466
+		},
+		{
+			"id": "fasthttp-router",
+			"name": "fasthttp-router",
+			"url": "https://github.com/fasthttp/router",
+			"memBytes": 149248,
+			"nsPerOp": 3344,
+			"allocsPerOp": 15,
+			"allocedBytesPerOp": 2577
+		},
+		{
+			"id": "gorilla-mux",
+			"name": "gorilla-mux",
+			"url": "https://github.com/gorilla/mux",
+			"memBytes": 1386296,
+			"nsPerOp": 11065,
+			"allocsPerOp": 24,
+			"allocedBytesPerOp": 3434
+		},
+		{
+			"id": "issue9-mux-v6",
+			"name": "issue9-mux/v6",
+			"url": "https://github.com/issue9/mux",
+			"memBytes": 118432,
+			"nsPerOp": 4355,
+			"allocsPerOp": 17,
+			"allocedBytesPerOp": 2542
+		}
+	]
+}

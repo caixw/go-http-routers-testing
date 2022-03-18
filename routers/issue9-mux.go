@@ -13,7 +13,7 @@ import (
 )
 
 func init() {
-	Routers = append(Routers, &Router{
+	routers = append(routers, &Router{
 		ID:   "issue9-mux-v6",
 		Name: "issue9-mux/v6",
 		URL:  "https://github.com/issue9/mux",

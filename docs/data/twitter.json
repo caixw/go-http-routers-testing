@@ -1,0 +1,44 @@
+{
+	"id": "twitter",
+	"name": "Twitter API",
+	"desc": "采集自 Twitter 的 API，以静态路由为主。",
+	"count": 128,
+	"routers": [
+		{
+			"id": "dimfeld-httptreemux-v5",
+			"name": "dimfeld-httptreemux/v5",
+			"url": "https://github.com/dimfeld/httptreemux",
+			"memBytes": 115904,
+			"nsPerOp": 2358,
+			"allocsPerOp": 14,
+			"allocedBytesPerOp": 1539
+		},
+		{
+			"id": "fasthttp-router",
+			"name": "fasthttp-router",
+			"url": "https://github.com/fasthttp/router",
+			"memBytes": 201984,
+			"nsPerOp": 1605,
+			"allocsPerOp": 7,
+			"allocedBytesPerOp": 1557
+		},
+		{
+			"id": "gorilla-mux",
+			"name": "gorilla-mux",
+			"url": "https://github.com/gorilla/mux",
+			"memBytes": 1242880,
+			"nsPerOp": 7358,
+			"allocsPerOp": 23,
+			"allocedBytesPerOp": 2560
+		},
+		{
+			"id": "issue9-mux-v6",
+			"name": "issue9-mux/v6",
+			"url": "https://github.com/issue9/mux",
+			"memBytes": 402184,
+			"nsPerOp": 2538,
+			"allocsPerOp": 14,
+			"allocedBytesPerOp": 1549
+		}
+	]
+}

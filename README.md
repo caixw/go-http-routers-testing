@@ -12,28 +12,24 @@ go get github.com/caixw/go-http-routers-testing
 
 ### 运行测试
 
-可以使用 test.benchtime 指定每个测试的运行时间。
+main.go 可以有以下参数：
+
+- test.benchtime 指定每个测试的运行时间；
 
 ```shell
 go run main.go -test.benchtime=5s
 ```
 
-或是
+之后通过以下代码编译成 html：
 
 ```shell
-run.sh
+go run html.go
 ```
 
 如果要本地查看数据，请运行：
 
 ```shell
 go run ./serve.go
-```
-
-或是
-
-```shell
-serve.sh
 ```
 
 ## 协作
