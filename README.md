@@ -17,7 +17,7 @@ main.go 可以有以下参数：
 - test.benchtime 指定每个测试的运行时间；
 
 ```shell
-go run main.go -test.benchtime=5s
+go run json.go -test.benchtime=5s
 ```
 
 之后通过以下代码编译成 html：

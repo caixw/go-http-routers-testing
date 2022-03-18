@@ -56,6 +56,13 @@ func APIs() []*Collection {
 	}
 
 	sort.SliceStable(apis, func(i, j int) bool {
+		if apis[i].ID == "all" {
+			return true
+		}
+		if apis[j].ID == "all" {
+			return false
+		}
+
 		return apis[i].ID > apis[j].ID
 	})
 

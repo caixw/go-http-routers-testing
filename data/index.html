@@ -10,6 +10,7 @@
     <meta name="description" content="Google Go 路由的性能测试工具。"/>
     <link rel="icon" href="./favicon.ico"/>
     <link href="./style.css" type="text/css" rel="stylesheet"/>
+    <script src="./sortable.js"></script>
 </head>
 
 <body>
@@ -29,28 +30,29 @@
     </section>
 
     {{- range .APIs}}
-    <section id="{{.ID}}">
-        <h3>{{.Name}}({{.Count}})</h3>
+    {{- $min := .Min -}}
+    <section id="{{.ID}}" data-file="{{.File}}">
+        <h3><a href="#{{.ID}}" class="anchor">#</a>{{.Name}}({{.Count}})</h3>
         <p>{{.Desc}}</p>
-        <table>
+        <table class="sortable">
             <thead>
                 <tr>
                     <th>路由</th>
                     <th>ns/op</th>
                     <th>B/op</th>
                     <th>allocs/op</th>
-                    <th>占用内存(KB)</th>
-                    <th>未命中</th>
+                    <th>内存(KB)</th>
+                    <th class="no-sort">未命中</th>
                 </tr>
             </thead>
             <tbody>
                 {{- range .Routers}}
                 <tr>
-                    <th><a href="{{.URL}}">{{.Name}}</a></th>
-                    <td>{{.NsPerOp}}</td>
-                    <td>{{.AllocedBytesPerOp}}</td>
-                    <td>{{.AllocsPerOp}}</td>
-                    <td>{{kb .MemBytes}}</td>
+                    <td data-sort="{{.ID}}"><a href="{{.URL}}">{{.Name}}</a></td>
+                    <td data-sort="{{.NsPerOp}}">{{.NsPerOp}}{{if eq .NsPerOp $min.NsPerOp}} ⚡️️{{end}}</td>
+                    <td data-sort="{{.AllocedBytesPerOp}}">{{.AllocedBytesPerOp}}{{if eq .AllocedBytesPerOp $min.AllocedBytesPerOp}} ⚡️️{{end}}</td>
+                    <td data-sort="{{.AllocsPerOp}}">{{.AllocsPerOp}}{{if eq .AllocsPerOp $min.AllocsPerOp}} ⚡️️{{end}}</td>
+                    <td data-sort="{{.MemBytes}}">{{kb .MemBytes}}{{if eq .MemBytes $min.MemBytes}} ⚡️️{{end}}</td>
                     <td>{{if gt .Misses 0}}<a href="miss.html?{{.MissFile}}">{{.Misses}}</a>{{else}}无{{end}}</td>
                 </tr>
                 {{- end}}
@@ -65,6 +67,10 @@
     <p>&copy; 2017-{{year}} by
         <a href="https://caixw.io">caixw</a> &middot;
         <a href="https://github.com/caixw/go-http-routers-testing">Github</a>
+    </p>
+    <p>
+        用到的第三方库：
+        <a href="https://github.com/tofsjonas/sortable">表格排序</a>
     </p>
 </footer>
 

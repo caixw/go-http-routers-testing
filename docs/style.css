@@ -52,6 +52,19 @@ h1 {
 
 h3 {
     margin-top: 3rem;
+    cursor: pointer;
+}
+
+h3 .anchor {
+    float: left;
+    margin-left: -1em;
+    line-height: 1.5;
+    width: 1em;
+    display: none;
+}
+
+h3:hover .anchor {
+    display: block;
 }
 
 table {
@@ -78,4 +91,43 @@ table td {
 footer {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+/* 以下代码改自 https://github.com/tofsjonas/sortable/blob/main/sortable.css */
+
+.sortable th.no-sort {
+    pointer-events: none;
+}
+
+.sortable th:not(.no-sort) {
+    cursor: pointer;
+}
+
+.sortable th::after {
+    font-size: 1.2em;
+    color: transparent;
+    content: ' \025B8';
+    cursor: pointer;
+}
+
+.sortable th:hover::after {
+    color: var(--primary);
+}
+
+.sortable th.dir-d {
+    color: var(--primary);
+}
+  
+.sortable th.dir-d::after {
+    color: inherit;
+    content: ' \025BE';
+}
+  
+.sortable th.dir-u {
+    color: var(--primary);
+}
+  
+.sortable th.dir-u::after {
+    color: inherit;
+    content: ' \025B4';
 }

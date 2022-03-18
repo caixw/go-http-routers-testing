@@ -35,7 +35,7 @@ func JSON(dir string, l *log.Logger) error {
 		}
 
 		for _, r := range rs {
-			l.Print("    ", r.Name, "......")
+			l.Print("    ", r.Name, "...")
 
 			data := testRouter(a, r)
 
@@ -49,8 +49,6 @@ func JSON(dir string, l *log.Logger) error {
 			}
 
 			apiFile.Routers = append(apiFile.Routers, data)
-
-			l.Println("[OK]")
 		}
 
 		filename := a.ID + ".json"

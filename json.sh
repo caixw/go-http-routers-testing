@@ -1,1 +1,1 @@
-go run main.go -test.benchtime=30s
+go run json.go -test.benchtime=30s

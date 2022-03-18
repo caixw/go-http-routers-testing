@@ -19,6 +19,15 @@ type api struct {
 	Desc    string    `json:"desc"`
 	Count   int       `json:"count"`
 	Routers []*router `json:"routers"`
+	File    string    `json:"-"` // 仅用于 html 输出
+	Min     *testData `json:"-"` // 记录最小的值，仅用于 html 输出
+}
+
+type testData struct {
+	MemBytes          uint64
+	NsPerOp           int64
+	AllocsPerOp       int64
+	AllocedBytesPerOp int64
 }
 
 // 每个 API 对应的路由测试数据
