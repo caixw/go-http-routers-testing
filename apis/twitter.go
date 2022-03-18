@@ -12,6 +12,7 @@ func init() {
 
 // https://developer.twitter.com/en/docs/api-reference-index
 var twitter = &Collection{
+	ID:   "twitter",
 	Name: "Twitter API",
 	Desc: "采集自 Twitter 的 API，以静态路由为主。",
 	APIS: []*API{

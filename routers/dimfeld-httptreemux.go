@@ -14,6 +14,7 @@ import (
 
 func init() {
 	Routers = append(Routers, &Router{
+		ID:   "dimfeld-httptreemux-v5",
 		Name: "dimfeld-httptreemux/v5",
 		URL:  "https://github.com/dimfeld/httptreemux",
 		Load: dimfeldHTTPTreeMuxLoad,

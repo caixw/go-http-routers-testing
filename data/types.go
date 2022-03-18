@@ -9,10 +9,11 @@ type env struct {
 	Arch string   `json:"arch"`
 	CPU  int      `json:"cpu"`
 	Go   string   `json:"go"`   // Go 的版本
-	Data []string `json:"data"` // 测试数据文件列表
+	APIs []string `json:"apis"` // 测试数据文件列表
 }
 
 type api struct {
+	ID      string    `json:"id"`
 	Name    string    `json:"name"`
 	Desc    string    `json:"desc"`
 	Count   int       `json:"count"`
@@ -21,8 +22,9 @@ type api struct {
 
 // 每个 API 对应的路由测试数据
 type router struct {
-	RouterName        string `json:"name"`     // 路由的名称
-	RouterURL         string `json:"url"`      // 路由工具的 URL
+	ID                string `json:"id"`
+	Name              string `json:"name"`     // 路由的名称
+	URL               string `json:"url"`      // 路由工具的 URL
 	MemBytes          uint64 `json:"memBytes"` // 分配的内存
 	NsPerOp           int64  `json:"nsPerOp"`
 	AllocsPerOp       int64  `json:"allocsPerOp"`

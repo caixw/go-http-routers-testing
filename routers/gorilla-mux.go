@@ -12,7 +12,8 @@ import (
 
 func init() {
 	Routers = append(Routers, &Router{
-		Name: "gorilla-mux/v1.8",
+		ID:   "gorilla-mux",
+		Name: "gorilla-mux",
 		URL:  "https://github.com/gorilla/mux",
 		Load: gorillaMuxLoad,
 	})

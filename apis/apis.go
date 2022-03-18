@@ -10,6 +10,7 @@ import "strings"
 // APIS 所有 API 的集体
 var APIS = []*Collection{
 	{
+		ID:   "all",
 		Name: "所有",
 		Desc: "所有接口混合测试",
 		APIS: make([]*API, 0, 1000),
@@ -18,6 +19,7 @@ var APIS = []*Collection{
 
 // Collection 表示一组 API 的定义。
 type Collection struct {
+	ID   string
 	Name string
 	Desc string
 	APIS []*API

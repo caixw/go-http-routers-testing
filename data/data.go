@@ -6,91 +6,15 @@
 package data
 
 import (
-	"encoding/json"
-	"fmt"
-	"io"
 	"net/http"
 	"net/http/httptest"
-	"os"
-	"path/filepath"
 	"runtime"
 	"runtime/metrics"
-	"sort"
-	"strconv"
 	"testing"
 
 	"github.com/caixw/go-http-routers-testing/apis"
 	"github.com/caixw/go-http-routers-testing/routers"
 )
-
-// JSON 输出 JSON 数据，数据按路由进行分组。
-func JSON(dir string, log io.Writer) error {
-	sort.SliceStable(apis.APIS, func(i, j int) bool {
-		return apis.APIS[i].Name > apis.APIS[j].Name
-	})
-
-	sort.SliceStable(routers.Routers, func(i, j int) bool {
-		return routers.Routers[i].Name < routers.Routers[j].Name
-	})
-
-	env := getEnv()
-	env.Data = make([]string, 0, len(apis.APIS))
-	for apiIndex, a := range apis.APIS {
-		fmt.Fprintf(log, "开始测试 %s \n", a.Name)
-
-		apiFile := &api{
-			Name:    a.Name,
-			Desc:    a.Desc,
-			Count:   len(a.APIS),
-			Routers: make([]*router, 0, len(routers.Routers)),
-		}
-
-		for routerIndex, r := range routers.Routers {
-			fmt.Fprint(log, "    ", r.Name, "......")
-
-			data := testRouter(a, r)
-
-			if data.Misses > 0 {
-				filename := strconv.Itoa(apiIndex) + "-" + strconv.Itoa(routerIndex) + ".json"
-				data.MissFile = filename
-				if err := writeJSON(filepath.Join(dir, filename), data.missesData); err != nil {
-					return err
-				}
-				data.missesData = nil
-			}
-
-			apiFile.Routers = append(apiFile.Routers, data)
-
-			fmt.Fprintln(log, "[OK]")
-		}
-
-		filename := strconv.Itoa(apiIndex) + ".json"
-		env.Data = append(env.Data, filename)
-		if err := writeJSON(filepath.Join(dir, filename), apiFile); err != nil {
-			return err
-		}
-
-		fmt.Fprintf(log, "完成 %s 测试\n\n", a.Name)
-	}
-
-	return writeJSON(filepath.Join(dir, "env.json"), env)
-}
-
-func writeJSON(path string, obj interface{}) error {
-	bs, err := json.MarshalIndent(obj, "", "  ")
-	if err != nil {
-		return err
-	}
-
-	f, err := os.Create(path)
-	if err != nil {
-		return err
-	}
-	defer f.Close()
-
-	_, err = f.Write(bs)
-	return err
-}
 
 func getEnv() *env {
 	return &env{
@@ -103,8 +27,9 @@ func getEnv() *env {
 
 func testRouter(c *apis.Collection, r *routers.Router) *router {
 	ret := &router{
-		RouterName: r.Name,
-		RouterURL:  r.URL,
+		ID:   r.ID,
+		Name: r.Name,
+		URL:  r.URL,
 	}
 
 	// 加载

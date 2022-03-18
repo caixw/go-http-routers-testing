@@ -12,6 +12,7 @@ func init() {
 
 // https://developer.github.com/v3/
 var github = &Collection{
+	ID:   "github",
 	Name: "Github API",
 	Desc: "模仿 Github 的 API 定义，数量中等、命名合理，符合一般情况下的需求。",
 	APIS: []*API{

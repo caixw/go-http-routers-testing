@@ -11,6 +11,7 @@ func init() {
 }
 
 var discuz = &Collection{
+	ID:   "discuz",
 	Name: "Discuz Routes",
 	Desc: "DZ 风格的路由定义",
 	APIS: []*API{

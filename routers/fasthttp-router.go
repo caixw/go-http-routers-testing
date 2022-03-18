@@ -11,6 +11,7 @@ import (
 
 func init() {
 	Routers = append(Routers, &Router{
+		ID:   "fasthttp-router",
 		Name: "fasthttp-router",
 		URL:  "https://github.com/fasthttp/router",
 		Load: fasthttpRouterLoad,

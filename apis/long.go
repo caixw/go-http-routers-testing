@@ -9,7 +9,8 @@ func init() {
 }
 
 var long = &Collection{
-	Name: "Long Route",
+	ID:   "long",
+	Name: "Long Routes",
 	Desc: "路径很长的路由项",
 	APIS: []*API{
 		{Method: http.MethodGet, Brace: "/loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog/{p1}/loooooooooooooooooooooooooooooooooooooooogooooooooooooooooooooooooooooooog/{p2}.html"},

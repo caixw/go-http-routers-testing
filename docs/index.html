@@ -25,7 +25,7 @@
                 return resp.json()
             }).then(async data => {
                 this.env = data;
-                for (const file of data.data) {
+                for (const file of data.apis) {
                     await this.loadAPIFile(file);
                 }
             }).catch(reason => {

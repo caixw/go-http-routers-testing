@@ -9,6 +9,7 @@ func init() {
 }
 
 var params10 = &Collection{
+	ID:   "10-params",
 	Name: "10 Params",
 	Desc: "十个参数的路由",
 	APIS: []*API{
