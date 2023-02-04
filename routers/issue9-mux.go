@@ -7,25 +7,25 @@ package routers
 import (
 	"net/http"
 
-	"github.com/issue9/mux/v6"
+	"github.com/issue9/mux/v7/examples/std"
 
 	"github.com/caixw/go-http-routers-testing/apis"
 )
 
 func init() {
 	routers = append(routers, &Router{
-		ID:   "issue9-mux-v6",
-		Name: "issue9-mux/v6",
+		ID:   "issue9-mux-v7",
+		Name: "issue9-mux/v7",
 		URL:  "https://github.com/issue9/mux",
 		Load: issue9MuxLoad,
 	})
 }
 
 func issue9MuxLoad(apis []*apis.API) ServeFunc {
-	router := mux.NewRouter("", nil)
+	router := std.NewRouter("")
 	for _, api := range apis {
 		router.Handle(api.Brace, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			_ = mux.GetParams(r)
+			_ = std.GetParams(r)
 			w.Write([]byte(r.URL.Path))
 		}), api.Method)
 	}
