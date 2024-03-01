@@ -1,6 +1,6 @@
-// Copyright 2017 by caixw, All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
+// SPDX-FileCopyrightText: 2017-2024 caixw
+//
+// SPDX-License-Identifier: MIT
 
 // Package data 处理数据
 package data
@@ -35,7 +35,7 @@ func testRouter(c *apis.Collection, r *routers.Router) *router {
 	}
 
 	// 加载
-	s, size := loadAPIS(c.APIS, r.Load)
+	s, size := loadAPIS(c, r.Load)
 	ret.MemBytes = size
 
 	// bench
@@ -86,7 +86,7 @@ func testMiss(apis []*apis.API, s routers.ServeFunc) []*miss {
 }
 
 // 加载一组 API 到指定的路由中，返回该路由的处理方法和所消耗的内存。
-func loadAPIS(apis []*apis.API, load routers.Load) (routers.ServeFunc, uint64) {
+func loadAPIS(c *apis.Collection, load routers.Load) (routers.ServeFunc, uint64) {
 	sample := make([]metrics.Sample, 1)
 	sample[0].Name = "/gc/heap/allocs:bytes"
 
@@ -94,7 +94,7 @@ func loadAPIS(apis []*apis.API, load routers.Load) (routers.ServeFunc, uint64) {
 	metrics.Read(sample)
 	before := sample[0].Value
 
-	s := load(apis)
+	s := load(c)
 
 	metrics.Read(sample)
 	after := sample[0].Value

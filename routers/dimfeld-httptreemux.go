@@ -1,6 +1,6 @@
-// Copyright 2017 by caixw, All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
+// SPDX-FileCopyrightText: 2017-2024 caixw
+//
+// SPDX-License-Identifier: MIT
 
 package routers
 
@@ -21,9 +21,9 @@ func init() {
 	})
 }
 
-func dimfeldHTTPTreeMuxLoad(apis []*apis.API) ServeFunc {
+func dimfeldHTTPTreeMuxLoad(c *apis.Collection) ServeFunc {
 	mux := httptreemux.New()
-	for _, api := range apis {
+	for _, api := range c.APIS {
 		mux.Handle(api.Method, api.Colon, dimfeldHTTPTreeMuxHandler)
 	}
 	return stdServeFunc(mux)

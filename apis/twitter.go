@@ -1,6 +1,6 @@
-// Copyright 2018 by caixw, All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
+// SPDX-FileCopyrightText: 2017-2024 caixw
+//
+// SPDX-License-Identifier: MIT
 
 package apis
 

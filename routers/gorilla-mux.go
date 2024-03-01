@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: 2017-2024 caixw
+//
 // SPDX-License-Identifier: MIT
 
 package routers
@@ -19,9 +21,9 @@ func init() {
 	})
 }
 
-func gorillaMuxLoad(apis []*apis.API) ServeFunc {
+func gorillaMuxLoad(c *apis.Collection) ServeFunc {
 	router := mux.NewRouter()
-	for _, api := range apis {
+	for _, api := range c.APIS {
 		router.HandleFunc(api.Brace, func(w http.ResponseWriter, r *http.Request) {
 			_ = mux.Vars(r)
 			w.Write([]byte(r.URL.Path))

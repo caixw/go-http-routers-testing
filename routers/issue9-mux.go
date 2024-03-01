@@ -1,6 +1,6 @@
-// Copyright 2017 by caixw, All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
+// SPDX-FileCopyrightText: 2017-2024 caixw
+//
+// SPDX-License-Identifier: MIT
 
 package routers
 
@@ -21,9 +21,9 @@ func init() {
 	})
 }
 
-func issue9MuxLoad(apis []*apis.API) ServeFunc {
+func issue9MuxLoad(c *apis.Collection) ServeFunc {
 	router := std.NewRouter("")
-	for _, api := range apis {
+	for _, api := range c.APIS {
 		router.Handle(api.Brace, http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			_ = std.GetParams(r)
 			w.Write([]byte(r.URL.Path))

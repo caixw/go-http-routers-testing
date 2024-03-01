@@ -1,6 +1,6 @@
-// Copyright 2017 by caixw, All rights reserved.
-// Use of this source code is governed by a MIT
-// license that can be found in the LICENSE file.
+// SPDX-FileCopyrightText: 2017-2024 caixw
+//
+// SPDX-License-Identifier: MIT
 
 // Package routers 各类路由包的定义处
 package routers
@@ -18,7 +18,7 @@ import (
 var routers = make([]*Router, 0, 10)
 
 // Load 加载路由的函数
-type Load func(apis []*apis.API) ServeFunc
+type Load func(c *apis.Collection) ServeFunc
 
 // ServeFunc 传入一个 api，返回处理之后的内容。
 type ServeFunc func(*apis.API) string
