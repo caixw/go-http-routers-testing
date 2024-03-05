@@ -8,37 +8,37 @@
 			"id": "dimfeld-httptreemux-v5",
 			"name": "dimfeld-httptreemux/v5",
 			"url": "https://github.com/dimfeld/httptreemux",
-			"memBytes": 28416,
-			"nsPerOp": 2517,
+			"memBytes": 28496,
+			"nsPerOp": 2563,
 			"allocsPerOp": 18,
-			"allocedBytesPerOp": 1872
+			"allocedBytesPerOp": 1904
 		},
 		{
 			"id": "fasthttp-router",
 			"name": "fasthttp-router",
 			"url": "https://github.com/fasthttp/router",
-			"memBytes": 868496,
-			"nsPerOp": 2425,
+			"memBytes": 880144,
+			"nsPerOp": 2392,
 			"allocsPerOp": 18,
-			"allocedBytesPerOp": 1880
+			"allocedBytesPerOp": 1886
 		},
 		{
 			"id": "gorilla-mux",
 			"name": "gorilla-mux",
 			"url": "https://github.com/gorilla/mux",
-			"memBytes": 1919184,
-			"nsPerOp": 15486,
+			"memBytes": 1986784,
+			"nsPerOp": 15574,
 			"allocsPerOp": 22,
-			"allocedBytesPerOp": 2549
+			"allocedBytesPerOp": 2649
 		},
 		{
 			"id": "issue9-mux-v7",
 			"name": "issue9-mux/v7",
 			"url": "https://github.com/issue9/mux",
-			"memBytes": 362704,
-			"nsPerOp": 2482,
+			"memBytes": 361808,
+			"nsPerOp": 2552,
 			"allocsPerOp": 16,
-			"allocedBytesPerOp": 1792
+			"allocedBytesPerOp": 1856
 		}
 	]
 }
